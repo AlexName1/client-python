@@ -142,6 +142,7 @@ Class | Method | HTTP request | Description
  - [PurchaseBase](docs/PurchaseBase.md)
  - [PurchaseInsert](docs/PurchaseInsert.md)
  - [PurchaseUpdate](docs/PurchaseUpdate.md)
+ - [PurchaseWithDeliveryCdek](docs/PurchaseWithDeliveryCdek.md)
  - [PurchaseWithSize](docs/PurchaseWithSize.md)
  - [PurchaseWithSizeDeliveryCdek](docs/PurchaseWithSizeDeliveryCdek.md)
  - [PurchaseWithSizeStockDeliveryCdek](docs/PurchaseWithSizeStockDeliveryCdek.md)

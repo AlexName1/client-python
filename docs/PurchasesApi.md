@@ -67,7 +67,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_active_orders_api_v1_purchases_token_active_get**
-> object get_active_orders_api_v1_purchases_token_active_get(token, ds=ds)
+> list[PurchaseWithDeliveryCdek] get_active_orders_api_v1_purchases_token_active_get(token, ds=ds)
 
 Get Active Orders
 
@@ -105,7 +105,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**object**
+[**list[PurchaseWithDeliveryCdek]**](PurchaseWithDeliveryCdek.md)
 
 ### Authorization
 
