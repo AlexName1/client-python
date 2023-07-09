@@ -59,7 +59,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_sizes_api_v1_sizes_get**
-> list[Size] get_sizes_api_v1_sizes_get()
+> list[SizeBase] get_sizes_api_v1_sizes_get()
 
 Get Sizes
 
@@ -91,7 +91,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**list[Size]**](Size.md)
+[**list[SizeBase]**](SizeBase.md)
 
 ### Authorization
 

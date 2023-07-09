@@ -148,7 +148,6 @@ Class | Method | HTTP request | Description
  - [QuantityBase](docs/QuantityBase.md)
  - [QuantityWithSize](docs/QuantityWithSize.md)
  - [QuantityWithSizeStock](docs/QuantityWithSizeStock.md)
- - [Size](docs/Size.md)
  - [SizeBase](docs/SizeBase.md)
  - [Stock](docs/Stock.md)
  - [StockBase](docs/StockBase.md)
