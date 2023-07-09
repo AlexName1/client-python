@@ -80,7 +80,8 @@ Class | Method | HTTP request | Description
 *DeliveriesCdekApi* | [**delete_api_v1_deliveries_cdek_delete**](docs/DeliveriesCdekApi.md#delete_api_v1_deliveries_cdek_delete) | **DELETE** /api/v1/deliveries-cdek | Delete
 *DeliveriesCdekApi* | [**insert_api_v1_deliveries_cdek_post**](docs/DeliveriesCdekApi.md#insert_api_v1_deliveries_cdek_post) | **POST** /api/v1/deliveries-cdek | Insert
 *DeliveriesCdekApi* | [**update_api_v1_deliveries_cdek_put**](docs/DeliveriesCdekApi.md#update_api_v1_deliveries_cdek_put) | **PUT** /api/v1/deliveries-cdek | Update
-*InfoItemsApi* | [**insert_or_update_api_v1_info_items_bot_token_post**](docs/InfoItemsApi.md#insert_or_update_api_v1_info_items_bot_token_post) | **POST** /api/v1/info-items/{bot_token} | Insert Or Update
+*InfoItemsApi* | [**insert_or_update_api_v1_info_items_token_post**](docs/InfoItemsApi.md#insert_or_update_api_v1_info_items_token_post) | **POST** /api/v1/info-items/{token} | Insert Or Update
+*InfoItemsApi* | [**update_api_v1_info_items_token_put**](docs/InfoItemsApi.md#update_api_v1_info_items_token_put) | **PUT** /api/v1/info-items/{token} | Update
 *ItemsApi* | [**get_brands_and_counts_api_v1_items_category_brands_counts_get**](docs/ItemsApi.md#get_brands_and_counts_api_v1_items_category_brands_counts_get) | **GET** /api/v1/items/{category}/brands-counts | Get Brands And Counts
 *ItemsApi* | [**get_codes_items_api_v1_items_codes_get**](docs/ItemsApi.md#get_codes_items_api_v1_items_codes_get) | **GET** /api/v1/items/codes | Get Codes Items
 *ItemsApi* | [**get_item_api_v1_items_code_token_one_get**](docs/ItemsApi.md#get_item_api_v1_items_code_token_one_get) | **GET** /api/v1/items/{code}/{token}/one | Get Item
@@ -129,6 +130,7 @@ Class | Method | HTTP request | Description
  - [DimensionBase](docs/DimensionBase.md)
  - [HTTPValidationError](docs/HTTPValidationError.md)
  - [InfoItemInsert](docs/InfoItemInsert.md)
+ - [InfoItemUpdate](docs/InfoItemUpdate.md)
  - [ItemBase](docs/ItemBase.md)
  - [ItemWithQuantitySizeCategory](docs/ItemWithQuantitySizeCategory.md)
  - [ItemWithQuantitySizeDimension](docs/ItemWithQuantitySizeDimension.md)

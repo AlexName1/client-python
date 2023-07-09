@@ -24,6 +24,7 @@ from swagger_client.models.delivery_cdek_update import DeliveryCdekUpdate
 from swagger_client.models.dimension_base import DimensionBase
 from swagger_client.models.http_validation_error import HTTPValidationError
 from swagger_client.models.info_item_insert import InfoItemInsert
+from swagger_client.models.info_item_update import InfoItemUpdate
 from swagger_client.models.item_base import ItemBase
 from swagger_client.models.item_with_quantity_size_category import ItemWithQuantitySizeCategory
 from swagger_client.models.item_with_quantity_size_dimension import ItemWithQuantitySizeDimension
