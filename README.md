@@ -95,9 +95,10 @@ Class | Method | HTTP request | Description
 *ItemsApi* | [**update_active_api_v1_items_active_put**](docs/ItemsApi.md#update_active_api_v1_items_active_put) | **PUT** /api/v1/items/active | Update Active
 *ItemsApi* | [**update_photo_by_code_api_v1_items_photo_code_file_id_photo_put**](docs/ItemsApi.md#update_photo_by_code_api_v1_items_photo_code_file_id_photo_put) | **PUT** /api/v1/items/photo/{code}/{file_id_photo} | Update Photo By Code
 *PurchasesApi* | [**delete_api_v1_purchases_order_id_token_delete**](docs/PurchasesApi.md#delete_api_v1_purchases_order_id_token_delete) | **DELETE** /api/v1/purchases/{order_id}/{token} | Delete
+*PurchasesApi* | [**get_active_orders_api_v1_purchases_token_active_get**](docs/PurchasesApi.md#get_active_orders_api_v1_purchases_token_active_get) | **GET** /api/v1/purchases/{token}/active | Get Active Orders
 *PurchasesApi* | [**get_all_api_v1_purchases_token_get**](docs/PurchasesApi.md#get_all_api_v1_purchases_token_get) | **GET** /api/v1/purchases/{token} | Get All
 *PurchasesApi* | [**get_count_api_v1_purchases_token_status_count_get**](docs/PurchasesApi.md#get_count_api_v1_purchases_token_status_count_get) | **GET** /api/v1/purchases/{token}/{status}/count | Get Count
-*PurchasesApi* | [**get_order_by_id_api_v1_purchases_order_id_token_get**](docs/PurchasesApi.md#get_order_by_id_api_v1_purchases_order_id_token_get) | **GET** /api/v1/purchases/{order_id}/{token} | Get Order By Id
+*PurchasesApi* | [**get_order_by_id_api_v1_purchases_order_id_token_one_get**](docs/PurchasesApi.md#get_order_by_id_api_v1_purchases_order_id_token_one_get) | **GET** /api/v1/purchases/{order_id}/{token}/one | Get Order By Id
 *PurchasesApi* | [**get_user_orders_api_v1_purchases_token_users_user_id_get**](docs/PurchasesApi.md#get_user_orders_api_v1_purchases_token_users_user_id_get) | **GET** /api/v1/purchases/{token}/users/{user_id} | Get User Orders
 *PurchasesApi* | [**insert_api_v1_purchases_token_post**](docs/PurchasesApi.md#insert_api_v1_purchases_token_post) | **POST** /api/v1/purchases/{token} | Insert
 *PurchasesApi* | [**insert_new_api_v1_purchases_token_new_post**](docs/PurchasesApi.md#insert_new_api_v1_purchases_token_new_post) | **POST** /api/v1/purchases/{token}/new | Insert New
