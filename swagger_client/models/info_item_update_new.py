@@ -31,7 +31,6 @@ class InfoItemUpdateNew(object):
         'code': 'str',
         'retail_price': 'int',
         'link': 'str',
-        'photo_tg_id': 'str',
         'discount_price': 'int'
     }
 
@@ -39,16 +38,14 @@ class InfoItemUpdateNew(object):
         'code': 'code',
         'retail_price': 'retail_price',
         'link': 'link',
-        'photo_tg_id': 'photo_tg_id',
         'discount_price': 'discount_price'
     }
 
-    def __init__(self, code=None, retail_price=None, link=None, photo_tg_id=None, discount_price=None):  # noqa: E501
+    def __init__(self, code=None, retail_price=None, link=None, discount_price=None):  # noqa: E501
         """InfoItemUpdateNew - a model defined in Swagger"""  # noqa: E501
         self._code = None
         self._retail_price = None
         self._link = None
-        self._photo_tg_id = None
         self._discount_price = None
         self.discriminator = None
         self.code = code
@@ -56,8 +53,6 @@ class InfoItemUpdateNew(object):
             self.retail_price = retail_price
         if link is not None:
             self.link = link
-        if photo_tg_id is not None:
-            self.photo_tg_id = photo_tg_id
         if discount_price is not None:
             self.discount_price = discount_price
 
@@ -125,27 +120,6 @@ class InfoItemUpdateNew(object):
         """
 
         self._link = link
-
-    @property
-    def photo_tg_id(self):
-        """Gets the photo_tg_id of this InfoItemUpdateNew.  # noqa: E501
-
-
-        :return: The photo_tg_id of this InfoItemUpdateNew.  # noqa: E501
-        :rtype: str
-        """
-        return self._photo_tg_id
-
-    @photo_tg_id.setter
-    def photo_tg_id(self, photo_tg_id):
-        """Sets the photo_tg_id of this InfoItemUpdateNew.
-
-
-        :param photo_tg_id: The photo_tg_id of this InfoItemUpdateNew.  # noqa: E501
-        :type: str
-        """
-
-        self._photo_tg_id = photo_tg_id
 
     @property
     def discount_price(self):
