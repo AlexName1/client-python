@@ -30,7 +30,7 @@ class PurchaseInsert(object):
     swagger_types = {
         'buyer': 'str',
         'code': 'str',
-        'price': 'str',
+        'price': 'int',
         'delivery': 'str',
         'address': 'str',
         'phone': 'str',
@@ -129,7 +129,7 @@ class PurchaseInsert(object):
 
 
         :return: The price of this PurchaseInsert.  # noqa: E501
-        :rtype: str
+        :rtype: int
         """
         return self._price
 
@@ -139,7 +139,7 @@ class PurchaseInsert(object):
 
 
         :param price: The price of this PurchaseInsert.  # noqa: E501
-        :type: str
+        :type: int
         """
         if price is None:
             raise ValueError("Invalid value for `price`, must not be `None`")  # noqa: E501

@@ -5,7 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **buyer** | **str** |  | 
 **code** | **str** |  | 
-**price** | **str** |  | 
+**price** | **int** |  | 
 **delivery** | **str** |  | 
 **address** | **str** |  | 
 **phone** | **str** |  | 
