@@ -435,7 +435,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_api_v1_purchases_token_put**
-> PurchaseWithSizeStockDeliveryCdek update_api_v1_purchases_token_put(body, token)
+> PurchaseBase update_api_v1_purchases_token_put(body, token)
 
 Update
 
@@ -473,7 +473,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PurchaseWithSizeStockDeliveryCdek**](PurchaseWithSizeStockDeliveryCdek.md)
+[**PurchaseBase**](PurchaseBase.md)
 
 ### Authorization
 

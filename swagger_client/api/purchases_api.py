@@ -863,7 +863,7 @@ class PurchasesApi(object):
         :param async_req bool
         :param PurchaseUpdate body: (required)
         :param str token: (required)
-        :return: PurchaseWithSizeStockDeliveryCdek
+        :return: PurchaseBase
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -885,7 +885,7 @@ class PurchasesApi(object):
         :param async_req bool
         :param PurchaseUpdate body: (required)
         :param str token: (required)
-        :return: PurchaseWithSizeStockDeliveryCdek
+        :return: PurchaseBase
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -949,7 +949,7 @@ class PurchasesApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='PurchaseWithSizeStockDeliveryCdek',  # noqa: E501
+            response_type='PurchaseBase',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),

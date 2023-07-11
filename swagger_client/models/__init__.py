@@ -39,7 +39,6 @@ from swagger_client.models.purchase_update import PurchaseUpdate
 from swagger_client.models.purchase_with_delivery_cdek import PurchaseWithDeliveryCdek
 from swagger_client.models.purchase_with_size import PurchaseWithSize
 from swagger_client.models.purchase_with_size_delivery_cdek import PurchaseWithSizeDeliveryCdek
-from swagger_client.models.purchase_with_size_stock_delivery_cdek import PurchaseWithSizeStockDeliveryCdek
 from swagger_client.models.quantity_base import QuantityBase
 from swagger_client.models.quantity_with_size import QuantityWithSize
 from swagger_client.models.quantity_with_size_stock import QuantityWithSizeStock

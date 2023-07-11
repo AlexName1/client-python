@@ -147,7 +147,6 @@ Class | Method | HTTP request | Description
  - [PurchaseWithDeliveryCdek](docs/PurchaseWithDeliveryCdek.md)
  - [PurchaseWithSize](docs/PurchaseWithSize.md)
  - [PurchaseWithSizeDeliveryCdek](docs/PurchaseWithSizeDeliveryCdek.md)
- - [PurchaseWithSizeStockDeliveryCdek](docs/PurchaseWithSizeStockDeliveryCdek.md)
  - [QuantityBase](docs/QuantityBase.md)
  - [QuantityWithSize](docs/QuantityWithSize.md)
  - [QuantityWithSizeStock](docs/QuantityWithSizeStock.md)
