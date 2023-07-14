@@ -74,7 +74,8 @@ class PurchaseInsert(object):
         self.phone = phone
         self.checking = checking
         self.pod = pod
-        self.comment = comment
+        if comment is not None:
+            self.comment = comment
         self.size_id = size_id
 
     @property
@@ -279,8 +280,6 @@ class PurchaseInsert(object):
         :param comment: The comment of this PurchaseInsert.  # noqa: E501
         :type: str
         """
-        if comment is None:
-            raise ValueError("Invalid value for `comment`, must not be `None`")  # noqa: E501
 
         self._comment = comment
 
