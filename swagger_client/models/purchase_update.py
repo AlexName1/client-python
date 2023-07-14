@@ -31,22 +31,25 @@ class PurchaseUpdate(object):
         'id': 'int',
         'status': 'int',
         'add_info': 'str',
-        'add_photo': 'str'
+        'add_photo': 'str',
+        'paid': 'bool'
     }
 
     attribute_map = {
         'id': 'id',
         'status': 'status',
         'add_info': 'add_info',
-        'add_photo': 'add_photo'
+        'add_photo': 'add_photo',
+        'paid': 'paid'
     }
 
-    def __init__(self, id=None, status=None, add_info=None, add_photo=None):  # noqa: E501
+    def __init__(self, id=None, status=None, add_info=None, add_photo=None, paid=None):  # noqa: E501
         """PurchaseUpdate - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._status = None
         self._add_info = None
         self._add_photo = None
+        self._paid = None
         self.discriminator = None
         self.id = id
         if status is not None:
@@ -55,6 +58,8 @@ class PurchaseUpdate(object):
             self.add_info = add_info
         if add_photo is not None:
             self.add_photo = add_photo
+        if paid is not None:
+            self.paid = paid
 
     @property
     def id(self):
@@ -141,6 +146,27 @@ class PurchaseUpdate(object):
         """
 
         self._add_photo = add_photo
+
+    @property
+    def paid(self):
+        """Gets the paid of this PurchaseUpdate.  # noqa: E501
+
+
+        :return: The paid of this PurchaseUpdate.  # noqa: E501
+        :rtype: bool
+        """
+        return self._paid
+
+    @paid.setter
+    def paid(self, paid):
+        """Sets the paid of this PurchaseUpdate.
+
+
+        :param paid: The paid of this PurchaseUpdate.  # noqa: E501
+        :type: bool
+        """
+
+        self._paid = paid
 
     def to_dict(self):
         """Returns the model properties as a dict"""

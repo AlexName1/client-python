@@ -7,6 +7,7 @@ Name | Type | Description | Notes
 **status** | **int** |  | [optional] 
 **add_info** | **str** |  | [optional] 
 **add_photo** | **str** |  | [optional] 
+**paid** | **bool** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
