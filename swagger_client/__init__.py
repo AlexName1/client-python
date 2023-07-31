@@ -36,7 +36,6 @@ from swagger_client.models.barcode_insert import BarcodeInsert
 from swagger_client.models.bot import Bot
 from swagger_client.models.brand_count import BrandCount
 from swagger_client.models.category_base import CategoryBase
-from swagger_client.models.centimeter_base import CentimeterBase
 from swagger_client.models.delivery_cdek_base import DeliveryCdekBase
 from swagger_client.models.delivery_cdek_update import DeliveryCdekUpdate
 from swagger_client.models.dimension_base import DimensionBase

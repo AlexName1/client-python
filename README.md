@@ -127,7 +127,6 @@ Class | Method | HTTP request | Description
  - [Bot](docs/Bot.md)
  - [BrandCount](docs/BrandCount.md)
  - [CategoryBase](docs/CategoryBase.md)
- - [CentimeterBase](docs/CentimeterBase.md)
  - [DeliveryCdekBase](docs/DeliveryCdekBase.md)
  - [DeliveryCdekUpdate](docs/DeliveryCdekUpdate.md)
  - [DimensionBase](docs/DimensionBase.md)

@@ -34,7 +34,6 @@ class QuantityWithSizeStock(object):
         'size_id': 'int',
         'count': 'int',
         'size': 'SizeBase',
-        'centimeter': 'CentimeterBase',
         'stock': 'StockBase'
     }
 
@@ -45,11 +44,10 @@ class QuantityWithSizeStock(object):
         'size_id': 'size_id',
         'count': 'count',
         'size': 'size',
-        'centimeter': 'centimeter',
         'stock': 'stock'
     }
 
-    def __init__(self, id=None, item_id=None, stock_id=None, size_id=None, count=None, size=None, centimeter=None, stock=None):  # noqa: E501
+    def __init__(self, id=None, item_id=None, stock_id=None, size_id=None, count=None, size=None, stock=None):  # noqa: E501
         """QuantityWithSizeStock - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._item_id = None
@@ -57,7 +55,6 @@ class QuantityWithSizeStock(object):
         self._size_id = None
         self._count = None
         self._size = None
-        self._centimeter = None
         self._stock = None
         self.discriminator = None
         if id is not None:
@@ -71,8 +68,6 @@ class QuantityWithSizeStock(object):
         if count is not None:
             self.count = count
         self.size = size
-        if centimeter is not None:
-            self.centimeter = centimeter
         self.stock = stock
 
     @property
@@ -202,27 +197,6 @@ class QuantityWithSizeStock(object):
             raise ValueError("Invalid value for `size`, must not be `None`")  # noqa: E501
 
         self._size = size
-
-    @property
-    def centimeter(self):
-        """Gets the centimeter of this QuantityWithSizeStock.  # noqa: E501
-
-
-        :return: The centimeter of this QuantityWithSizeStock.  # noqa: E501
-        :rtype: CentimeterBase
-        """
-        return self._centimeter
-
-    @centimeter.setter
-    def centimeter(self, centimeter):
-        """Sets the centimeter of this QuantityWithSizeStock.
-
-
-        :param centimeter: The centimeter of this QuantityWithSizeStock.  # noqa: E501
-        :type: CentimeterBase
-        """
-
-        self._centimeter = centimeter
 
     @property
     def stock(self):
