@@ -435,6 +435,7 @@ class ItemsApi(object):
         :param async_req bool
         :param str code: (required)
         :param str token: (required)
+        :param bool centimeter:
         :return: ItemWithQuantitySizeCategory
                  If the method is called asynchronously,
                  returns the request thread.
@@ -457,12 +458,13 @@ class ItemsApi(object):
         :param async_req bool
         :param str code: (required)
         :param str token: (required)
+        :param bool centimeter:
         :return: ItemWithQuantitySizeCategory
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['code', 'token']  # noqa: E501
+        all_params = ['code', 'token', 'centimeter']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -495,6 +497,8 @@ class ItemsApi(object):
             path_params['token'] = params['token']  # noqa: E501
 
         query_params = []
+        if 'centimeter' in params:
+            query_params.append(('centimeter', params['centimeter']))  # noqa: E501
 
         header_params = {}
 

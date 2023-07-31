@@ -224,7 +224,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_item_selectinload_size_category_api_v1_items_code_token_load_size_category_get**
-> ItemWithQuantitySizeCategory get_item_selectinload_size_category_api_v1_items_code_token_load_size_category_get(code, token)
+> ItemWithQuantitySizeCategory get_item_selectinload_size_category_api_v1_items_code_token_load_size_category_get(code, token, centimeter=centimeter)
 
 Get Item Selectinload Size Category
 
@@ -244,10 +244,11 @@ configuration.password = 'YOUR_PASSWORD'
 api_instance = swagger_client.ItemsApi(swagger_client.ApiClient(configuration))
 code = 'code_example' # str | 
 token = 'token_example' # str | 
+centimeter = false # bool |  (optional) (default to false)
 
 try:
     # Get Item Selectinload Size Category
-    api_response = api_instance.get_item_selectinload_size_category_api_v1_items_code_token_load_size_category_get(code, token)
+    api_response = api_instance.get_item_selectinload_size_category_api_v1_items_code_token_load_size_category_get(code, token, centimeter=centimeter)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling ItemsApi->get_item_selectinload_size_category_api_v1_items_code_token_load_size_category_get: %s\n" % e)
@@ -259,6 +260,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **code** | **str**|  | 
  **token** | **str**|  | 
+ **centimeter** | **bool**|  | [optional] [default to false]
 
 ### Return type
 
