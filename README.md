@@ -88,6 +88,7 @@ Class | Method | HTTP request | Description
 *ItemsApi* | [**get_item_api_v1_items_code_token_one_get**](docs/ItemsApi.md#get_item_api_v1_items_code_token_one_get) | **GET** /api/v1/items/{code}/{token}/one | Get Item
 *ItemsApi* | [**get_item_selectinload_size_api_v1_items_code_token_load_size_get**](docs/ItemsApi.md#get_item_selectinload_size_api_v1_items_code_token_load_size_get) | **GET** /api/v1/items/{code}/{token}/load-size | Get Item Selectinload Size
 *ItemsApi* | [**get_item_selectinload_size_category_api_v1_items_code_token_load_size_category_get**](docs/ItemsApi.md#get_item_selectinload_size_category_api_v1_items_code_token_load_size_category_get) | **GET** /api/v1/items/{code}/{token}/load-size-category | Get Item Selectinload Size Category
+*ItemsApi* | [**get_item_selectinload_size_centimeter_category_api_v1_items_code_token_load_size_centimeter_category_get**](docs/ItemsApi.md#get_item_selectinload_size_centimeter_category_api_v1_items_code_token_load_size_centimeter_category_get) | **GET** /api/v1/items/{code}/{token}/load-size-centimeter-category | Get Item Selectinload Size Centimeter Category
 *ItemsApi* | [**get_items_action_api_v1_items_token_all_get**](docs/ItemsApi.md#get_items_action_api_v1_items_token_all_get) | **GET** /api/v1/items/{token}/all | Get Items Action
 *ItemsApi* | [**get_items_api_v1_items_category_brand_token_get**](docs/ItemsApi.md#get_items_api_v1_items_category_brand_token_get) | **GET** /api/v1/items/{category}/{brand}/{token} | Get Items
 *ItemsApi* | [**get_models_and_counts_api_v1_items_category_brand_models_counts_get**](docs/ItemsApi.md#get_models_and_counts_api_v1_items_category_brand_models_counts_get) | **GET** /api/v1/items/{category}/{brand}/models-counts | Get Models And Counts
@@ -127,6 +128,7 @@ Class | Method | HTTP request | Description
  - [Bot](docs/Bot.md)
  - [BrandCount](docs/BrandCount.md)
  - [CategoryBase](docs/CategoryBase.md)
+ - [CentimeterBase](docs/CentimeterBase.md)
  - [DeliveryCdekBase](docs/DeliveryCdekBase.md)
  - [DeliveryCdekUpdate](docs/DeliveryCdekUpdate.md)
  - [DimensionBase](docs/DimensionBase.md)
@@ -136,6 +138,7 @@ Class | Method | HTTP request | Description
  - [InfoItemUpdateNew](docs/InfoItemUpdateNew.md)
  - [ItemBase](docs/ItemBase.md)
  - [ItemWithQuantitySizeCategory](docs/ItemWithQuantitySizeCategory.md)
+ - [ItemWithQuantitySizeCentimeterCategory](docs/ItemWithQuantitySizeCentimeterCategory.md)
  - [ItemWithQuantitySizeDimension](docs/ItemWithQuantitySizeDimension.md)
  - [ItemWithQuantityStockSizeDimension](docs/ItemWithQuantityStockSizeDimension.md)
  - [ItemsUpdateActive](docs/ItemsUpdateActive.md)
@@ -149,6 +152,7 @@ Class | Method | HTTP request | Description
  - [PurchaseWithSizeDeliveryCdek](docs/PurchaseWithSizeDeliveryCdek.md)
  - [QuantityBase](docs/QuantityBase.md)
  - [QuantityWithSize](docs/QuantityWithSize.md)
+ - [QuantityWithSizeCentimeter](docs/QuantityWithSizeCentimeter.md)
  - [QuantityWithSizeStock](docs/QuantityWithSizeStock.md)
  - [SizeBase](docs/SizeBase.md)
  - [Stock](docs/Stock.md)

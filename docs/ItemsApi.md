@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**get_item_api_v1_items_code_token_one_get**](ItemsApi.md#get_item_api_v1_items_code_token_one_get) | **GET** /api/v1/items/{code}/{token}/one | Get Item
 [**get_item_selectinload_size_api_v1_items_code_token_load_size_get**](ItemsApi.md#get_item_selectinload_size_api_v1_items_code_token_load_size_get) | **GET** /api/v1/items/{code}/{token}/load-size | Get Item Selectinload Size
 [**get_item_selectinload_size_category_api_v1_items_code_token_load_size_category_get**](ItemsApi.md#get_item_selectinload_size_category_api_v1_items_code_token_load_size_category_get) | **GET** /api/v1/items/{code}/{token}/load-size-category | Get Item Selectinload Size Category
+[**get_item_selectinload_size_centimeter_category_api_v1_items_code_token_load_size_centimeter_category_get**](ItemsApi.md#get_item_selectinload_size_centimeter_category_api_v1_items_code_token_load_size_centimeter_category_get) | **GET** /api/v1/items/{code}/{token}/load-size-centimeter-category | Get Item Selectinload Size Centimeter Category
 [**get_items_action_api_v1_items_token_all_get**](ItemsApi.md#get_items_action_api_v1_items_token_all_get) | **GET** /api/v1/items/{token}/all | Get Items Action
 [**get_items_api_v1_items_category_brand_token_get**](ItemsApi.md#get_items_api_v1_items_category_brand_token_get) | **GET** /api/v1/items/{category}/{brand}/{token} | Get Items
 [**get_models_and_counts_api_v1_items_category_brand_models_counts_get**](ItemsApi.md#get_models_and_counts_api_v1_items_category_brand_models_counts_get) | **GET** /api/v1/items/{category}/{brand}/models-counts | Get Models And Counts
@@ -224,7 +225,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_item_selectinload_size_category_api_v1_items_code_token_load_size_category_get**
-> ItemWithQuantitySizeCategory get_item_selectinload_size_category_api_v1_items_code_token_load_size_category_get(code, token, centimeter=centimeter)
+> ItemWithQuantitySizeCategory get_item_selectinload_size_category_api_v1_items_code_token_load_size_category_get(code, token)
 
 Get Item Selectinload Size Category
 
@@ -244,11 +245,10 @@ configuration.password = 'YOUR_PASSWORD'
 api_instance = swagger_client.ItemsApi(swagger_client.ApiClient(configuration))
 code = 'code_example' # str | 
 token = 'token_example' # str | 
-centimeter = false # bool |  (optional) (default to false)
 
 try:
     # Get Item Selectinload Size Category
-    api_response = api_instance.get_item_selectinload_size_category_api_v1_items_code_token_load_size_category_get(code, token, centimeter=centimeter)
+    api_response = api_instance.get_item_selectinload_size_category_api_v1_items_code_token_load_size_category_get(code, token)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling ItemsApi->get_item_selectinload_size_category_api_v1_items_code_token_load_size_category_get: %s\n" % e)
@@ -260,11 +260,62 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **code** | **str**|  | 
  **token** | **str**|  | 
- **centimeter** | **bool**|  | [optional] [default to false]
 
 ### Return type
 
 [**ItemWithQuantitySizeCategory**](ItemWithQuantitySizeCategory.md)
+
+### Authorization
+
+[HTTPBasic](../README.md#HTTPBasic)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **get_item_selectinload_size_centimeter_category_api_v1_items_code_token_load_size_centimeter_category_get**
+> ItemWithQuantitySizeCentimeterCategory get_item_selectinload_size_centimeter_category_api_v1_items_code_token_load_size_centimeter_category_get(code, token)
+
+Get Item Selectinload Size Centimeter Category
+
+### Example
+```python
+from __future__ import print_function
+import time
+import swagger_client
+from swagger_client.rest import ApiException
+from pprint import pprint
+# Configure HTTP basic authorization: HTTPBasic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
+
+# create an instance of the API class
+api_instance = swagger_client.ItemsApi(swagger_client.ApiClient(configuration))
+code = 'code_example' # str | 
+token = 'token_example' # str | 
+
+try:
+    # Get Item Selectinload Size Centimeter Category
+    api_response = api_instance.get_item_selectinload_size_centimeter_category_api_v1_items_code_token_load_size_centimeter_category_get(code, token)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling ItemsApi->get_item_selectinload_size_centimeter_category_api_v1_items_code_token_load_size_centimeter_category_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **code** | **str**|  | 
+ **token** | **str**|  | 
+
+### Return type
+
+[**ItemWithQuantitySizeCentimeterCategory**](ItemWithQuantitySizeCentimeterCategory.md)
 
 ### Authorization
 
