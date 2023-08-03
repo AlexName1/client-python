@@ -59,7 +59,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_sizes_api_v1_sizes_get**
-> list[SizeBase] get_sizes_api_v1_sizes_get()
+> list[SizeBase] get_sizes_api_v1_sizes_get(category=category)
 
 Get Sizes
 
@@ -77,17 +77,21 @@ configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
 api_instance = swagger_client.SizesApi(swagger_client.ApiClient(configuration))
+category = '' # str |  (optional)
 
 try:
     # Get Sizes
-    api_response = api_instance.get_sizes_api_v1_sizes_get()
+    api_response = api_instance.get_sizes_api_v1_sizes_get(category=category)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling SizesApi->get_sizes_api_v1_sizes_get: %s\n" % e)
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **category** | **str**|  | [optional] 
 
 ### Return type
 

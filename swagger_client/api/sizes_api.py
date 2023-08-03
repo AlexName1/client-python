@@ -134,6 +134,7 @@ class SizesApi(object):
         >>> result = thread.get()
 
         :param async_req bool
+        :param str category:
         :return: list[SizeBase]
                  If the method is called asynchronously,
                  returns the request thread.
@@ -154,12 +155,13 @@ class SizesApi(object):
         >>> result = thread.get()
 
         :param async_req bool
+        :param str category:
         :return: list[SizeBase]
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = []  # noqa: E501
+        all_params = ['category']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -180,6 +182,8 @@ class SizesApi(object):
         path_params = {}
 
         query_params = []
+        if 'category' in params:
+            query_params.append(('category', params['category']))  # noqa: E501
 
         header_params = {}
 
