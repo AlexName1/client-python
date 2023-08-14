@@ -171,7 +171,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_item_selectinload_size_api_v1_items_code_token_load_size_get**
-> ItemWithQuantitySizeDimension get_item_selectinload_size_api_v1_items_code_token_load_size_get(code, token, like=like)
+> ItemWithQuantitySizeDimension get_item_selectinload_size_api_v1_items_code_token_load_size_get(code, token, like=like, sneaker=sneaker)
 
 Get Item Selectinload Size
 
@@ -192,10 +192,11 @@ api_instance = swagger_client.ItemsApi(swagger_client.ApiClient(configuration))
 code = 'code_example' # str | 
 token = 'token_example' # str | 
 like = false # bool |  (optional) (default to false)
+sneaker = false # bool |  (optional) (default to false)
 
 try:
     # Get Item Selectinload Size
-    api_response = api_instance.get_item_selectinload_size_api_v1_items_code_token_load_size_get(code, token, like=like)
+    api_response = api_instance.get_item_selectinload_size_api_v1_items_code_token_load_size_get(code, token, like=like, sneaker=sneaker)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling ItemsApi->get_item_selectinload_size_api_v1_items_code_token_load_size_get: %s\n" % e)
@@ -208,6 +209,7 @@ Name | Type | Description  | Notes
  **code** | **str**|  | 
  **token** | **str**|  | 
  **like** | **bool**|  | [optional] [default to false]
+ **sneaker** | **bool**|  | [optional] [default to false]
 
 ### Return type
 
@@ -329,7 +331,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_items_action_api_v1_items_token_all_get**
-> list[ItemWithQuantityStockSizeDimension] get_items_action_api_v1_items_token_all_get(token, action, category=category, size=size, color=color, season=season)
+> list[ItemWithQuantityStockSizeDimension] get_items_action_api_v1_items_token_all_get(token, action, category=category, size=size, color=color, season=season, sneaker=sneaker)
 
 Get Items Action
 
@@ -353,10 +355,11 @@ category = 'category_example' # str |  (optional)
 size = 56 # int |  (optional)
 color = 'color_example' # str |  (optional)
 season = 'season_example' # str |  (optional)
+sneaker = false # bool |  (optional) (default to false)
 
 try:
     # Get Items Action
-    api_response = api_instance.get_items_action_api_v1_items_token_all_get(token, action, category=category, size=size, color=color, season=season)
+    api_response = api_instance.get_items_action_api_v1_items_token_all_get(token, action, category=category, size=size, color=color, season=season, sneaker=sneaker)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling ItemsApi->get_items_action_api_v1_items_token_all_get: %s\n" % e)
@@ -372,6 +375,7 @@ Name | Type | Description  | Notes
  **size** | **int**|  | [optional] 
  **color** | **str**|  | [optional] 
  **season** | **str**|  | [optional] 
+ **sneaker** | **bool**|  | [optional] [default to false]
 
 ### Return type
 

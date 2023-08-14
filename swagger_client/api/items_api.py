@@ -331,6 +331,7 @@ class ItemsApi(object):
         :param str code: (required)
         :param str token: (required)
         :param bool like:
+        :param bool sneaker:
         :return: ItemWithQuantitySizeDimension
                  If the method is called asynchronously,
                  returns the request thread.
@@ -354,12 +355,13 @@ class ItemsApi(object):
         :param str code: (required)
         :param str token: (required)
         :param bool like:
+        :param bool sneaker:
         :return: ItemWithQuantitySizeDimension
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['code', 'token', 'like']  # noqa: E501
+        all_params = ['code', 'token', 'like', 'sneaker']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -394,6 +396,8 @@ class ItemsApi(object):
         query_params = []
         if 'like' in params:
             query_params.append(('like', params['like']))  # noqa: E501
+        if 'sneaker' in params:
+            query_params.append(('sneaker', params['sneaker']))  # noqa: E501
 
         header_params = {}
 
@@ -641,6 +645,7 @@ class ItemsApi(object):
         :param int size:
         :param str color:
         :param str season:
+        :param bool sneaker:
         :return: list[ItemWithQuantityStockSizeDimension]
                  If the method is called asynchronously,
                  returns the request thread.
@@ -667,12 +672,13 @@ class ItemsApi(object):
         :param int size:
         :param str color:
         :param str season:
+        :param bool sneaker:
         :return: list[ItemWithQuantityStockSizeDimension]
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['token', 'action', 'category', 'size', 'color', 'season']  # noqa: E501
+        all_params = ['token', 'action', 'category', 'size', 'color', 'season', 'sneaker']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -713,6 +719,8 @@ class ItemsApi(object):
             query_params.append(('color', params['color']))  # noqa: E501
         if 'season' in params:
             query_params.append(('season', params['season']))  # noqa: E501
+        if 'sneaker' in params:
+            query_params.append(('sneaker', params['sneaker']))  # noqa: E501
 
         header_params = {}
 
