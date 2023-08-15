@@ -221,7 +221,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_order_by_id_api_v1_purchases_order_id_token_one_get**
-> PurchaseWithSizeDeliveryCdek get_order_by_id_api_v1_purchases_order_id_token_one_get(order_id, token)
+> Purchase get_order_by_id_api_v1_purchases_order_id_token_one_get(order_id, token)
 
 Get Order By Id
 
@@ -259,7 +259,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PurchaseWithSizeDeliveryCdek**](PurchaseWithSizeDeliveryCdek.md)
+[**Purchase**](Purchase.md)
 
 ### Authorization
 
