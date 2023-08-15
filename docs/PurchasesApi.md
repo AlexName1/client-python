@@ -400,7 +400,7 @@ api_instance = swagger_client.PurchasesApi(swagger_client.ApiClient(configuratio
 body = swagger_client.PurchaseInsert() # PurchaseInsert | 
 user_id = 56 # int | 
 token = 'token_example' # str | 
-partner = false # object |  (optional) (default to false)
+partner = false # bool |  (optional) (default to false)
 
 try:
     # Insert New
@@ -417,7 +417,7 @@ Name | Type | Description  | Notes
  **body** | [**PurchaseInsert**](PurchaseInsert.md)|  | 
  **user_id** | **int**|  | 
  **token** | **str**|  | 
- **partner** | [**object**](.md)|  | [optional] [default to false]
+ **partner** | **bool**|  | [optional] [default to false]
 
 ### Return type
 

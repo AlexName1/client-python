@@ -747,7 +747,7 @@ class PurchasesApi(object):
         :param PurchaseInsert body: (required)
         :param int user_id: (required)
         :param str token: (required)
-        :param object partner:
+        :param bool partner:
         :return: object
                  If the method is called asynchronously,
                  returns the request thread.
@@ -771,7 +771,7 @@ class PurchasesApi(object):
         :param PurchaseInsert body: (required)
         :param int user_id: (required)
         :param str token: (required)
-        :param object partner:
+        :param bool partner:
         :return: object
                  If the method is called asynchronously,
                  returns the request thread.

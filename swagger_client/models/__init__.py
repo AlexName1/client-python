@@ -51,3 +51,4 @@ from swagger_client.models.stock_base import StockBase
 from swagger_client.models.user_base import UserBase
 from swagger_client.models.validation_error import ValidationError
 from swagger_client.models.waybill_update import WaybillUpdate
+from swagger_client.models.yookassa_payment import YookassaPayment
