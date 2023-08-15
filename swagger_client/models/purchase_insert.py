@@ -37,8 +37,7 @@ class PurchaseInsert(object):
         'checking': 'bool',
         'pod': 'int',
         'comment': 'str',
-        'size_id': 'int',
-        'yookassa_payment': 'YookassaPayment'
+        'size_id': 'int'
     }
 
     attribute_map = {
@@ -51,11 +50,10 @@ class PurchaseInsert(object):
         'checking': 'checking',
         'pod': 'pod',
         'comment': 'comment',
-        'size_id': 'size_id',
-        'yookassa_payment': 'yookassa_payment'
+        'size_id': 'size_id'
     }
 
-    def __init__(self, buyer=None, code=None, price=None, delivery=None, address=None, phone=None, checking=None, pod=None, comment=None, size_id=None, yookassa_payment=None):  # noqa: E501
+    def __init__(self, buyer=None, code=None, price=None, delivery=None, address=None, phone=None, checking=None, pod=None, comment=None, size_id=None):  # noqa: E501
         """PurchaseInsert - a model defined in Swagger"""  # noqa: E501
         self._buyer = None
         self._code = None
@@ -67,7 +65,6 @@ class PurchaseInsert(object):
         self._pod = None
         self._comment = None
         self._size_id = None
-        self._yookassa_payment = None
         self.discriminator = None
         self.buyer = buyer
         self.code = code
@@ -80,8 +77,6 @@ class PurchaseInsert(object):
         if comment is not None:
             self.comment = comment
         self.size_id = size_id
-        if yookassa_payment is not None:
-            self.yookassa_payment = yookassa_payment
 
     @property
     def buyer(self):
@@ -310,27 +305,6 @@ class PurchaseInsert(object):
             raise ValueError("Invalid value for `size_id`, must not be `None`")  # noqa: E501
 
         self._size_id = size_id
-
-    @property
-    def yookassa_payment(self):
-        """Gets the yookassa_payment of this PurchaseInsert.  # noqa: E501
-
-
-        :return: The yookassa_payment of this PurchaseInsert.  # noqa: E501
-        :rtype: YookassaPayment
-        """
-        return self._yookassa_payment
-
-    @yookassa_payment.setter
-    def yookassa_payment(self, yookassa_payment):
-        """Sets the yookassa_payment of this PurchaseInsert.
-
-
-        :param yookassa_payment: The yookassa_payment of this PurchaseInsert.  # noqa: E501
-        :type: YookassaPayment
-        """
-
-        self._yookassa_payment = yookassa_payment
 
     def to_dict(self):
         """Returns the model properties as a dict"""

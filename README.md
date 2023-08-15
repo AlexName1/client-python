@@ -160,7 +160,6 @@ Class | Method | HTTP request | Description
  - [UserBase](docs/UserBase.md)
  - [ValidationError](docs/ValidationError.md)
  - [WaybillUpdate](docs/WaybillUpdate.md)
- - [YookassaPayment](docs/YookassaPayment.md)
 
 ## Documentation For Authorization
 
