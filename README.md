@@ -120,6 +120,7 @@ Class | Method | HTTP request | Description
 *UsersApi* | [**update_last_mess_api_v1_users_user_id_mess_put**](docs/UsersApi.md#update_last_mess_api_v1_users_user_id_mess_put) | **PUT** /api/v1/users/{user_id}/mess | Update Last Mess
 *UsersApi* | [**update_user_items_api_v1_users_user_id_items_put**](docs/UsersApi.md#update_user_items_api_v1_users_user_id_items_put) | **PUT** /api/v1/users/{user_id}/items | Update User Items
 *WaybillsApi* | [**update_api_v1_waybills_put**](docs/WaybillsApi.md#update_api_v1_waybills_put) | **PUT** /api/v1/waybills | Update
+*YookassaPaymentsApi* | [**insert_api_v1_yookassa_payments_token_post**](docs/YookassaPaymentsApi.md#insert_api_v1_yookassa_payments_token_post) | **POST** /api/v1/yookassa-payments/{token} | Insert
 
 ## Documentation For Models
 
@@ -160,6 +161,7 @@ Class | Method | HTTP request | Description
  - [UserBase](docs/UserBase.md)
  - [ValidationError](docs/ValidationError.md)
  - [WaybillUpdate](docs/WaybillUpdate.md)
+ - [YookassaPaymentInsert](docs/YookassaPaymentInsert.md)
 
 ## Documentation For Authorization
 

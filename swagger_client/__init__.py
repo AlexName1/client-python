@@ -27,6 +27,7 @@ from swagger_client.api.sizes_api import SizesApi
 from swagger_client.api.stocks_api import StocksApi
 from swagger_client.api.users_api import UsersApi
 from swagger_client.api.waybills_api import WaybillsApi
+from swagger_client.api.yookassa_payments_api import YookassaPaymentsApi
 # import ApiClient
 from swagger_client.api_client import ApiClient
 from swagger_client.configuration import Configuration
@@ -68,3 +69,4 @@ from swagger_client.models.stock_base import StockBase
 from swagger_client.models.user_base import UserBase
 from swagger_client.models.validation_error import ValidationError
 from swagger_client.models.waybill_update import WaybillUpdate
+from swagger_client.models.yookassa_payment_insert import YookassaPaymentInsert
