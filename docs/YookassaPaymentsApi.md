@@ -4,10 +4,10 @@ All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**insert_api_v1_yookassa_payments_token_post**](YookassaPaymentsApi.md#insert_api_v1_yookassa_payments_token_post) | **POST** /api/v1/yookassa-payments/{token} | Insert
+[**insert_api_v1_yookassa_payments_post**](YookassaPaymentsApi.md#insert_api_v1_yookassa_payments_post) | **POST** /api/v1/yookassa-payments | Insert
 
-# **insert_api_v1_yookassa_payments_token_post**
-> object insert_api_v1_yookassa_payments_token_post(body, token)
+# **insert_api_v1_yookassa_payments_post**
+> int insert_api_v1_yookassa_payments_post(body)
 
 Insert
 
@@ -26,14 +26,13 @@ configuration.password = 'YOUR_PASSWORD'
 # create an instance of the API class
 api_instance = swagger_client.YookassaPaymentsApi(swagger_client.ApiClient(configuration))
 body = swagger_client.YookassaPaymentInsert() # YookassaPaymentInsert | 
-token = 'token_example' # str | 
 
 try:
     # Insert
-    api_response = api_instance.insert_api_v1_yookassa_payments_token_post(body, token)
+    api_response = api_instance.insert_api_v1_yookassa_payments_post(body)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling YookassaPaymentsApi->insert_api_v1_yookassa_payments_token_post: %s\n" % e)
+    print("Exception when calling YookassaPaymentsApi->insert_api_v1_yookassa_payments_post: %s\n" % e)
 ```
 
 ### Parameters
@@ -41,11 +40,10 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **body** | [**YookassaPaymentInsert**](YookassaPaymentInsert.md)|  | 
- **token** | **str**|  | 
 
 ### Return type
 
-**object**
+**int**
 
 ### Authorization
 
