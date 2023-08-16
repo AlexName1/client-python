@@ -30,24 +30,28 @@ class YookassaPaymentInsert(object):
     swagger_types = {
         'purchase_id': 'int',
         'payment_id': 'str',
-        'status': 'str'
+        'status': 'str',
+        'email': 'str'
     }
 
     attribute_map = {
         'purchase_id': 'purchase_id',
         'payment_id': 'payment_id',
-        'status': 'status'
+        'status': 'status',
+        'email': 'email'
     }
 
-    def __init__(self, purchase_id=None, payment_id=None, status=None):  # noqa: E501
+    def __init__(self, purchase_id=None, payment_id=None, status=None, email=None):  # noqa: E501
         """YookassaPaymentInsert - a model defined in Swagger"""  # noqa: E501
         self._purchase_id = None
         self._payment_id = None
         self._status = None
+        self._email = None
         self.discriminator = None
         self.purchase_id = purchase_id
         self.payment_id = payment_id
         self.status = status
+        self.email = email
 
     @property
     def purchase_id(self):
@@ -117,6 +121,29 @@ class YookassaPaymentInsert(object):
             raise ValueError("Invalid value for `status`, must not be `None`")  # noqa: E501
 
         self._status = status
+
+    @property
+    def email(self):
+        """Gets the email of this YookassaPaymentInsert.  # noqa: E501
+
+
+        :return: The email of this YookassaPaymentInsert.  # noqa: E501
+        :rtype: str
+        """
+        return self._email
+
+    @email.setter
+    def email(self, email):
+        """Sets the email of this YookassaPaymentInsert.
+
+
+        :param email: The email of this YookassaPaymentInsert.  # noqa: E501
+        :type: str
+        """
+        if email is None:
+            raise ValueError("Invalid value for `email`, must not be `None`")  # noqa: E501
+
+        self._email = email
 
     def to_dict(self):
         """Returns the model properties as a dict"""

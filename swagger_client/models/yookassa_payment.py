@@ -28,18 +28,22 @@ class YookassaPayment(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'payment_id': 'str'
+        'payment_id': 'str',
+        'email': 'str'
     }
 
     attribute_map = {
-        'payment_id': 'payment_id'
+        'payment_id': 'payment_id',
+        'email': 'email'
     }
 
-    def __init__(self, payment_id=None):  # noqa: E501
+    def __init__(self, payment_id=None, email=None):  # noqa: E501
         """YookassaPayment - a model defined in Swagger"""  # noqa: E501
         self._payment_id = None
+        self._email = None
         self.discriminator = None
         self.payment_id = payment_id
+        self.email = email
 
     @property
     def payment_id(self):
@@ -63,6 +67,29 @@ class YookassaPayment(object):
             raise ValueError("Invalid value for `payment_id`, must not be `None`")  # noqa: E501
 
         self._payment_id = payment_id
+
+    @property
+    def email(self):
+        """Gets the email of this YookassaPayment.  # noqa: E501
+
+
+        :return: The email of this YookassaPayment.  # noqa: E501
+        :rtype: str
+        """
+        return self._email
+
+    @email.setter
+    def email(self, email):
+        """Sets the email of this YookassaPayment.
+
+
+        :param email: The email of this YookassaPayment.  # noqa: E501
+        :type: str
+        """
+        if email is None:
+            raise ValueError("Invalid value for `email`, must not be `None`")  # noqa: E501
+
+        self._email = email
 
     def to_dict(self):
         """Returns the model properties as a dict"""

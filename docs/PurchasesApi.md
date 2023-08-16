@@ -379,7 +379,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **insert_new_api_v1_purchases_token_new_post**
-> object insert_new_api_v1_purchases_token_new_post(body, user_id, token, partner=partner)
+> int insert_new_api_v1_purchases_token_new_post(body, user_id, token, partner=partner)
 
 Insert New
 
@@ -421,7 +421,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**object**
+**int**
 
 ### Authorization
 

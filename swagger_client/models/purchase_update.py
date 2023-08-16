@@ -32,7 +32,9 @@ class PurchaseUpdate(object):
         'status': 'int',
         'add_info': 'str',
         'add_photo': 'str',
-        'paid': 'bool'
+        'paid': 'bool',
+        'yookasa_status': 'str',
+        'yookasa_captured_at': 'str'
     }
 
     attribute_map = {
@@ -40,16 +42,20 @@ class PurchaseUpdate(object):
         'status': 'status',
         'add_info': 'add_info',
         'add_photo': 'add_photo',
-        'paid': 'paid'
+        'paid': 'paid',
+        'yookasa_status': 'yookasa_status',
+        'yookasa_captured_at': 'yookasa_captured_at'
     }
 
-    def __init__(self, id=None, status=None, add_info=None, add_photo=None, paid=None):  # noqa: E501
+    def __init__(self, id=None, status=None, add_info=None, add_photo=None, paid=None, yookasa_status=None, yookasa_captured_at=None):  # noqa: E501
         """PurchaseUpdate - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._status = None
         self._add_info = None
         self._add_photo = None
         self._paid = None
+        self._yookasa_status = None
+        self._yookasa_captured_at = None
         self.discriminator = None
         self.id = id
         if status is not None:
@@ -60,6 +66,10 @@ class PurchaseUpdate(object):
             self.add_photo = add_photo
         if paid is not None:
             self.paid = paid
+        if yookasa_status is not None:
+            self.yookasa_status = yookasa_status
+        if yookasa_captured_at is not None:
+            self.yookasa_captured_at = yookasa_captured_at
 
     @property
     def id(self):
@@ -167,6 +177,48 @@ class PurchaseUpdate(object):
         """
 
         self._paid = paid
+
+    @property
+    def yookasa_status(self):
+        """Gets the yookasa_status of this PurchaseUpdate.  # noqa: E501
+
+
+        :return: The yookasa_status of this PurchaseUpdate.  # noqa: E501
+        :rtype: str
+        """
+        return self._yookasa_status
+
+    @yookasa_status.setter
+    def yookasa_status(self, yookasa_status):
+        """Sets the yookasa_status of this PurchaseUpdate.
+
+
+        :param yookasa_status: The yookasa_status of this PurchaseUpdate.  # noqa: E501
+        :type: str
+        """
+
+        self._yookasa_status = yookasa_status
+
+    @property
+    def yookasa_captured_at(self):
+        """Gets the yookasa_captured_at of this PurchaseUpdate.  # noqa: E501
+
+
+        :return: The yookasa_captured_at of this PurchaseUpdate.  # noqa: E501
+        :rtype: str
+        """
+        return self._yookasa_captured_at
+
+    @yookasa_captured_at.setter
+    def yookasa_captured_at(self, yookasa_captured_at):
+        """Sets the yookasa_captured_at of this PurchaseUpdate.
+
+
+        :param yookasa_captured_at: The yookasa_captured_at of this PurchaseUpdate.  # noqa: E501
+        :type: str
+        """
+
+        self._yookasa_captured_at = yookasa_captured_at
 
     def to_dict(self):
         """Returns the model properties as a dict"""
