@@ -23,11 +23,13 @@ from swagger_client.models.centimeter_base import CentimeterBase
 from swagger_client.models.delivery_cdek_base import DeliveryCdekBase
 from swagger_client.models.delivery_cdek_update import DeliveryCdekUpdate
 from swagger_client.models.dimension_base import DimensionBase
+from swagger_client.models.get_message_tg import GetMessageTg
 from swagger_client.models.get_user import GetUser
 from swagger_client.models.http_validation_error import HTTPValidationError
 from swagger_client.models.info_item_insert import InfoItemInsert
 from swagger_client.models.info_item_update import InfoItemUpdate
 from swagger_client.models.info_item_update_new import InfoItemUpdateNew
+from swagger_client.models.insert_message_tg import InsertMessageTg
 from swagger_client.models.insert_user import InsertUser
 from swagger_client.models.item_base import ItemBase
 from swagger_client.models.item_with_quantity_size_category import ItemWithQuantitySizeCategory

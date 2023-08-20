@@ -30,24 +30,30 @@ class GetUser(object):
     swagger_types = {
         'user_id': 'int',
         'first_name': 'str',
-        'last_mess': 'int'
+        'last_mess': 'int',
+        'new_user': 'bool'
     }
 
     attribute_map = {
         'user_id': 'user_id',
         'first_name': 'first_name',
-        'last_mess': 'last_mess'
+        'last_mess': 'last_mess',
+        'new_user': 'new_user'
     }
 
-    def __init__(self, user_id=None, first_name=None, last_mess=None):  # noqa: E501
+    def __init__(self, user_id=None, first_name=None, last_mess=None, new_user=False):  # noqa: E501
         """GetUser - a model defined in Swagger"""  # noqa: E501
         self._user_id = None
         self._first_name = None
         self._last_mess = None
+        self._new_user = None
         self.discriminator = None
         self.user_id = user_id
         self.first_name = first_name
-        self.last_mess = last_mess
+        if last_mess is not None:
+            self.last_mess = last_mess
+        if new_user is not None:
+            self.new_user = new_user
 
     @property
     def user_id(self):
@@ -113,10 +119,29 @@ class GetUser(object):
         :param last_mess: The last_mess of this GetUser.  # noqa: E501
         :type: int
         """
-        if last_mess is None:
-            raise ValueError("Invalid value for `last_mess`, must not be `None`")  # noqa: E501
 
         self._last_mess = last_mess
+
+    @property
+    def new_user(self):
+        """Gets the new_user of this GetUser.  # noqa: E501
+
+
+        :return: The new_user of this GetUser.  # noqa: E501
+        :rtype: bool
+        """
+        return self._new_user
+
+    @new_user.setter
+    def new_user(self, new_user):
+        """Sets the new_user of this GetUser.
+
+
+        :param new_user: The new_user of this GetUser.  # noqa: E501
+        :type: bool
+        """
+
+        self._new_user = new_user
 
     def to_dict(self):
         """Returns the model properties as a dict"""

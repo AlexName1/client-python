@@ -95,6 +95,8 @@ Class | Method | HTTP request | Description
 *ItemsApi* | [**insert_or_update_api_v1_items_merge_post**](docs/ItemsApi.md#insert_or_update_api_v1_items_merge_post) | **POST** /api/v1/items/merge | Insert Or Update
 *ItemsApi* | [**update_active_api_v1_items_active_put**](docs/ItemsApi.md#update_active_api_v1_items_active_put) | **PUT** /api/v1/items/active | Update Active
 *ItemsApi* | [**update_photo_by_code_api_v1_items_photo_code_file_id_photo_put**](docs/ItemsApi.md#update_photo_by_code_api_v1_items_photo_code_file_id_photo_put) | **PUT** /api/v1/items/photo/{code}/{file_id_photo} | Update Photo By Code
+*MessagesTgApi* | [**get_api_v1_messages_tg_name_get**](docs/MessagesTgApi.md#get_api_v1_messages_tg_name_get) | **GET** /api/v1/messages-tg/{name} | Get
+*MessagesTgApi* | [**insert_or_update_api_v1_messages_tg_post**](docs/MessagesTgApi.md#insert_or_update_api_v1_messages_tg_post) | **POST** /api/v1/messages-tg | Insert Or Update
 *PurchasesApi* | [**delete_api_v1_purchases_order_id_token_delete**](docs/PurchasesApi.md#delete_api_v1_purchases_order_id_token_delete) | **DELETE** /api/v1/purchases/{order_id}/{token} | Delete
 *PurchasesApi* | [**get_active_orders_api_v1_purchases_token_active_get**](docs/PurchasesApi.md#get_active_orders_api_v1_purchases_token_active_get) | **GET** /api/v1/purchases/{token}/active | Get Active Orders
 *PurchasesApi* | [**get_all_api_v1_purchases_token_get**](docs/PurchasesApi.md#get_all_api_v1_purchases_token_get) | **GET** /api/v1/purchases/{token} | Get All
@@ -132,11 +134,13 @@ Class | Method | HTTP request | Description
  - [DeliveryCdekBase](docs/DeliveryCdekBase.md)
  - [DeliveryCdekUpdate](docs/DeliveryCdekUpdate.md)
  - [DimensionBase](docs/DimensionBase.md)
+ - [GetMessageTg](docs/GetMessageTg.md)
  - [GetUser](docs/GetUser.md)
  - [HTTPValidationError](docs/HTTPValidationError.md)
  - [InfoItemInsert](docs/InfoItemInsert.md)
  - [InfoItemUpdate](docs/InfoItemUpdate.md)
  - [InfoItemUpdateNew](docs/InfoItemUpdateNew.md)
+ - [InsertMessageTg](docs/InsertMessageTg.md)
  - [InsertUser](docs/InsertUser.md)
  - [ItemBase](docs/ItemBase.md)
  - [ItemWithQuantitySizeCategory](docs/ItemWithQuantitySizeCategory.md)

@@ -1,12 +1,11 @@
-# GetUser
+# InsertMessageTg
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**user_id** | **int** |  | 
-**first_name** | **str** |  | 
-**last_mess** | **int** |  | [optional] 
-**new_user** | **bool** |  | [optional] [default to False]
+**name** | **str** |  | 
+**video_id** | **str** |  | [optional] 
+**text** | **str** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

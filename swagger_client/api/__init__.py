@@ -9,6 +9,7 @@ from swagger_client.api.categories_api import CategoriesApi
 from swagger_client.api.deliveries_cdek_api import DeliveriesCdekApi
 from swagger_client.api.info_items_api import InfoItemsApi
 from swagger_client.api.items_api import ItemsApi
+from swagger_client.api.messages_tg_api import MessagesTgApi
 from swagger_client.api.purchases_api import PurchasesApi
 from swagger_client.api.quantities_api import QuantitiesApi
 from swagger_client.api.sizes_api import SizesApi
