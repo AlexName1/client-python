@@ -76,7 +76,6 @@ Class | Method | HTTP request | Description
 *BarcodesApi* | [**insert_api_v1_barcodes_post**](docs/BarcodesApi.md#insert_api_v1_barcodes_post) | **POST** /api/v1/barcodes | Insert
 *BotsApi* | [**insert_or_nothing_api_v1_bots_post**](docs/BotsApi.md#insert_or_nothing_api_v1_bots_post) | **POST** /api/v1/bots | Insert Or Nothing
 *CategoriesApi* | [**get_categories_name_api_v1_categories_get**](docs/CategoriesApi.md#get_categories_name_api_v1_categories_get) | **GET** /api/v1/categories | Get Categories Name
-*CategoriesApi* | [**insert_or_nothing_api_v1_categories_post**](docs/CategoriesApi.md#insert_or_nothing_api_v1_categories_post) | **POST** /api/v1/categories | Insert Or Nothing
 *DeliveriesCdekApi* | [**delete_api_v1_deliveries_cdek_delete**](docs/DeliveriesCdekApi.md#delete_api_v1_deliveries_cdek_delete) | **DELETE** /api/v1/deliveries-cdek | Delete
 *DeliveriesCdekApi* | [**insert_api_v1_deliveries_cdek_post**](docs/DeliveriesCdekApi.md#insert_api_v1_deliveries_cdek_post) | **POST** /api/v1/deliveries-cdek | Insert
 *DeliveriesCdekApi* | [**update_api_v1_deliveries_cdek_put**](docs/DeliveriesCdekApi.md#update_api_v1_deliveries_cdek_put) | **PUT** /api/v1/deliveries-cdek | Update
@@ -112,13 +111,13 @@ Class | Method | HTTP request | Description
 *StocksApi* | [**get_stock_by_stock_id_api_v1_stocks_user_stock_id_get**](docs/StocksApi.md#get_stock_by_stock_id_api_v1_stocks_user_stock_id_get) | **GET** /api/v1/stocks/user/{stock_id} | Get Stock By Stock Id
 *StocksApi* | [**get_stock_without_load_by_stock_id_api_v1_stocks_stock_id_get**](docs/StocksApi.md#get_stock_without_load_by_stock_id_api_v1_stocks_stock_id_get) | **GET** /api/v1/stocks/{stock_id} | Get Stock Without Load By Stock Id
 *StocksApi* | [**get_stocks_by_order_code_api_v1_stocks_code_size_get**](docs/StocksApi.md#get_stocks_by_order_code_api_v1_stocks_code_size_get) | **GET** /api/v1/stocks/{code}/{size} | Get Stocks By Order Code
-*UsersApi* | [**get_all_ids_users_api_v1_users_ids_get**](docs/UsersApi.md#get_all_ids_users_api_v1_users_ids_get) | **GET** /api/v1/users/ids | Get All Ids Users
-*UsersApi* | [**get_all_users_api_v1_users_get**](docs/UsersApi.md#get_all_users_api_v1_users_get) | **GET** /api/v1/users | Get All Users
-*UsersApi* | [**get_user_api_v1_users_user_id_get**](docs/UsersApi.md#get_user_api_v1_users_user_id_get) | **GET** /api/v1/users/{user_id} | Get User
-*UsersApi* | [**get_user_client_api_v1_users_clients_user_id_get**](docs/UsersApi.md#get_user_client_api_v1_users_clients_user_id_get) | **GET** /api/v1/users/clients/{user_id} | Get User Client
-*UsersApi* | [**get_user_codes_api_v1_users_user_id_codes_get**](docs/UsersApi.md#get_user_codes_api_v1_users_user_id_codes_get) | **GET** /api/v1/users/{user_id}/codes | Get User Codes
+*UsersApi* | [**get_count_api_v1_users_count_get**](docs/UsersApi.md#get_count_api_v1_users_count_get) | **GET** /api/v1/users/count | Get Count
+*UsersApi* | [**get_ids_api_v1_users_ids_get**](docs/UsersApi.md#get_ids_api_v1_users_ids_get) | **GET** /api/v1/users/ids | Get Ids
+*UsersApi* | [**get_items_api_v1_users_user_id_items_get**](docs/UsersApi.md#get_items_api_v1_users_user_id_items_get) | **GET** /api/v1/users/{user_id}/items | Get Items
+*UsersApi* | [**get_user_api_v1_users_user_id_one_get**](docs/UsersApi.md#get_user_api_v1_users_user_id_one_get) | **GET** /api/v1/users/{user_id}/one | Get User
+*UsersApi* | [**insert_or_nothing_api_v1_users_post**](docs/UsersApi.md#insert_or_nothing_api_v1_users_post) | **POST** /api/v1/users | Insert Or Nothing
+*UsersApi* | [**update_items_api_v1_users_user_id_items_put**](docs/UsersApi.md#update_items_api_v1_users_user_id_items_put) | **PUT** /api/v1/users/{user_id}/items | Update Items
 *UsersApi* | [**update_last_mess_api_v1_users_user_id_mess_put**](docs/UsersApi.md#update_last_mess_api_v1_users_user_id_mess_put) | **PUT** /api/v1/users/{user_id}/mess | Update Last Mess
-*UsersApi* | [**update_user_items_api_v1_users_user_id_items_put**](docs/UsersApi.md#update_user_items_api_v1_users_user_id_items_put) | **PUT** /api/v1/users/{user_id}/items | Update User Items
 *WaybillsApi* | [**update_api_v1_waybills_put**](docs/WaybillsApi.md#update_api_v1_waybills_put) | **PUT** /api/v1/waybills | Update
 *YookassaPaymentsApi* | [**insert_api_v1_yookassa_payments_post**](docs/YookassaPaymentsApi.md#insert_api_v1_yookassa_payments_post) | **POST** /api/v1/yookassa-payments | Insert
 
@@ -126,17 +125,19 @@ Class | Method | HTTP request | Description
 
  - [AnyOfValidationErrorLocItems](docs/AnyOfValidationErrorLocItems.md)
  - [BarcodeInsert](docs/BarcodeInsert.md)
- - [Bot](docs/Bot.md)
+ - [BotBase](docs/BotBase.md)
  - [BrandCount](docs/BrandCount.md)
  - [CategoryBase](docs/CategoryBase.md)
  - [CentimeterBase](docs/CentimeterBase.md)
  - [DeliveryCdekBase](docs/DeliveryCdekBase.md)
  - [DeliveryCdekUpdate](docs/DeliveryCdekUpdate.md)
  - [DimensionBase](docs/DimensionBase.md)
+ - [GetUser](docs/GetUser.md)
  - [HTTPValidationError](docs/HTTPValidationError.md)
  - [InfoItemInsert](docs/InfoItemInsert.md)
  - [InfoItemUpdate](docs/InfoItemUpdate.md)
  - [InfoItemUpdateNew](docs/InfoItemUpdateNew.md)
+ - [InsertUser](docs/InsertUser.md)
  - [ItemBase](docs/ItemBase.md)
  - [ItemWithQuantitySizeCategory](docs/ItemWithQuantitySizeCategory.md)
  - [ItemWithQuantitySizeCentimeterCategory](docs/ItemWithQuantitySizeCentimeterCategory.md)
@@ -159,6 +160,8 @@ Class | Method | HTTP request | Description
  - [SizeBase](docs/SizeBase.md)
  - [Stock](docs/Stock.md)
  - [StockBase](docs/StockBase.md)
+ - [UpdateUserItems](docs/UpdateUserItems.md)
+ - [UpdateUserMess](docs/UpdateUserMess.md)
  - [UserBase](docs/UserBase.md)
  - [ValidationError](docs/ValidationError.md)
  - [WaybillUpdate](docs/WaybillUpdate.md)

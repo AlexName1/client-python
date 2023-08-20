@@ -25,7 +25,7 @@ configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
 api_instance = swagger_client.BotsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.Bot() # Bot | 
+body = swagger_client.BotBase() # BotBase | 
 
 try:
     # Insert Or Nothing
@@ -39,7 +39,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**Bot**](Bot.md)|  | 
+ **body** | [**BotBase**](BotBase.md)|  | 
 
 ### Return type
 

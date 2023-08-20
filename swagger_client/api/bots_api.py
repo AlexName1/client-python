@@ -41,7 +41,7 @@ class BotsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param Bot body: (required)
+        :param BotBase body: (required)
         :return: object
                  If the method is called asynchronously,
                  returns the request thread.
@@ -62,7 +62,7 @@ class BotsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param Bot body: (required)
+        :param BotBase body: (required)
         :return: object
                  If the method is called asynchronously,
                  returns the request thread.

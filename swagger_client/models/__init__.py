@@ -16,17 +16,19 @@ from __future__ import absolute_import
 # import models into model package
 from swagger_client.models.any_of_validation_error_loc_items import AnyOfValidationErrorLocItems
 from swagger_client.models.barcode_insert import BarcodeInsert
-from swagger_client.models.bot import Bot
+from swagger_client.models.bot_base import BotBase
 from swagger_client.models.brand_count import BrandCount
 from swagger_client.models.category_base import CategoryBase
 from swagger_client.models.centimeter_base import CentimeterBase
 from swagger_client.models.delivery_cdek_base import DeliveryCdekBase
 from swagger_client.models.delivery_cdek_update import DeliveryCdekUpdate
 from swagger_client.models.dimension_base import DimensionBase
+from swagger_client.models.get_user import GetUser
 from swagger_client.models.http_validation_error import HTTPValidationError
 from swagger_client.models.info_item_insert import InfoItemInsert
 from swagger_client.models.info_item_update import InfoItemUpdate
 from swagger_client.models.info_item_update_new import InfoItemUpdateNew
+from swagger_client.models.insert_user import InsertUser
 from swagger_client.models.item_base import ItemBase
 from swagger_client.models.item_with_quantity_size_category import ItemWithQuantitySizeCategory
 from swagger_client.models.item_with_quantity_size_centimeter_category import ItemWithQuantitySizeCentimeterCategory
@@ -49,6 +51,8 @@ from swagger_client.models.size import Size
 from swagger_client.models.size_base import SizeBase
 from swagger_client.models.stock import Stock
 from swagger_client.models.stock_base import StockBase
+from swagger_client.models.update_user_items import UpdateUserItems
+from swagger_client.models.update_user_mess import UpdateUserMess
 from swagger_client.models.user_base import UserBase
 from swagger_client.models.validation_error import ValidationError
 from swagger_client.models.waybill_update import WaybillUpdate
