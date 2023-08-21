@@ -12,6 +12,7 @@ from swagger_client.api.items_api import ItemsApi
 from swagger_client.api.messages_tg_api import MessagesTgApi
 from swagger_client.api.purchases_api import PurchasesApi
 from swagger_client.api.quantities_api import QuantitiesApi
+from swagger_client.api.schedulers_api import SchedulersApi
 from swagger_client.api.sizes_api import SizesApi
 from swagger_client.api.stocks_api import StocksApi
 from swagger_client.api.users_api import UsersApi

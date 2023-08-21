@@ -107,6 +107,9 @@ Class | Method | HTTP request | Description
 *PurchasesApi* | [**insert_new_api_v1_purchases_token_new_post**](docs/PurchasesApi.md#insert_new_api_v1_purchases_token_new_post) | **POST** /api/v1/purchases/{token}/new | Insert New
 *PurchasesApi* | [**update_api_v1_purchases_token_put**](docs/PurchasesApi.md#update_api_v1_purchases_token_put) | **PUT** /api/v1/purchases/{token} | Update
 *QuantitiesApi* | [**insert_or_update_api_v1_quantities_merge_post**](docs/QuantitiesApi.md#insert_or_update_api_v1_quantities_merge_post) | **POST** /api/v1/quantities/merge | Insert Or Update
+*SchedulersApi* | [**delete_api_v1_schedulers_scheduler_id_delete**](docs/SchedulersApi.md#delete_api_v1_schedulers_scheduler_id_delete) | **DELETE** /api/v1/schedulers/{scheduler_id} | Delete
+*SchedulersApi* | [**get_api_v1_schedulers_get**](docs/SchedulersApi.md#get_api_v1_schedulers_get) | **GET** /api/v1/schedulers | Get
+*SchedulersApi* | [**insert_api_v1_schedulers_post**](docs/SchedulersApi.md#insert_api_v1_schedulers_post) | **POST** /api/v1/schedulers | Insert
 *SizesApi* | [**get_size_by_id_api_v1_sizes_size_id_get**](docs/SizesApi.md#get_size_by_id_api_v1_sizes_size_id_get) | **GET** /api/v1/sizes/{size_id} | Get Size By Id
 *SizesApi* | [**get_sizes_api_v1_sizes_get**](docs/SizesApi.md#get_sizes_api_v1_sizes_get) | **GET** /api/v1/sizes | Get Sizes
 *SizesApi* | [**insert_or_nothing_api_v1_sizes_post**](docs/SizesApi.md#insert_or_nothing_api_v1_sizes_post) | **POST** /api/v1/sizes | Insert Or Nothing
@@ -135,12 +138,14 @@ Class | Method | HTTP request | Description
  - [DeliveryCdekUpdate](docs/DeliveryCdekUpdate.md)
  - [DimensionBase](docs/DimensionBase.md)
  - [GetMessageTg](docs/GetMessageTg.md)
+ - [GetScheduler](docs/GetScheduler.md)
  - [GetUser](docs/GetUser.md)
  - [HTTPValidationError](docs/HTTPValidationError.md)
  - [InfoItemInsert](docs/InfoItemInsert.md)
  - [InfoItemUpdate](docs/InfoItemUpdate.md)
  - [InfoItemUpdateNew](docs/InfoItemUpdateNew.md)
  - [InsertMessageTg](docs/InsertMessageTg.md)
+ - [InsertScheduler](docs/InsertScheduler.md)
  - [InsertUser](docs/InsertUser.md)
  - [ItemBase](docs/ItemBase.md)
  - [ItemWithQuantitySizeCategory](docs/ItemWithQuantitySizeCategory.md)

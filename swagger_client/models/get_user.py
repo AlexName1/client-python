@@ -28,6 +28,7 @@ class GetUser(object):
                             and the value is json key in definition.
     """
     swagger_types = {
+        'users_bots_id': 'int',
         'user_id': 'int',
         'first_name': 'str',
         'last_mess': 'int',
@@ -35,25 +36,51 @@ class GetUser(object):
     }
 
     attribute_map = {
+        'users_bots_id': 'users_bots_id',
         'user_id': 'user_id',
         'first_name': 'first_name',
         'last_mess': 'last_mess',
         'new_user': 'new_user'
     }
 
-    def __init__(self, user_id=None, first_name=None, last_mess=None, new_user=False):  # noqa: E501
+    def __init__(self, users_bots_id=None, user_id=None, first_name=None, last_mess=None, new_user=False):  # noqa: E501
         """GetUser - a model defined in Swagger"""  # noqa: E501
+        self._users_bots_id = None
         self._user_id = None
         self._first_name = None
         self._last_mess = None
         self._new_user = None
         self.discriminator = None
+        self.users_bots_id = users_bots_id
         self.user_id = user_id
         self.first_name = first_name
         if last_mess is not None:
             self.last_mess = last_mess
         if new_user is not None:
             self.new_user = new_user
+
+    @property
+    def users_bots_id(self):
+        """Gets the users_bots_id of this GetUser.  # noqa: E501
+
+
+        :return: The users_bots_id of this GetUser.  # noqa: E501
+        :rtype: int
+        """
+        return self._users_bots_id
+
+    @users_bots_id.setter
+    def users_bots_id(self, users_bots_id):
+        """Sets the users_bots_id of this GetUser.
+
+
+        :param users_bots_id: The users_bots_id of this GetUser.  # noqa: E501
+        :type: int
+        """
+        if users_bots_id is None:
+            raise ValueError("Invalid value for `users_bots_id`, must not be `None`")  # noqa: E501
+
+        self._users_bots_id = users_bots_id
 
     @property
     def user_id(self):

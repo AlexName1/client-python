@@ -3,6 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**id** | **int** |  | 
+**name** | **str** |  | 
 **video_id** | **str** |  | 
 **text** | **str** |  | 
 
