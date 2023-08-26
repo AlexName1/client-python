@@ -74,6 +74,7 @@ All URIs are relative to */*
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *BarcodesApi* | [**insert_api_v1_barcodes_post**](docs/BarcodesApi.md#insert_api_v1_barcodes_post) | **POST** /api/v1/barcodes | Insert
+*BotsApi* | [**get_api_v1_bots_token_get**](docs/BotsApi.md#get_api_v1_bots_token_get) | **GET** /api/v1/bots/{token} | Get
 *BotsApi* | [**insert_or_nothing_api_v1_bots_post**](docs/BotsApi.md#insert_or_nothing_api_v1_bots_post) | **POST** /api/v1/bots | Insert Or Nothing
 *CategoriesApi* | [**get_categories_name_api_v1_categories_get**](docs/CategoriesApi.md#get_categories_name_api_v1_categories_get) | **GET** /api/v1/categories | Get Categories Name
 *DeliveriesCdekApi* | [**delete_api_v1_deliveries_cdek_delete**](docs/DeliveriesCdekApi.md#delete_api_v1_deliveries_cdek_delete) | **DELETE** /api/v1/deliveries-cdek | Delete
@@ -137,6 +138,7 @@ Class | Method | HTTP request | Description
  - [DeliveryCdekBase](docs/DeliveryCdekBase.md)
  - [DeliveryCdekUpdate](docs/DeliveryCdekUpdate.md)
  - [DimensionBase](docs/DimensionBase.md)
+ - [GetBotInfo](docs/GetBotInfo.md)
  - [GetMessageTg](docs/GetMessageTg.md)
  - [GetScheduler](docs/GetScheduler.md)
  - [GetUser](docs/GetUser.md)

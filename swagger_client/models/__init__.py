@@ -23,6 +23,7 @@ from swagger_client.models.centimeter_base import CentimeterBase
 from swagger_client.models.delivery_cdek_base import DeliveryCdekBase
 from swagger_client.models.delivery_cdek_update import DeliveryCdekUpdate
 from swagger_client.models.dimension_base import DimensionBase
+from swagger_client.models.get_bot_info import GetBotInfo
 from swagger_client.models.get_message_tg import GetMessageTg
 from swagger_client.models.get_scheduler import GetScheduler
 from swagger_client.models.get_user import GetUser

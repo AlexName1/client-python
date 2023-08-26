@@ -51,7 +51,8 @@ class GetUser(object):
         self._last_mess = None
         self._new_user = None
         self.discriminator = None
-        self.users_bots_id = users_bots_id
+        if users_bots_id is not None:
+            self.users_bots_id = users_bots_id
         self.user_id = user_id
         self.first_name = first_name
         if last_mess is not None:
@@ -77,8 +78,6 @@ class GetUser(object):
         :param users_bots_id: The users_bots_id of this GetUser.  # noqa: E501
         :type: int
         """
-        if users_bots_id is None:
-            raise ValueError("Invalid value for `users_bots_id`, must not be `None`")  # noqa: E501
 
         self._users_bots_id = users_bots_id
 
