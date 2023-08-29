@@ -5,6 +5,7 @@ All URIs are relative to */*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**get_api_v1_bots_token_get**](BotsApi.md#get_api_v1_bots_token_get) | **GET** /api/v1/bots/{token} | Get
+[**get_tokens_multibot_api_v1_bots_multibot_tokens_get**](BotsApi.md#get_tokens_multibot_api_v1_bots_multibot_tokens_get) | **GET** /api/v1/bots/multibot/tokens | Get Tokens Multibot
 [**insert_or_nothing_api_v1_bots_post**](BotsApi.md#insert_or_nothing_api_v1_bots_post) | **POST** /api/v1/bots | Insert Or Nothing
 
 # **get_api_v1_bots_token_get**
@@ -45,6 +46,52 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**GetBotInfo**](GetBotInfo.md)
+
+### Authorization
+
+[HTTPBasic](../README.md#HTTPBasic)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **get_tokens_multibot_api_v1_bots_multibot_tokens_get**
+> list[object] get_tokens_multibot_api_v1_bots_multibot_tokens_get()
+
+Get Tokens Multibot
+
+### Example
+```python
+from __future__ import print_function
+import time
+import swagger_client
+from swagger_client.rest import ApiException
+from pprint import pprint
+# Configure HTTP basic authorization: HTTPBasic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
+
+# create an instance of the API class
+api_instance = swagger_client.BotsApi(swagger_client.ApiClient(configuration))
+
+try:
+    # Get Tokens Multibot
+    api_response = api_instance.get_tokens_multibot_api_v1_bots_multibot_tokens_get()
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling BotsApi->get_tokens_multibot_api_v1_bots_multibot_tokens_get: %s\n" % e)
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+**list[object]**
 
 ### Authorization
 

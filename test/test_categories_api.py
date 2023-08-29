@@ -35,13 +35,6 @@ class TestCategoriesApi(unittest.TestCase):
         """
         pass
 
-    def test_insert_or_nothing_api_v1_categories_post(self):
-        """Test case for insert_or_nothing_api_v1_categories_post
-
-        Insert Or Nothing  # noqa: E501
-        """
-        pass
-
 
 if __name__ == '__main__':
     unittest.main()

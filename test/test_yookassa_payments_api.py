@@ -28,8 +28,8 @@ class TestYookassaPaymentsApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_insert_api_v1_yookassa_payments_token_post(self):
-        """Test case for insert_api_v1_yookassa_payments_token_post
+    def test_insert_api_v1_yookassa_payments_post(self):
+        """Test case for insert_api_v1_yookassa_payments_post
 
         Insert  # noqa: E501
         """
