@@ -319,6 +319,107 @@ class ItemsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
+    def get_item_new_api_v1_items_code_token_one_new_get(self, code, token, **kwargs):  # noqa: E501
+        """Get Item New  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.get_item_new_api_v1_items_code_token_one_new_get(code, token, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str code: (required)
+        :param str token: (required)
+        :return: GetItemNew
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.get_item_new_api_v1_items_code_token_one_new_get_with_http_info(code, token, **kwargs)  # noqa: E501
+        else:
+            (data) = self.get_item_new_api_v1_items_code_token_one_new_get_with_http_info(code, token, **kwargs)  # noqa: E501
+            return data
+
+    def get_item_new_api_v1_items_code_token_one_new_get_with_http_info(self, code, token, **kwargs):  # noqa: E501
+        """Get Item New  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.get_item_new_api_v1_items_code_token_one_new_get_with_http_info(code, token, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str code: (required)
+        :param str token: (required)
+        :return: GetItemNew
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['code', 'token']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method get_item_new_api_v1_items_code_token_one_new_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'code' is set
+        if ('code' not in params or
+                params['code'] is None):
+            raise ValueError("Missing the required parameter `code` when calling `get_item_new_api_v1_items_code_token_one_new_get`")  # noqa: E501
+        # verify the required parameter 'token' is set
+        if ('token' not in params or
+                params['token'] is None):
+            raise ValueError("Missing the required parameter `token` when calling `get_item_new_api_v1_items_code_token_one_new_get`")  # noqa: E501
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'code' in params:
+            path_params['code'] = params['code']  # noqa: E501
+        if 'token' in params:
+            path_params['token'] = params['token']  # noqa: E501
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['HTTPBasic']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/api/v1/items/{code}/{token}/one_new', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='GetItemNew',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
     def get_item_selectinload_size_api_v1_items_code_token_load_size_get(self, code, token, **kwargs):  # noqa: E501
         """Get Item Selectinload Size  # noqa: E501
 
@@ -751,6 +852,127 @@ class ItemsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
+    def get_items_action_new_codes_api_v1_items_token_all_new_codes_get(self, token, action, **kwargs):  # noqa: E501
+        """Get Items Action New Codes  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.get_items_action_new_codes_api_v1_items_token_all_new_codes_get(token, action, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str token: (required)
+        :param str action: (required)
+        :param str category:
+        :param int size:
+        :param str color:
+        :param str season:
+        :param bool sneaker:
+        :return: list[object]
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.get_items_action_new_codes_api_v1_items_token_all_new_codes_get_with_http_info(token, action, **kwargs)  # noqa: E501
+        else:
+            (data) = self.get_items_action_new_codes_api_v1_items_token_all_new_codes_get_with_http_info(token, action, **kwargs)  # noqa: E501
+            return data
+
+    def get_items_action_new_codes_api_v1_items_token_all_new_codes_get_with_http_info(self, token, action, **kwargs):  # noqa: E501
+        """Get Items Action New Codes  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.get_items_action_new_codes_api_v1_items_token_all_new_codes_get_with_http_info(token, action, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str token: (required)
+        :param str action: (required)
+        :param str category:
+        :param int size:
+        :param str color:
+        :param str season:
+        :param bool sneaker:
+        :return: list[object]
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['token', 'action', 'category', 'size', 'color', 'season', 'sneaker']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method get_items_action_new_codes_api_v1_items_token_all_new_codes_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'token' is set
+        if ('token' not in params or
+                params['token'] is None):
+            raise ValueError("Missing the required parameter `token` when calling `get_items_action_new_codes_api_v1_items_token_all_new_codes_get`")  # noqa: E501
+        # verify the required parameter 'action' is set
+        if ('action' not in params or
+                params['action'] is None):
+            raise ValueError("Missing the required parameter `action` when calling `get_items_action_new_codes_api_v1_items_token_all_new_codes_get`")  # noqa: E501
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'token' in params:
+            path_params['token'] = params['token']  # noqa: E501
+
+        query_params = []
+        if 'action' in params:
+            query_params.append(('action', params['action']))  # noqa: E501
+        if 'category' in params:
+            query_params.append(('category', params['category']))  # noqa: E501
+        if 'size' in params:
+            query_params.append(('size', params['size']))  # noqa: E501
+        if 'color' in params:
+            query_params.append(('color', params['color']))  # noqa: E501
+        if 'season' in params:
+            query_params.append(('season', params['season']))  # noqa: E501
+        if 'sneaker' in params:
+            query_params.append(('sneaker', params['sneaker']))  # noqa: E501
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['HTTPBasic']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/api/v1/items/{token}/all_new_codes', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='list[object]',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
     def get_items_api_v1_items_category_brand_token_get(self, category, brand, token, **kwargs):  # noqa: E501
         """Get Items  # noqa: E501
 
@@ -857,6 +1079,111 @@ class ItemsApi(object):
             post_params=form_params,
             files=local_var_files,
             response_type='list[ItemWithQuantitySizeDimension]',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def get_items_codes_api_v1_items_category_brand_codes_get(self, category, brand, **kwargs):  # noqa: E501
+        """Get Items Codes  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.get_items_codes_api_v1_items_category_brand_codes_get(category, brand, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str category: (required)
+        :param str brand: (required)
+        :param str model:
+        :return: list[object]
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.get_items_codes_api_v1_items_category_brand_codes_get_with_http_info(category, brand, **kwargs)  # noqa: E501
+        else:
+            (data) = self.get_items_codes_api_v1_items_category_brand_codes_get_with_http_info(category, brand, **kwargs)  # noqa: E501
+            return data
+
+    def get_items_codes_api_v1_items_category_brand_codes_get_with_http_info(self, category, brand, **kwargs):  # noqa: E501
+        """Get Items Codes  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.get_items_codes_api_v1_items_category_brand_codes_get_with_http_info(category, brand, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str category: (required)
+        :param str brand: (required)
+        :param str model:
+        :return: list[object]
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['category', 'brand', 'model']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method get_items_codes_api_v1_items_category_brand_codes_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'category' is set
+        if ('category' not in params or
+                params['category'] is None):
+            raise ValueError("Missing the required parameter `category` when calling `get_items_codes_api_v1_items_category_brand_codes_get`")  # noqa: E501
+        # verify the required parameter 'brand' is set
+        if ('brand' not in params or
+                params['brand'] is None):
+            raise ValueError("Missing the required parameter `brand` when calling `get_items_codes_api_v1_items_category_brand_codes_get`")  # noqa: E501
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'category' in params:
+            path_params['category'] = params['category']  # noqa: E501
+        if 'brand' in params:
+            path_params['brand'] = params['brand']  # noqa: E501
+
+        query_params = []
+        if 'model' in params:
+            query_params.append(('model', params['model']))  # noqa: E501
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['HTTPBasic']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/api/v1/items/{category}/{brand}/codes', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='list[object]',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),

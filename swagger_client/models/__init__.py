@@ -23,7 +23,9 @@ from swagger_client.models.centimeter_base import CentimeterBase
 from swagger_client.models.delivery_cdek_base import DeliveryCdekBase
 from swagger_client.models.delivery_cdek_update import DeliveryCdekUpdate
 from swagger_client.models.dimension_base import DimensionBase
+from swagger_client.models.dimension_item_new import DimensionItemNew
 from swagger_client.models.get_bot_info import GetBotInfo
+from swagger_client.models.get_item_new import GetItemNew
 from swagger_client.models.get_message_tg import GetMessageTg
 from swagger_client.models.get_scheduler import GetScheduler
 from swagger_client.models.get_user import GetUser
@@ -49,11 +51,13 @@ from swagger_client.models.purchase_update import PurchaseUpdate
 from swagger_client.models.purchase_with_delivery_cdek import PurchaseWithDeliveryCdek
 from swagger_client.models.purchase_with_size import PurchaseWithSize
 from swagger_client.models.quantity_base import QuantityBase
+from swagger_client.models.quantity_item_new import QuantityItemNew
 from swagger_client.models.quantity_with_size import QuantityWithSize
 from swagger_client.models.quantity_with_size_centimeter import QuantityWithSizeCentimeter
 from swagger_client.models.quantity_with_size_stock import QuantityWithSizeStock
 from swagger_client.models.size import Size
 from swagger_client.models.size_base import SizeBase
+from swagger_client.models.size_item_new import SizeItemNew
 from swagger_client.models.stock import Stock
 from swagger_client.models.stock_base import StockBase
 from swagger_client.models.update_user_items import UpdateUserItems

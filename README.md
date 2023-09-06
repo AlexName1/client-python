@@ -87,11 +87,14 @@ Class | Method | HTTP request | Description
 *ItemsApi* | [**get_brands_and_counts_api_v1_items_category_brands_counts_get**](docs/ItemsApi.md#get_brands_and_counts_api_v1_items_category_brands_counts_get) | **GET** /api/v1/items/{category}/brands-counts | Get Brands And Counts
 *ItemsApi* | [**get_codes_items_api_v1_items_codes_get**](docs/ItemsApi.md#get_codes_items_api_v1_items_codes_get) | **GET** /api/v1/items/codes | Get Codes Items
 *ItemsApi* | [**get_item_api_v1_items_code_token_one_get**](docs/ItemsApi.md#get_item_api_v1_items_code_token_one_get) | **GET** /api/v1/items/{code}/{token}/one | Get Item
+*ItemsApi* | [**get_item_new_api_v1_items_code_token_one_new_get**](docs/ItemsApi.md#get_item_new_api_v1_items_code_token_one_new_get) | **GET** /api/v1/items/{code}/{token}/one_new | Get Item New
 *ItemsApi* | [**get_item_selectinload_size_api_v1_items_code_token_load_size_get**](docs/ItemsApi.md#get_item_selectinload_size_api_v1_items_code_token_load_size_get) | **GET** /api/v1/items/{code}/{token}/load-size | Get Item Selectinload Size
 *ItemsApi* | [**get_item_selectinload_size_category_api_v1_items_code_token_load_size_category_get**](docs/ItemsApi.md#get_item_selectinload_size_category_api_v1_items_code_token_load_size_category_get) | **GET** /api/v1/items/{code}/{token}/load-size-category | Get Item Selectinload Size Category
 *ItemsApi* | [**get_item_selectinload_size_centimeter_category_api_v1_items_code_token_load_size_centimeter_category_get**](docs/ItemsApi.md#get_item_selectinload_size_centimeter_category_api_v1_items_code_token_load_size_centimeter_category_get) | **GET** /api/v1/items/{code}/{token}/load-size-centimeter-category | Get Item Selectinload Size Centimeter Category
 *ItemsApi* | [**get_items_action_api_v1_items_token_all_get**](docs/ItemsApi.md#get_items_action_api_v1_items_token_all_get) | **GET** /api/v1/items/{token}/all | Get Items Action
+*ItemsApi* | [**get_items_action_new_codes_api_v1_items_token_all_new_codes_get**](docs/ItemsApi.md#get_items_action_new_codes_api_v1_items_token_all_new_codes_get) | **GET** /api/v1/items/{token}/all_new_codes | Get Items Action New Codes
 *ItemsApi* | [**get_items_api_v1_items_category_brand_token_get**](docs/ItemsApi.md#get_items_api_v1_items_category_brand_token_get) | **GET** /api/v1/items/{category}/{brand}/{token} | Get Items
+*ItemsApi* | [**get_items_codes_api_v1_items_category_brand_codes_get**](docs/ItemsApi.md#get_items_codes_api_v1_items_category_brand_codes_get) | **GET** /api/v1/items/{category}/{brand}/codes | Get Items Codes
 *ItemsApi* | [**get_models_and_counts_api_v1_items_category_brand_models_counts_get**](docs/ItemsApi.md#get_models_and_counts_api_v1_items_category_brand_models_counts_get) | **GET** /api/v1/items/{category}/{brand}/models-counts | Get Models And Counts
 *ItemsApi* | [**get_models_api_v1_items_category_brand_models_get**](docs/ItemsApi.md#get_models_api_v1_items_category_brand_models_get) | **GET** /api/v1/items/{category}/{brand}/models | Get Models
 *ItemsApi* | [**insert_or_update_api_v1_items_merge_post**](docs/ItemsApi.md#insert_or_update_api_v1_items_merge_post) | **POST** /api/v1/items/merge | Insert Or Update
@@ -139,7 +142,9 @@ Class | Method | HTTP request | Description
  - [DeliveryCdekBase](docs/DeliveryCdekBase.md)
  - [DeliveryCdekUpdate](docs/DeliveryCdekUpdate.md)
  - [DimensionBase](docs/DimensionBase.md)
+ - [DimensionItemNew](docs/DimensionItemNew.md)
  - [GetBotInfo](docs/GetBotInfo.md)
+ - [GetItemNew](docs/GetItemNew.md)
  - [GetMessageTg](docs/GetMessageTg.md)
  - [GetScheduler](docs/GetScheduler.md)
  - [GetUser](docs/GetUser.md)
@@ -165,11 +170,13 @@ Class | Method | HTTP request | Description
  - [PurchaseWithDeliveryCdek](docs/PurchaseWithDeliveryCdek.md)
  - [PurchaseWithSize](docs/PurchaseWithSize.md)
  - [QuantityBase](docs/QuantityBase.md)
+ - [QuantityItemNew](docs/QuantityItemNew.md)
  - [QuantityWithSize](docs/QuantityWithSize.md)
  - [QuantityWithSizeCentimeter](docs/QuantityWithSizeCentimeter.md)
  - [QuantityWithSizeStock](docs/QuantityWithSizeStock.md)
  - [Size](docs/Size.md)
  - [SizeBase](docs/SizeBase.md)
+ - [SizeItemNew](docs/SizeItemNew.md)
  - [Stock](docs/Stock.md)
  - [StockBase](docs/StockBase.md)
  - [UpdateUserItems](docs/UpdateUserItems.md)
