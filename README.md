@@ -117,14 +117,10 @@ Class | Method | HTTP request | Description
 *SizesApi* | [**get_size_by_id_api_v1_sizes_size_id_get**](docs/SizesApi.md#get_size_by_id_api_v1_sizes_size_id_get) | **GET** /api/v1/sizes/{size_id} | Get Size By Id
 *SizesApi* | [**get_sizes_api_v1_sizes_get**](docs/SizesApi.md#get_sizes_api_v1_sizes_get) | **GET** /api/v1/sizes | Get Sizes
 *SizesApi* | [**insert_or_nothing_api_v1_sizes_post**](docs/SizesApi.md#insert_or_nothing_api_v1_sizes_post) | **POST** /api/v1/sizes | Insert Or Nothing
-*StocksApi* | [**get_stock_by_stock_id_api_v1_stocks_user_stock_id_get**](docs/StocksApi.md#get_stock_by_stock_id_api_v1_stocks_user_stock_id_get) | **GET** /api/v1/stocks/user/{stock_id} | Get Stock By Stock Id
-*StocksApi* | [**get_stock_without_load_by_stock_id_api_v1_stocks_stock_id_get**](docs/StocksApi.md#get_stock_without_load_by_stock_id_api_v1_stocks_stock_id_get) | **GET** /api/v1/stocks/{stock_id} | Get Stock Without Load By Stock Id
-*StocksApi* | [**get_stocks_by_order_code_api_v1_stocks_code_size_get**](docs/StocksApi.md#get_stocks_by_order_code_api_v1_stocks_code_size_get) | **GET** /api/v1/stocks/{code}/{size} | Get Stocks By Order Code
 *UsersApi* | [**get_count_api_v1_users_count_get**](docs/UsersApi.md#get_count_api_v1_users_count_get) | **GET** /api/v1/users/count | Get Count
 *UsersApi* | [**get_ids_api_v1_users_ids_get**](docs/UsersApi.md#get_ids_api_v1_users_ids_get) | **GET** /api/v1/users/ids | Get Ids
 *UsersApi* | [**get_items_api_v1_users_user_id_items_get**](docs/UsersApi.md#get_items_api_v1_users_user_id_items_get) | **GET** /api/v1/users/{user_id}/items | Get Items
 *UsersApi* | [**get_user_api_v1_users_user_id_one_get**](docs/UsersApi.md#get_user_api_v1_users_user_id_one_get) | **GET** /api/v1/users/{user_id}/one | Get User
-*UsersApi* | [**insert_or_nothing_api_v1_users_post**](docs/UsersApi.md#insert_or_nothing_api_v1_users_post) | **POST** /api/v1/users | Insert Or Nothing
 *UsersApi* | [**update_items_api_v1_users_user_id_items_put**](docs/UsersApi.md#update_items_api_v1_users_user_id_items_put) | **PUT** /api/v1/users/{user_id}/items | Update Items
 *UsersApi* | [**update_last_mess_api_v1_users_user_id_mess_put**](docs/UsersApi.md#update_last_mess_api_v1_users_user_id_mess_put) | **PUT** /api/v1/users/{user_id}/mess | Update Last Mess
 *WaybillsApi* | [**update_api_v1_waybills_put**](docs/WaybillsApi.md#update_api_v1_waybills_put) | **PUT** /api/v1/waybills | Update
@@ -153,7 +149,6 @@ Class | Method | HTTP request | Description
  - [InfoItemUpdateNew](docs/InfoItemUpdateNew.md)
  - [InsertMessageTg](docs/InsertMessageTg.md)
  - [InsertScheduler](docs/InsertScheduler.md)
- - [InsertUser](docs/InsertUser.md)
  - [ItemBase](docs/ItemBase.md)
  - [ItemWithQuantitySizeCategory](docs/ItemWithQuantitySizeCategory.md)
  - [ItemWithQuantitySizeCentimeterCategory](docs/ItemWithQuantitySizeCentimeterCategory.md)
@@ -167,7 +162,6 @@ Class | Method | HTTP request | Description
  - [PurchaseUpdate](docs/PurchaseUpdate.md)
  - [PurchaseWithDeliveryCdek](docs/PurchaseWithDeliveryCdek.md)
  - [PurchaseWithSize](docs/PurchaseWithSize.md)
- - [QuantityBase](docs/QuantityBase.md)
  - [QuantityItemNew](docs/QuantityItemNew.md)
  - [QuantityWithSize](docs/QuantityWithSize.md)
  - [QuantityWithSizeCentimeter](docs/QuantityWithSizeCentimeter.md)
@@ -175,11 +169,9 @@ Class | Method | HTTP request | Description
  - [Size](docs/Size.md)
  - [SizeBase](docs/SizeBase.md)
  - [SizeItemNew](docs/SizeItemNew.md)
- - [Stock](docs/Stock.md)
  - [StockBase](docs/StockBase.md)
  - [UpdateUserItems](docs/UpdateUserItems.md)
  - [UpdateUserMess](docs/UpdateUserMess.md)
- - [UserBase](docs/UserBase.md)
  - [ValidationError](docs/ValidationError.md)
  - [WaybillUpdate](docs/WaybillUpdate.md)
  - [YookassaPayment](docs/YookassaPayment.md)

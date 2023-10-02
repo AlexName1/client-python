@@ -26,7 +26,6 @@ from swagger_client.api.purchases_api import PurchasesApi
 from swagger_client.api.quantities_api import QuantitiesApi
 from swagger_client.api.schedulers_api import SchedulersApi
 from swagger_client.api.sizes_api import SizesApi
-from swagger_client.api.stocks_api import StocksApi
 from swagger_client.api.users_api import UsersApi
 from swagger_client.api.waybills_api import WaybillsApi
 from swagger_client.api.yookassa_payments_api import YookassaPaymentsApi
@@ -55,7 +54,6 @@ from swagger_client.models.info_item_update import InfoItemUpdate
 from swagger_client.models.info_item_update_new import InfoItemUpdateNew
 from swagger_client.models.insert_message_tg import InsertMessageTg
 from swagger_client.models.insert_scheduler import InsertScheduler
-from swagger_client.models.insert_user import InsertUser
 from swagger_client.models.item_base import ItemBase
 from swagger_client.models.item_with_quantity_size_category import ItemWithQuantitySizeCategory
 from swagger_client.models.item_with_quantity_size_centimeter_category import ItemWithQuantitySizeCentimeterCategory
@@ -69,7 +67,6 @@ from swagger_client.models.purchase_insert import PurchaseInsert
 from swagger_client.models.purchase_update import PurchaseUpdate
 from swagger_client.models.purchase_with_delivery_cdek import PurchaseWithDeliveryCdek
 from swagger_client.models.purchase_with_size import PurchaseWithSize
-from swagger_client.models.quantity_base import QuantityBase
 from swagger_client.models.quantity_item_new import QuantityItemNew
 from swagger_client.models.quantity_with_size import QuantityWithSize
 from swagger_client.models.quantity_with_size_centimeter import QuantityWithSizeCentimeter
@@ -77,11 +74,9 @@ from swagger_client.models.quantity_with_size_stock import QuantityWithSizeStock
 from swagger_client.models.size import Size
 from swagger_client.models.size_base import SizeBase
 from swagger_client.models.size_item_new import SizeItemNew
-from swagger_client.models.stock import Stock
 from swagger_client.models.stock_base import StockBase
 from swagger_client.models.update_user_items import UpdateUserItems
 from swagger_client.models.update_user_mess import UpdateUserMess
-from swagger_client.models.user_base import UserBase
 from swagger_client.models.validation_error import ValidationError
 from swagger_client.models.waybill_update import WaybillUpdate
 from swagger_client.models.yookassa_payment import YookassaPayment

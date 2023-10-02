@@ -56,13 +56,6 @@ class TestUsersApi(unittest.TestCase):
         """
         pass
 
-    def test_insert_or_nothing_api_v1_users_post(self):
-        """Test case for insert_or_nothing_api_v1_users_post
-
-        Insert Or Nothing  # noqa: E501
-        """
-        pass
-
     def test_update_items_api_v1_users_user_id_items_put(self):
         """Test case for update_items_api_v1_users_user_id_items_put
 

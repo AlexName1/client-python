@@ -14,7 +14,6 @@ from swagger_client.api.purchases_api import PurchasesApi
 from swagger_client.api.quantities_api import QuantitiesApi
 from swagger_client.api.schedulers_api import SchedulersApi
 from swagger_client.api.sizes_api import SizesApi
-from swagger_client.api.stocks_api import StocksApi
 from swagger_client.api.users_api import UsersApi
 from swagger_client.api.waybills_api import WaybillsApi
 from swagger_client.api.yookassa_payments_api import YookassaPaymentsApi
