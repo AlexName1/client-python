@@ -21,8 +21,6 @@ Name | Type | Description | Notes
 **add_photo** | **str** |  | [optional] 
 **partner** | **bool** |  | [optional] 
 **paid** | **bool** |  | [optional] 
-**stock_id** | **str** |  | [optional] 
-**comment_sender** | **str** |  | [optional] 
 **delivery_cdek_id** | **int** |  | [optional] 
 **approve_size** | **bool** |  | [optional] 
 **size_id** | **int** |  | [optional] 

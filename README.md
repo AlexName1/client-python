@@ -108,7 +108,6 @@ Class | Method | HTTP request | Description
 *PurchasesApi* | [**get_count_api_v1_purchases_token_status_count_get**](docs/PurchasesApi.md#get_count_api_v1_purchases_token_status_count_get) | **GET** /api/v1/purchases/{token}/{status}/count | Get Count
 *PurchasesApi* | [**get_order_by_id_api_v1_purchases_order_id_token_one_get**](docs/PurchasesApi.md#get_order_by_id_api_v1_purchases_order_id_token_one_get) | **GET** /api/v1/purchases/{order_id}/{token}/one | Get Order By Id
 *PurchasesApi* | [**get_user_orders_api_v1_purchases_token_users_user_id_get**](docs/PurchasesApi.md#get_user_orders_api_v1_purchases_token_users_user_id_get) | **GET** /api/v1/purchases/{token}/users/{user_id} | Get User Orders
-*PurchasesApi* | [**insert_api_v1_purchases_token_post**](docs/PurchasesApi.md#insert_api_v1_purchases_token_post) | **POST** /api/v1/purchases/{token} | Insert
 *PurchasesApi* | [**insert_new_api_v1_purchases_token_new_post**](docs/PurchasesApi.md#insert_new_api_v1_purchases_token_new_post) | **POST** /api/v1/purchases/{token}/new | Insert New
 *PurchasesApi* | [**update_api_v1_purchases_token_put**](docs/PurchasesApi.md#update_api_v1_purchases_token_put) | **PUT** /api/v1/purchases/{token} | Update
 *QuantitiesApi* | [**insert_or_update_api_v1_quantities_merge_post**](docs/QuantitiesApi.md#insert_or_update_api_v1_quantities_merge_post) | **POST** /api/v1/quantities/merge | Insert Or Update
@@ -162,7 +161,6 @@ Class | Method | HTTP request | Description
  - [ItemWithQuantityStockSizeDimension](docs/ItemWithQuantityStockSizeDimension.md)
  - [ItemsUpdateActive](docs/ItemsUpdateActive.md)
  - [ModelCount](docs/ModelCount.md)
- - [OldPurchase](docs/OldPurchase.md)
  - [Purchase](docs/Purchase.md)
  - [PurchaseBase](docs/PurchaseBase.md)
  - [PurchaseInsert](docs/PurchaseInsert.md)

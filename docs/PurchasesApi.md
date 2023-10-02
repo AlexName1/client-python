@@ -10,7 +10,6 @@ Method | HTTP request | Description
 [**get_count_api_v1_purchases_token_status_count_get**](PurchasesApi.md#get_count_api_v1_purchases_token_status_count_get) | **GET** /api/v1/purchases/{token}/{status}/count | Get Count
 [**get_order_by_id_api_v1_purchases_order_id_token_one_get**](PurchasesApi.md#get_order_by_id_api_v1_purchases_order_id_token_one_get) | **GET** /api/v1/purchases/{order_id}/{token}/one | Get Order By Id
 [**get_user_orders_api_v1_purchases_token_users_user_id_get**](PurchasesApi.md#get_user_orders_api_v1_purchases_token_users_user_id_get) | **GET** /api/v1/purchases/{token}/users/{user_id} | Get User Orders
-[**insert_api_v1_purchases_token_post**](PurchasesApi.md#insert_api_v1_purchases_token_post) | **POST** /api/v1/purchases/{token} | Insert
 [**insert_new_api_v1_purchases_token_new_post**](PurchasesApi.md#insert_new_api_v1_purchases_token_new_post) | **POST** /api/v1/purchases/{token}/new | Insert New
 [**update_api_v1_purchases_token_put**](PurchasesApi.md#update_api_v1_purchases_token_put) | **PUT** /api/v1/purchases/{token} | Update
 
@@ -322,58 +321,6 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **insert_api_v1_purchases_token_post**
-> object insert_api_v1_purchases_token_post(body, token)
-
-Insert
-
-### Example
-```python
-from __future__ import print_function
-import time
-import swagger_client
-from swagger_client.rest import ApiException
-from pprint import pprint
-# Configure HTTP basic authorization: HTTPBasic
-configuration = swagger_client.Configuration()
-configuration.username = 'YOUR_USERNAME'
-configuration.password = 'YOUR_PASSWORD'
-
-# create an instance of the API class
-api_instance = swagger_client.PurchasesApi(swagger_client.ApiClient(configuration))
-body = swagger_client.OldPurchase() # OldPurchase | 
-token = 'token_example' # str | 
-
-try:
-    # Insert
-    api_response = api_instance.insert_api_v1_purchases_token_post(body, token)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling PurchasesApi->insert_api_v1_purchases_token_post: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | [**OldPurchase**](OldPurchase.md)|  | 
- **token** | **str**|  | 
-
-### Return type
-
-**object**
-
-### Authorization
-
-[HTTPBasic](../README.md#HTTPBasic)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

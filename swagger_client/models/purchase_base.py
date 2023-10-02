@@ -46,8 +46,6 @@ class PurchaseBase(object):
         'add_photo': 'str',
         'partner': 'bool',
         'paid': 'bool',
-        'stock_id': 'str',
-        'comment_sender': 'str',
         'delivery_cdek_id': 'int',
         'approve_size': 'bool',
         'size_id': 'int',
@@ -73,15 +71,13 @@ class PurchaseBase(object):
         'add_photo': 'add_photo',
         'partner': 'partner',
         'paid': 'paid',
-        'stock_id': 'stock_id',
-        'comment_sender': 'comment_sender',
         'delivery_cdek_id': 'delivery_cdek_id',
         'approve_size': 'approve_size',
         'size_id': 'size_id',
         'bot_id': 'bot_id'
     }
 
-    def __init__(self, id=None, created=None, buyer=None, code=None, price=None, delivery=None, address=None, phone=None, checking=None, pod=None, invoice=None, comment=None, status=None, add_info=None, user_id=None, add_photo=None, partner=None, paid=None, stock_id=None, comment_sender=None, delivery_cdek_id=None, approve_size=None, size_id=None, bot_id=None):  # noqa: E501
+    def __init__(self, id=None, created=None, buyer=None, code=None, price=None, delivery=None, address=None, phone=None, checking=None, pod=None, invoice=None, comment=None, status=None, add_info=None, user_id=None, add_photo=None, partner=None, paid=None, delivery_cdek_id=None, approve_size=None, size_id=None, bot_id=None):  # noqa: E501
         """PurchaseBase - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._created = None
@@ -101,8 +97,6 @@ class PurchaseBase(object):
         self._add_photo = None
         self._partner = None
         self._paid = None
-        self._stock_id = None
-        self._comment_sender = None
         self._delivery_cdek_id = None
         self._approve_size = None
         self._size_id = None
@@ -144,10 +138,6 @@ class PurchaseBase(object):
             self.partner = partner
         if paid is not None:
             self.paid = paid
-        if stock_id is not None:
-            self.stock_id = stock_id
-        if comment_sender is not None:
-            self.comment_sender = comment_sender
         if delivery_cdek_id is not None:
             self.delivery_cdek_id = delivery_cdek_id
         if approve_size is not None:
@@ -534,48 +524,6 @@ class PurchaseBase(object):
         """
 
         self._paid = paid
-
-    @property
-    def stock_id(self):
-        """Gets the stock_id of this PurchaseBase.  # noqa: E501
-
-
-        :return: The stock_id of this PurchaseBase.  # noqa: E501
-        :rtype: str
-        """
-        return self._stock_id
-
-    @stock_id.setter
-    def stock_id(self, stock_id):
-        """Sets the stock_id of this PurchaseBase.
-
-
-        :param stock_id: The stock_id of this PurchaseBase.  # noqa: E501
-        :type: str
-        """
-
-        self._stock_id = stock_id
-
-    @property
-    def comment_sender(self):
-        """Gets the comment_sender of this PurchaseBase.  # noqa: E501
-
-
-        :return: The comment_sender of this PurchaseBase.  # noqa: E501
-        :rtype: str
-        """
-        return self._comment_sender
-
-    @comment_sender.setter
-    def comment_sender(self, comment_sender):
-        """Sets the comment_sender of this PurchaseBase.
-
-
-        :param comment_sender: The comment_sender of this PurchaseBase.  # noqa: E501
-        :type: str
-        """
-
-        self._comment_sender = comment_sender
 
     @property
     def delivery_cdek_id(self):

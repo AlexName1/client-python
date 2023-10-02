@@ -70,13 +70,6 @@ class TestPurchasesApi(unittest.TestCase):
         """
         pass
 
-    def test_insert_api_v1_purchases_token_post(self):
-        """Test case for insert_api_v1_purchases_token_post
-
-        Insert  # noqa: E501
-        """
-        pass
-
     def test_insert_new_api_v1_purchases_token_new_post(self):
         """Test case for insert_new_api_v1_purchases_token_new_post
 

@@ -43,7 +43,6 @@ from swagger_client.models.item_with_quantity_size_dimension import ItemWithQuan
 from swagger_client.models.item_with_quantity_stock_size_dimension import ItemWithQuantityStockSizeDimension
 from swagger_client.models.items_update_active import ItemsUpdateActive
 from swagger_client.models.model_count import ModelCount
-from swagger_client.models.old_purchase import OldPurchase
 from swagger_client.models.purchase import Purchase
 from swagger_client.models.purchase_base import PurchaseBase
 from swagger_client.models.purchase_insert import PurchaseInsert
