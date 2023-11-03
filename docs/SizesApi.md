@@ -59,7 +59,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_sizes_api_v1_sizes_get**
-> list[SizeBase] get_sizes_api_v1_sizes_get(category=category)
+> list[SizeBaseDb] get_sizes_api_v1_sizes_get(category=category)
 
 Get Sizes
 
@@ -95,7 +95,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**list[SizeBase]**](SizeBase.md)
+[**list[SizeBaseDb]**](SizeBaseDb.md)
 
 ### Authorization
 

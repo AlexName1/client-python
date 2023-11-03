@@ -38,7 +38,9 @@ class DeliveryCdekBase(object):
         'cdek_number': 'str',
         'photo_tg_file_id': 'str',
         'invoice_tg_file_id': 'str',
-        'courier_to_location': 'str'
+        'courier_to_location': 'str',
+        'stock_id': 'str',
+        'comment_sender': 'str'
     }
 
     attribute_map = {
@@ -52,10 +54,12 @@ class DeliveryCdekBase(object):
         'cdek_number': 'cdek_number',
         'photo_tg_file_id': 'photo_tg_file_id',
         'invoice_tg_file_id': 'invoice_tg_file_id',
-        'courier_to_location': 'courier_to_location'
+        'courier_to_location': 'courier_to_location',
+        'stock_id': 'stock_id',
+        'comment_sender': 'comment_sender'
     }
 
-    def __init__(self, id=None, uuid_id=None, tariff_code=None, delivery_point=None, create_datetime=None, status=None, status_cdek=None, cdek_number=None, photo_tg_file_id=None, invoice_tg_file_id=None, courier_to_location=None):  # noqa: E501
+    def __init__(self, id=None, uuid_id=None, tariff_code=None, delivery_point=None, create_datetime=None, status=None, status_cdek=None, cdek_number=None, photo_tg_file_id=None, invoice_tg_file_id=None, courier_to_location=None, stock_id=None, comment_sender=None):  # noqa: E501
         """DeliveryCdekBase - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._uuid_id = None
@@ -68,14 +72,21 @@ class DeliveryCdekBase(object):
         self._photo_tg_file_id = None
         self._invoice_tg_file_id = None
         self._courier_to_location = None
+        self._stock_id = None
+        self._comment_sender = None
         self.discriminator = None
-        self.id = id
-        self.uuid_id = uuid_id
-        self.tariff_code = tariff_code
+        if id is not None:
+            self.id = id
+        if uuid_id is not None:
+            self.uuid_id = uuid_id
+        if tariff_code is not None:
+            self.tariff_code = tariff_code
         if delivery_point is not None:
             self.delivery_point = delivery_point
-        self.create_datetime = create_datetime
-        self.status = status
+        if create_datetime is not None:
+            self.create_datetime = create_datetime
+        if status is not None:
+            self.status = status
         if status_cdek is not None:
             self.status_cdek = status_cdek
         if cdek_number is not None:
@@ -86,6 +97,10 @@ class DeliveryCdekBase(object):
             self.invoice_tg_file_id = invoice_tg_file_id
         if courier_to_location is not None:
             self.courier_to_location = courier_to_location
+        if stock_id is not None:
+            self.stock_id = stock_id
+        if comment_sender is not None:
+            self.comment_sender = comment_sender
 
     @property
     def id(self):
@@ -105,8 +120,6 @@ class DeliveryCdekBase(object):
         :param id: The id of this DeliveryCdekBase.  # noqa: E501
         :type: int
         """
-        if id is None:
-            raise ValueError("Invalid value for `id`, must not be `None`")  # noqa: E501
 
         self._id = id
 
@@ -128,8 +141,6 @@ class DeliveryCdekBase(object):
         :param uuid_id: The uuid_id of this DeliveryCdekBase.  # noqa: E501
         :type: str
         """
-        if uuid_id is None:
-            raise ValueError("Invalid value for `uuid_id`, must not be `None`")  # noqa: E501
 
         self._uuid_id = uuid_id
 
@@ -151,8 +162,6 @@ class DeliveryCdekBase(object):
         :param tariff_code: The tariff_code of this DeliveryCdekBase.  # noqa: E501
         :type: int
         """
-        if tariff_code is None:
-            raise ValueError("Invalid value for `tariff_code`, must not be `None`")  # noqa: E501
 
         self._tariff_code = tariff_code
 
@@ -195,8 +204,6 @@ class DeliveryCdekBase(object):
         :param create_datetime: The create_datetime of this DeliveryCdekBase.  # noqa: E501
         :type: datetime
         """
-        if create_datetime is None:
-            raise ValueError("Invalid value for `create_datetime`, must not be `None`")  # noqa: E501
 
         self._create_datetime = create_datetime
 
@@ -218,8 +225,6 @@ class DeliveryCdekBase(object):
         :param status: The status of this DeliveryCdekBase.  # noqa: E501
         :type: int
         """
-        if status is None:
-            raise ValueError("Invalid value for `status`, must not be `None`")  # noqa: E501
 
         self._status = status
 
@@ -327,6 +332,48 @@ class DeliveryCdekBase(object):
         """
 
         self._courier_to_location = courier_to_location
+
+    @property
+    def stock_id(self):
+        """Gets the stock_id of this DeliveryCdekBase.  # noqa: E501
+
+
+        :return: The stock_id of this DeliveryCdekBase.  # noqa: E501
+        :rtype: str
+        """
+        return self._stock_id
+
+    @stock_id.setter
+    def stock_id(self, stock_id):
+        """Sets the stock_id of this DeliveryCdekBase.
+
+
+        :param stock_id: The stock_id of this DeliveryCdekBase.  # noqa: E501
+        :type: str
+        """
+
+        self._stock_id = stock_id
+
+    @property
+    def comment_sender(self):
+        """Gets the comment_sender of this DeliveryCdekBase.  # noqa: E501
+
+
+        :return: The comment_sender of this DeliveryCdekBase.  # noqa: E501
+        :rtype: str
+        """
+        return self._comment_sender
+
+    @comment_sender.setter
+    def comment_sender(self, comment_sender):
+        """Sets the comment_sender of this DeliveryCdekBase.
+
+
+        :param comment_sender: The comment_sender of this DeliveryCdekBase.  # noqa: E501
+        :type: str
+        """
+
+        self._comment_sender = comment_sender
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -46,10 +46,13 @@ class PurchaseBase(object):
         'add_photo': 'str',
         'partner': 'bool',
         'paid': 'bool',
-        'delivery_cdek_id': 'int',
+        'delivery_cdek_id': 'str',
         'approve_size': 'bool',
         'size_id': 'int',
-        'bot_id': 'int'
+        'bot_id': 'int',
+        'duplicate_check': 'str',
+        'order_id': 'int',
+        'delivery_cdek_photo_tg_file_id': 'str'
     }
 
     attribute_map = {
@@ -74,10 +77,13 @@ class PurchaseBase(object):
         'delivery_cdek_id': 'delivery_cdek_id',
         'approve_size': 'approve_size',
         'size_id': 'size_id',
-        'bot_id': 'bot_id'
+        'bot_id': 'bot_id',
+        'duplicate_check': 'duplicate_check',
+        'order_id': 'order_id',
+        'delivery_cdek_photo_tg_file_id': 'delivery_cdek_photo_tg_file_id'
     }
 
-    def __init__(self, id=None, created=None, buyer=None, code=None, price=None, delivery=None, address=None, phone=None, checking=None, pod=None, invoice=None, comment=None, status=None, add_info=None, user_id=None, add_photo=None, partner=None, paid=None, delivery_cdek_id=None, approve_size=None, size_id=None, bot_id=None):  # noqa: E501
+    def __init__(self, id=None, created=None, buyer=None, code=None, price=None, delivery=None, address=None, phone=None, checking=None, pod=None, invoice=None, comment=None, status=None, add_info=None, user_id=None, add_photo=None, partner=None, paid=None, delivery_cdek_id=None, approve_size=None, size_id=None, bot_id=None, duplicate_check=None, order_id=None, delivery_cdek_photo_tg_file_id=None):  # noqa: E501
         """PurchaseBase - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._created = None
@@ -101,6 +107,9 @@ class PurchaseBase(object):
         self._approve_size = None
         self._size_id = None
         self._bot_id = None
+        self._duplicate_check = None
+        self._order_id = None
+        self._delivery_cdek_photo_tg_file_id = None
         self.discriminator = None
         if id is not None:
             self.id = id
@@ -146,6 +155,12 @@ class PurchaseBase(object):
             self.size_id = size_id
         if bot_id is not None:
             self.bot_id = bot_id
+        if duplicate_check is not None:
+            self.duplicate_check = duplicate_check
+        if order_id is not None:
+            self.order_id = order_id
+        if delivery_cdek_photo_tg_file_id is not None:
+            self.delivery_cdek_photo_tg_file_id = delivery_cdek_photo_tg_file_id
 
     @property
     def id(self):
@@ -531,7 +546,7 @@ class PurchaseBase(object):
 
 
         :return: The delivery_cdek_id of this PurchaseBase.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._delivery_cdek_id
 
@@ -541,7 +556,7 @@ class PurchaseBase(object):
 
 
         :param delivery_cdek_id: The delivery_cdek_id of this PurchaseBase.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._delivery_cdek_id = delivery_cdek_id
@@ -608,6 +623,69 @@ class PurchaseBase(object):
         """
 
         self._bot_id = bot_id
+
+    @property
+    def duplicate_check(self):
+        """Gets the duplicate_check of this PurchaseBase.  # noqa: E501
+
+
+        :return: The duplicate_check of this PurchaseBase.  # noqa: E501
+        :rtype: str
+        """
+        return self._duplicate_check
+
+    @duplicate_check.setter
+    def duplicate_check(self, duplicate_check):
+        """Sets the duplicate_check of this PurchaseBase.
+
+
+        :param duplicate_check: The duplicate_check of this PurchaseBase.  # noqa: E501
+        :type: str
+        """
+
+        self._duplicate_check = duplicate_check
+
+    @property
+    def order_id(self):
+        """Gets the order_id of this PurchaseBase.  # noqa: E501
+
+
+        :return: The order_id of this PurchaseBase.  # noqa: E501
+        :rtype: int
+        """
+        return self._order_id
+
+    @order_id.setter
+    def order_id(self, order_id):
+        """Sets the order_id of this PurchaseBase.
+
+
+        :param order_id: The order_id of this PurchaseBase.  # noqa: E501
+        :type: int
+        """
+
+        self._order_id = order_id
+
+    @property
+    def delivery_cdek_photo_tg_file_id(self):
+        """Gets the delivery_cdek_photo_tg_file_id of this PurchaseBase.  # noqa: E501
+
+
+        :return: The delivery_cdek_photo_tg_file_id of this PurchaseBase.  # noqa: E501
+        :rtype: str
+        """
+        return self._delivery_cdek_photo_tg_file_id
+
+    @delivery_cdek_photo_tg_file_id.setter
+    def delivery_cdek_photo_tg_file_id(self, delivery_cdek_photo_tg_file_id):
+        """Sets the delivery_cdek_photo_tg_file_id of this PurchaseBase.
+
+
+        :param delivery_cdek_photo_tg_file_id: The delivery_cdek_photo_tg_file_id of this PurchaseBase.  # noqa: E501
+        :type: str
+        """
+
+        self._delivery_cdek_photo_tg_file_id = delivery_cdek_photo_tg_file_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

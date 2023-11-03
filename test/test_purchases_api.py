@@ -28,10 +28,10 @@ class TestPurchasesApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_delete_api_v1_purchases_order_id_token_delete(self):
-        """Test case for delete_api_v1_purchases_order_id_token_delete
+    def test_delete_purchase_api_v1_purchases_purchase_id_delete(self):
+        """Test case for delete_purchase_api_v1_purchases_purchase_id_delete
 
-        Delete  # noqa: E501
+        Delete Purchase  # noqa: E501
         """
         pass
 
@@ -42,10 +42,17 @@ class TestPurchasesApi(unittest.TestCase):
         """
         pass
 
-    def test_get_all_api_v1_purchases_token_get(self):
-        """Test case for get_all_api_v1_purchases_token_get
+    def test_get_all_api_v1_purchases_get(self):
+        """Test case for get_all_api_v1_purchases_get
 
         Get All  # noqa: E501
+        """
+        pass
+
+    def test_get_all_temporally_api_v1_purchases_temporally_bot_id_get(self):
+        """Test case for get_all_temporally_api_v1_purchases_temporally_bot_id_get
+
+        Get All Temporally  # noqa: E501
         """
         pass
 
@@ -60,6 +67,13 @@ class TestPurchasesApi(unittest.TestCase):
         """Test case for get_order_by_id_api_v1_purchases_order_id_token_one_get
 
         Get Order By Id  # noqa: E501
+        """
+        pass
+
+    def test_get_purchase_by_id_api_v1_purchases_purchase_id_get(self):
+        """Test case for get_purchase_by_id_api_v1_purchases_purchase_id_get
+
+        Get Purchase By Id  # noqa: E501
         """
         pass
 
@@ -81,6 +95,13 @@ class TestPurchasesApi(unittest.TestCase):
         """Test case for update_api_v1_purchases_token_put
 
         Update  # noqa: E501
+        """
+        pass
+
+    def test_update_only_api_v1_purchases_put(self):
+        """Test case for update_only_api_v1_purchases_put
+
+        Update Only  # noqa: E501
         """
         pass
 

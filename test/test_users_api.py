@@ -28,6 +28,13 @@ class TestUsersApi(unittest.TestCase):
     def tearDown(self):
         pass
 
+    def test_get_all_ids_users_api_v1_users_ids_get(self):
+        """Test case for get_all_ids_users_api_v1_users_ids_get
+
+        Get All Ids Users  # noqa: E501
+        """
+        pass
+
     def test_get_count_api_v1_users_count_get(self):
         """Test case for get_count_api_v1_users_count_get
 
@@ -35,31 +42,10 @@ class TestUsersApi(unittest.TestCase):
         """
         pass
 
-    def test_get_ids_api_v1_users_ids_get(self):
-        """Test case for get_ids_api_v1_users_ids_get
+    def test_get_user_items_api_v1_users_user_id_items_get(self):
+        """Test case for get_user_items_api_v1_users_user_id_items_get
 
-        Get Ids  # noqa: E501
-        """
-        pass
-
-    def test_get_items_api_v1_users_user_id_items_get(self):
-        """Test case for get_items_api_v1_users_user_id_items_get
-
-        Get Items  # noqa: E501
-        """
-        pass
-
-    def test_get_user_api_v1_users_user_id_one_get(self):
-        """Test case for get_user_api_v1_users_user_id_one_get
-
-        Get User  # noqa: E501
-        """
-        pass
-
-    def test_update_items_api_v1_users_user_id_items_put(self):
-        """Test case for update_items_api_v1_users_user_id_items_put
-
-        Update Items  # noqa: E501
+        Get User Items  # noqa: E501
         """
         pass
 
@@ -67,6 +53,13 @@ class TestUsersApi(unittest.TestCase):
         """Test case for update_last_mess_api_v1_users_user_id_mess_put
 
         Update Last Mess  # noqa: E501
+        """
+        pass
+
+    def test_update_user_items_api_v1_users_user_id_items_put(self):
+        """Test case for update_user_items_api_v1_users_user_id_items_put
+
+        Update User Items  # noqa: E501
         """
         pass
 

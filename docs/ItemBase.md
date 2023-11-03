@@ -5,6 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **int** |  | [optional] 
 **code** | **str** |  | [optional] 
+**changed** | **datetime** |  | [optional] 
 **active** | **bool** |  | [optional] 
 **brand** | **str** |  | [optional] 
 **model** | **str** |  | [optional] 

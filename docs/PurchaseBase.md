@@ -21,10 +21,13 @@ Name | Type | Description | Notes
 **add_photo** | **str** |  | [optional] 
 **partner** | **bool** |  | [optional] 
 **paid** | **bool** |  | [optional] 
-**delivery_cdek_id** | **int** |  | [optional] 
+**delivery_cdek_id** | **str** |  | [optional] 
 **approve_size** | **bool** |  | [optional] 
 **size_id** | **int** |  | [optional] 
 **bot_id** | **int** |  | [optional] 
+**duplicate_check** | **str** |  | [optional] 
+**order_id** | **int** |  | [optional] 
+**delivery_cdek_photo_tg_file_id** | **str** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

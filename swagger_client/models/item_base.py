@@ -30,6 +30,7 @@ class ItemBase(object):
     swagger_types = {
         'id': 'int',
         'code': 'str',
+        'changed': 'datetime',
         'active': 'bool',
         'brand': 'str',
         'model': 'str',
@@ -52,6 +53,7 @@ class ItemBase(object):
     attribute_map = {
         'id': 'id',
         'code': 'code',
+        'changed': 'changed',
         'active': 'active',
         'brand': 'brand',
         'model': 'model',
@@ -71,10 +73,11 @@ class ItemBase(object):
         'dimension_id': 'dimension_id'
     }
 
-    def __init__(self, id=None, code=None, active=None, brand=None, model=None, title=None, retail_price=None, drop_price=None, link=None, photos=None, season=None, color=None, discount_price=None, new=None, code_hash=None, category_id=None, manufacturer_country=None, material=None, dimension_id=None):  # noqa: E501
+    def __init__(self, id=None, code=None, changed=None, active=None, brand=None, model=None, title=None, retail_price=None, drop_price=None, link=None, photos=None, season=None, color=None, discount_price=None, new=None, code_hash=None, category_id=None, manufacturer_country=None, material=None, dimension_id=None):  # noqa: E501
         """ItemBase - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._code = None
+        self._changed = None
         self._active = None
         self._brand = None
         self._model = None
@@ -97,6 +100,8 @@ class ItemBase(object):
             self.id = id
         if code is not None:
             self.code = code
+        if changed is not None:
+            self.changed = changed
         if active is not None:
             self.active = active
         if brand is not None:
@@ -173,6 +178,27 @@ class ItemBase(object):
         """
 
         self._code = code
+
+    @property
+    def changed(self):
+        """Gets the changed of this ItemBase.  # noqa: E501
+
+
+        :return: The changed of this ItemBase.  # noqa: E501
+        :rtype: datetime
+        """
+        return self._changed
+
+    @changed.setter
+    def changed(self, changed):
+        """Sets the changed of this ItemBase.
+
+
+        :param changed: The changed of this ItemBase.  # noqa: E501
+        :type: datetime
+        """
+
+        self._changed = changed
 
     @property
     def active(self):

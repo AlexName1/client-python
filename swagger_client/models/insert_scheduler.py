@@ -29,24 +29,24 @@ class InsertScheduler(object):
     """
     swagger_types = {
         'messages_tg_id': 'int',
-        'users_bots_id': 'int',
+        'user_bot_id': 'int',
         'trigger_datetime': 'datetime'
     }
 
     attribute_map = {
         'messages_tg_id': 'messages_tg_id',
-        'users_bots_id': 'users_bots_id',
+        'user_bot_id': 'user_bot_id',
         'trigger_datetime': 'trigger_datetime'
     }
 
-    def __init__(self, messages_tg_id=None, users_bots_id=None, trigger_datetime=None):  # noqa: E501
+    def __init__(self, messages_tg_id=None, user_bot_id=None, trigger_datetime=None):  # noqa: E501
         """InsertScheduler - a model defined in Swagger"""  # noqa: E501
         self._messages_tg_id = None
-        self._users_bots_id = None
+        self._user_bot_id = None
         self._trigger_datetime = None
         self.discriminator = None
         self.messages_tg_id = messages_tg_id
-        self.users_bots_id = users_bots_id
+        self.user_bot_id = user_bot_id
         self.trigger_datetime = trigger_datetime
 
     @property
@@ -73,27 +73,27 @@ class InsertScheduler(object):
         self._messages_tg_id = messages_tg_id
 
     @property
-    def users_bots_id(self):
-        """Gets the users_bots_id of this InsertScheduler.  # noqa: E501
+    def user_bot_id(self):
+        """Gets the user_bot_id of this InsertScheduler.  # noqa: E501
 
 
-        :return: The users_bots_id of this InsertScheduler.  # noqa: E501
+        :return: The user_bot_id of this InsertScheduler.  # noqa: E501
         :rtype: int
         """
-        return self._users_bots_id
+        return self._user_bot_id
 
-    @users_bots_id.setter
-    def users_bots_id(self, users_bots_id):
-        """Sets the users_bots_id of this InsertScheduler.
+    @user_bot_id.setter
+    def user_bot_id(self, user_bot_id):
+        """Sets the user_bot_id of this InsertScheduler.
 
 
-        :param users_bots_id: The users_bots_id of this InsertScheduler.  # noqa: E501
+        :param user_bot_id: The user_bot_id of this InsertScheduler.  # noqa: E501
         :type: int
         """
-        if users_bots_id is None:
-            raise ValueError("Invalid value for `users_bots_id`, must not be `None`")  # noqa: E501
+        if user_bot_id is None:
+            raise ValueError("Invalid value for `user_bot_id`, must not be `None`")  # noqa: E501
 
-        self._users_bots_id = users_bots_id
+        self._user_bot_id = user_bot_id
 
     @property
     def trigger_datetime(self):

@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**insert_or_update_api_v1_messages_tg_post**](MessagesTgApi.md#insert_or_update_api_v1_messages_tg_post) | **POST** /api/v1/messages-tg | Insert Or Update
 
 # **get_api_v1_messages_tg_name_get**
-> GetMessageTg get_api_v1_messages_tg_name_get(name, token)
+> MessageTgBase get_api_v1_messages_tg_name_get(name, token)
 
 Get
 
@@ -46,7 +46,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetMessageTg**](GetMessageTg.md)
+[**MessageTgBase**](MessageTgBase.md)
 
 ### Authorization
 

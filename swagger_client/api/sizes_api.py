@@ -135,7 +135,7 @@ class SizesApi(object):
 
         :param async_req bool
         :param str category:
-        :return: list[SizeBase]
+        :return: list[SizeBaseDb]
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -156,7 +156,7 @@ class SizesApi(object):
 
         :param async_req bool
         :param str category:
-        :return: list[SizeBase]
+        :return: list[SizeBaseDb]
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -206,7 +206,7 @@ class SizesApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='list[SizeBase]',  # noqa: E501
+            response_type='list[SizeBaseDb]',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),

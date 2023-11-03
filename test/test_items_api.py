@@ -63,38 +63,10 @@ class TestItemsApi(unittest.TestCase):
         """
         pass
 
-    def test_get_item_selectinload_size_category_api_v1_items_code_token_load_size_category_get(self):
-        """Test case for get_item_selectinload_size_category_api_v1_items_code_token_load_size_category_get
-
-        Get Item Selectinload Size Category  # noqa: E501
-        """
-        pass
-
-    def test_get_item_selectinload_size_centimeter_category_api_v1_items_code_token_load_size_centimeter_category_get(self):
-        """Test case for get_item_selectinload_size_centimeter_category_api_v1_items_code_token_load_size_centimeter_category_get
-
-        Get Item Selectinload Size Centimeter Category  # noqa: E501
-        """
-        pass
-
-    def test_get_items_action_api_v1_items_token_all_get(self):
-        """Test case for get_items_action_api_v1_items_token_all_get
-
-        Get Items Action  # noqa: E501
-        """
-        pass
-
     def test_get_items_action_new_codes_api_v1_items_token_all_new_codes_get(self):
         """Test case for get_items_action_new_codes_api_v1_items_token_all_new_codes_get
 
         Get Items Action New Codes  # noqa: E501
-        """
-        pass
-
-    def test_get_items_api_v1_items_category_brand_token_get(self):
-        """Test case for get_items_api_v1_items_category_brand_token_get
-
-        Get Items  # noqa: E501
         """
         pass
 

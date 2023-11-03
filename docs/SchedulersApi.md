@@ -59,7 +59,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_api_v1_schedulers_get**
-> list[GetScheduler] get_api_v1_schedulers_get(token)
+> list[SchedulerBaseDb] get_api_v1_schedulers_get(token)
 
 Get
 
@@ -95,7 +95,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**list[GetScheduler]**](GetScheduler.md)
+[**list[SchedulerBaseDb]**](SchedulerBaseDb.md)
 
 ### Authorization
 

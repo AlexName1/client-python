@@ -32,7 +32,14 @@ class BotBase(object):
         'token': 'str',
         'full_name': 'str',
         'username': 'str',
-        'id_bot': 'int'
+        'id_bot': 'int',
+        'server_ip': 'str',
+        'admin_list': 'str',
+        'text_channel_url': 'str',
+        'support_url': 'str',
+        'channel_url': 'str',
+        'info_url': 'str',
+        'comments_url': 'str'
     }
 
     attribute_map = {
@@ -40,16 +47,30 @@ class BotBase(object):
         'token': 'token',
         'full_name': 'full_name',
         'username': 'username',
-        'id_bot': 'id_bot'
+        'id_bot': 'id_bot',
+        'server_ip': 'server_ip',
+        'admin_list': 'admin_list',
+        'text_channel_url': 'text_channel_url',
+        'support_url': 'support_url',
+        'channel_url': 'channel_url',
+        'info_url': 'info_url',
+        'comments_url': 'comments_url'
     }
 
-    def __init__(self, id=None, token=None, full_name=None, username=None, id_bot=None):  # noqa: E501
+    def __init__(self, id=None, token=None, full_name=None, username=None, id_bot=None, server_ip=None, admin_list=None, text_channel_url=None, support_url=None, channel_url=None, info_url=None, comments_url=None):  # noqa: E501
         """BotBase - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._token = None
         self._full_name = None
         self._username = None
         self._id_bot = None
+        self._server_ip = None
+        self._admin_list = None
+        self._text_channel_url = None
+        self._support_url = None
+        self._channel_url = None
+        self._info_url = None
+        self._comments_url = None
         self.discriminator = None
         if id is not None:
             self.id = id
@@ -61,6 +82,20 @@ class BotBase(object):
             self.username = username
         if id_bot is not None:
             self.id_bot = id_bot
+        if server_ip is not None:
+            self.server_ip = server_ip
+        if admin_list is not None:
+            self.admin_list = admin_list
+        if text_channel_url is not None:
+            self.text_channel_url = text_channel_url
+        if support_url is not None:
+            self.support_url = support_url
+        if channel_url is not None:
+            self.channel_url = channel_url
+        if info_url is not None:
+            self.info_url = info_url
+        if comments_url is not None:
+            self.comments_url = comments_url
 
     @property
     def id(self):
@@ -166,6 +201,153 @@ class BotBase(object):
         """
 
         self._id_bot = id_bot
+
+    @property
+    def server_ip(self):
+        """Gets the server_ip of this BotBase.  # noqa: E501
+
+
+        :return: The server_ip of this BotBase.  # noqa: E501
+        :rtype: str
+        """
+        return self._server_ip
+
+    @server_ip.setter
+    def server_ip(self, server_ip):
+        """Sets the server_ip of this BotBase.
+
+
+        :param server_ip: The server_ip of this BotBase.  # noqa: E501
+        :type: str
+        """
+
+        self._server_ip = server_ip
+
+    @property
+    def admin_list(self):
+        """Gets the admin_list of this BotBase.  # noqa: E501
+
+
+        :return: The admin_list of this BotBase.  # noqa: E501
+        :rtype: str
+        """
+        return self._admin_list
+
+    @admin_list.setter
+    def admin_list(self, admin_list):
+        """Sets the admin_list of this BotBase.
+
+
+        :param admin_list: The admin_list of this BotBase.  # noqa: E501
+        :type: str
+        """
+
+        self._admin_list = admin_list
+
+    @property
+    def text_channel_url(self):
+        """Gets the text_channel_url of this BotBase.  # noqa: E501
+
+
+        :return: The text_channel_url of this BotBase.  # noqa: E501
+        :rtype: str
+        """
+        return self._text_channel_url
+
+    @text_channel_url.setter
+    def text_channel_url(self, text_channel_url):
+        """Sets the text_channel_url of this BotBase.
+
+
+        :param text_channel_url: The text_channel_url of this BotBase.  # noqa: E501
+        :type: str
+        """
+
+        self._text_channel_url = text_channel_url
+
+    @property
+    def support_url(self):
+        """Gets the support_url of this BotBase.  # noqa: E501
+
+
+        :return: The support_url of this BotBase.  # noqa: E501
+        :rtype: str
+        """
+        return self._support_url
+
+    @support_url.setter
+    def support_url(self, support_url):
+        """Sets the support_url of this BotBase.
+
+
+        :param support_url: The support_url of this BotBase.  # noqa: E501
+        :type: str
+        """
+
+        self._support_url = support_url
+
+    @property
+    def channel_url(self):
+        """Gets the channel_url of this BotBase.  # noqa: E501
+
+
+        :return: The channel_url of this BotBase.  # noqa: E501
+        :rtype: str
+        """
+        return self._channel_url
+
+    @channel_url.setter
+    def channel_url(self, channel_url):
+        """Sets the channel_url of this BotBase.
+
+
+        :param channel_url: The channel_url of this BotBase.  # noqa: E501
+        :type: str
+        """
+
+        self._channel_url = channel_url
+
+    @property
+    def info_url(self):
+        """Gets the info_url of this BotBase.  # noqa: E501
+
+
+        :return: The info_url of this BotBase.  # noqa: E501
+        :rtype: str
+        """
+        return self._info_url
+
+    @info_url.setter
+    def info_url(self, info_url):
+        """Sets the info_url of this BotBase.
+
+
+        :param info_url: The info_url of this BotBase.  # noqa: E501
+        :type: str
+        """
+
+        self._info_url = info_url
+
+    @property
+    def comments_url(self):
+        """Gets the comments_url of this BotBase.  # noqa: E501
+
+
+        :return: The comments_url of this BotBase.  # noqa: E501
+        :rtype: str
+        """
+        return self._comments_url
+
+    @comments_url.setter
+    def comments_url(self, comments_url):
+        """Sets the comments_url of this BotBase.
+
+
+        :param comments_url: The comments_url of this BotBase.  # noqa: E501
+        :type: str
+        """
+
+        self._comments_url = comments_url
 
     def to_dict(self):
         """Returns the model properties as a dict"""

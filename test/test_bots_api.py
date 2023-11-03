@@ -28,10 +28,17 @@ class TestBotsApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_get_api_v1_bots_token_get(self):
-        """Test case for get_api_v1_bots_token_get
+    def test_get_bot_api_v1_bots_token_get(self):
+        """Test case for get_bot_api_v1_bots_token_get
 
-        Get  # noqa: E501
+        Get Bot  # noqa: E501
+        """
+        pass
+
+    def test_get_bots_api_v1_bots_get(self):
+        """Test case for get_bots_api_v1_bots_get
+
+        Get Bots  # noqa: E501
         """
         pass
 

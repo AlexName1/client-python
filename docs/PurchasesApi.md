@@ -4,19 +4,22 @@ All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**delete_api_v1_purchases_order_id_token_delete**](PurchasesApi.md#delete_api_v1_purchases_order_id_token_delete) | **DELETE** /api/v1/purchases/{order_id}/{token} | Delete
+[**delete_purchase_api_v1_purchases_purchase_id_delete**](PurchasesApi.md#delete_purchase_api_v1_purchases_purchase_id_delete) | **DELETE** /api/v1/purchases/{purchase_id} | Delete Purchase
 [**get_active_orders_api_v1_purchases_token_active_get**](PurchasesApi.md#get_active_orders_api_v1_purchases_token_active_get) | **GET** /api/v1/purchases/{token}/active | Get Active Orders
-[**get_all_api_v1_purchases_token_get**](PurchasesApi.md#get_all_api_v1_purchases_token_get) | **GET** /api/v1/purchases/{token} | Get All
+[**get_all_api_v1_purchases_get**](PurchasesApi.md#get_all_api_v1_purchases_get) | **GET** /api/v1/purchases | Get All
+[**get_all_temporally_api_v1_purchases_temporally_bot_id_get**](PurchasesApi.md#get_all_temporally_api_v1_purchases_temporally_bot_id_get) | **GET** /api/v1/purchases/temporally/{bot_id} | Get All Temporally
 [**get_count_api_v1_purchases_token_status_count_get**](PurchasesApi.md#get_count_api_v1_purchases_token_status_count_get) | **GET** /api/v1/purchases/{token}/{status}/count | Get Count
 [**get_order_by_id_api_v1_purchases_order_id_token_one_get**](PurchasesApi.md#get_order_by_id_api_v1_purchases_order_id_token_one_get) | **GET** /api/v1/purchases/{order_id}/{token}/one | Get Order By Id
+[**get_purchase_by_id_api_v1_purchases_purchase_id_get**](PurchasesApi.md#get_purchase_by_id_api_v1_purchases_purchase_id_get) | **GET** /api/v1/purchases/{purchase_id} | Get Purchase By Id
 [**get_user_orders_api_v1_purchases_token_users_user_id_get**](PurchasesApi.md#get_user_orders_api_v1_purchases_token_users_user_id_get) | **GET** /api/v1/purchases/{token}/users/{user_id} | Get User Orders
 [**insert_new_api_v1_purchases_token_new_post**](PurchasesApi.md#insert_new_api_v1_purchases_token_new_post) | **POST** /api/v1/purchases/{token}/new | Insert New
 [**update_api_v1_purchases_token_put**](PurchasesApi.md#update_api_v1_purchases_token_put) | **PUT** /api/v1/purchases/{token} | Update
+[**update_only_api_v1_purchases_put**](PurchasesApi.md#update_only_api_v1_purchases_put) | **PUT** /api/v1/purchases | Update Only
 
-# **delete_api_v1_purchases_order_id_token_delete**
-> object delete_api_v1_purchases_order_id_token_delete(order_id, token)
+# **delete_purchase_api_v1_purchases_purchase_id_delete**
+> object delete_purchase_api_v1_purchases_purchase_id_delete(purchase_id)
 
-Delete
+Delete Purchase
 
 ### Example
 ```python
@@ -32,23 +35,21 @@ configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
 api_instance = swagger_client.PurchasesApi(swagger_client.ApiClient(configuration))
-order_id = 56 # int | 
-token = 'token_example' # str | 
+purchase_id = 56 # int | 
 
 try:
-    # Delete
-    api_response = api_instance.delete_api_v1_purchases_order_id_token_delete(order_id, token)
+    # Delete Purchase
+    api_response = api_instance.delete_purchase_api_v1_purchases_purchase_id_delete(purchase_id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling PurchasesApi->delete_api_v1_purchases_order_id_token_delete: %s\n" % e)
+    print("Exception when calling PurchasesApi->delete_purchase_api_v1_purchases_purchase_id_delete: %s\n" % e)
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **order_id** | **int**|  | 
- **token** | **str**|  | 
+ **purchase_id** | **int**|  | 
 
 ### Return type
 
@@ -66,7 +67,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_active_orders_api_v1_purchases_token_active_get**
-> list[PurchaseWithDeliveryCdek] get_active_orders_api_v1_purchases_token_active_get(token, ds=ds)
+> list[PurchaseBaseDb] get_active_orders_api_v1_purchases_token_active_get(token, ds=ds)
 
 Get Active Orders
 
@@ -104,7 +105,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**list[PurchaseWithDeliveryCdek]**](PurchaseWithDeliveryCdek.md)
+[**list[PurchaseBaseDb]**](PurchaseBaseDb.md)
 
 ### Authorization
 
@@ -117,8 +118,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **get_all_api_v1_purchases_token_get**
-> list[PurchaseWithSize] get_all_api_v1_purchases_token_get(token)
+# **get_all_api_v1_purchases_get**
+> list[PurchaseBaseDb] get_all_api_v1_purchases_get(token)
 
 Get All
 
@@ -140,10 +141,10 @@ token = 'token_example' # str |
 
 try:
     # Get All
-    api_response = api_instance.get_all_api_v1_purchases_token_get(token)
+    api_response = api_instance.get_all_api_v1_purchases_get(token)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling PurchasesApi->get_all_api_v1_purchases_token_get: %s\n" % e)
+    print("Exception when calling PurchasesApi->get_all_api_v1_purchases_get: %s\n" % e)
 ```
 
 ### Parameters
@@ -154,7 +155,57 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**list[PurchaseWithSize]**](PurchaseWithSize.md)
+[**list[PurchaseBaseDb]**](PurchaseBaseDb.md)
+
+### Authorization
+
+[HTTPBasic](../README.md#HTTPBasic)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **get_all_temporally_api_v1_purchases_temporally_bot_id_get**
+> list[PurchaseBase] get_all_temporally_api_v1_purchases_temporally_bot_id_get(bot_id)
+
+Get All Temporally
+
+### Example
+```python
+from __future__ import print_function
+import time
+import swagger_client
+from swagger_client.rest import ApiException
+from pprint import pprint
+# Configure HTTP basic authorization: HTTPBasic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
+
+# create an instance of the API class
+api_instance = swagger_client.PurchasesApi(swagger_client.ApiClient(configuration))
+bot_id = 56 # int | 
+
+try:
+    # Get All Temporally
+    api_response = api_instance.get_all_temporally_api_v1_purchases_temporally_bot_id_get(bot_id)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling PurchasesApi->get_all_temporally_api_v1_purchases_temporally_bot_id_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bot_id** | **int**|  | 
+
+### Return type
+
+[**list[PurchaseBase]**](PurchaseBase.md)
 
 ### Authorization
 
@@ -220,7 +271,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_order_by_id_api_v1_purchases_order_id_token_one_get**
-> Purchase get_order_by_id_api_v1_purchases_order_id_token_one_get(order_id, token)
+> PurchaseBaseDb get_order_by_id_api_v1_purchases_order_id_token_one_get(order_id, token)
 
 Get Order By Id
 
@@ -258,7 +309,67 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Purchase**](Purchase.md)
+[**PurchaseBaseDb**](PurchaseBaseDb.md)
+
+### Authorization
+
+[HTTPBasic](../README.md#HTTPBasic)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **get_purchase_by_id_api_v1_purchases_purchase_id_get**
+> PurchaseBaseDb get_purchase_by_id_api_v1_purchases_purchase_id_get(purchase_id, token, delivery_cdek=delivery_cdek, waybill=waybill, stock=stock, user_stock=user_stock)
+
+Get Purchase By Id
+
+### Example
+```python
+from __future__ import print_function
+import time
+import swagger_client
+from swagger_client.rest import ApiException
+from pprint import pprint
+# Configure HTTP basic authorization: HTTPBasic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
+
+# create an instance of the API class
+api_instance = swagger_client.PurchasesApi(swagger_client.ApiClient(configuration))
+purchase_id = 56 # int | 
+token = 'token_example' # str | 
+delivery_cdek = true # bool |  (optional)
+waybill = true # bool |  (optional)
+stock = true # bool |  (optional)
+user_stock = true # bool |  (optional)
+
+try:
+    # Get Purchase By Id
+    api_response = api_instance.get_purchase_by_id_api_v1_purchases_purchase_id_get(purchase_id, token, delivery_cdek=delivery_cdek, waybill=waybill, stock=stock, user_stock=user_stock)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling PurchasesApi->get_purchase_by_id_api_v1_purchases_purchase_id_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **purchase_id** | **int**|  | 
+ **token** | **str**|  | 
+ **delivery_cdek** | **bool**|  | [optional] 
+ **waybill** | **bool**|  | [optional] 
+ **stock** | **bool**|  | [optional] 
+ **user_stock** | **bool**|  | [optional] 
+
+### Return type
+
+[**PurchaseBaseDb**](PurchaseBaseDb.md)
 
 ### Authorization
 
@@ -272,7 +383,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_user_orders_api_v1_purchases_token_users_user_id_get**
-> list[PurchaseBase] get_user_orders_api_v1_purchases_token_users_user_id_get(token, user_id, status=status)
+> list[PurchaseBaseDb] get_user_orders_api_v1_purchases_token_users_user_id_get(token, user_id, status=status)
 
 Get User Orders
 
@@ -312,7 +423,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**list[PurchaseBase]**](PurchaseBase.md)
+[**list[PurchaseBaseDb]**](PurchaseBaseDb.md)
 
 ### Authorization
 
@@ -344,7 +455,7 @@ configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
 api_instance = swagger_client.PurchasesApi(swagger_client.ApiClient(configuration))
-body = swagger_client.PurchaseInsert() # PurchaseInsert | 
+body = swagger_client.InsertPurchase() # InsertPurchase | 
 user_id = 56 # int | 
 token = 'token_example' # str | 
 partner = false # bool |  (optional) (default to false)
@@ -361,7 +472,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**PurchaseInsert**](PurchaseInsert.md)|  | 
+ **body** | [**InsertPurchase**](InsertPurchase.md)|  | 
  **user_id** | **int**|  | 
  **token** | **str**|  | 
  **partner** | **bool**|  | [optional] [default to false]
@@ -382,7 +493,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_api_v1_purchases_token_put**
-> PurchaseBase update_api_v1_purchases_token_put(body, token)
+> PurchaseBaseDb update_api_v1_purchases_token_put(body, token)
 
 Update
 
@@ -420,7 +531,57 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PurchaseBase**](PurchaseBase.md)
+[**PurchaseBaseDb**](PurchaseBaseDb.md)
+
+### Authorization
+
+[HTTPBasic](../README.md#HTTPBasic)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **update_only_api_v1_purchases_put**
+> object update_only_api_v1_purchases_put(body)
+
+Update Only
+
+### Example
+```python
+from __future__ import print_function
+import time
+import swagger_client
+from swagger_client.rest import ApiException
+from pprint import pprint
+# Configure HTTP basic authorization: HTTPBasic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
+
+# create an instance of the API class
+api_instance = swagger_client.PurchasesApi(swagger_client.ApiClient(configuration))
+body = swagger_client.UpdatePurchase() # UpdatePurchase | 
+
+try:
+    # Update Only
+    api_response = api_instance.update_only_api_v1_purchases_put(body)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling PurchasesApi->update_only_api_v1_purchases_put: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**UpdatePurchase**](UpdatePurchase.md)|  | 
+
+### Return type
+
+**object**
 
 ### Authorization
 
