@@ -7,7 +7,6 @@ Method | HTTP request | Description
 [**delete_purchase_api_v1_purchases_purchase_id_delete**](PurchasesApi.md#delete_purchase_api_v1_purchases_purchase_id_delete) | **DELETE** /api/v1/purchases/{purchase_id} | Delete Purchase
 [**get_active_orders_api_v1_purchases_token_active_get**](PurchasesApi.md#get_active_orders_api_v1_purchases_token_active_get) | **GET** /api/v1/purchases/{token}/active | Get Active Orders
 [**get_all_api_v1_purchases_get**](PurchasesApi.md#get_all_api_v1_purchases_get) | **GET** /api/v1/purchases | Get All
-[**get_all_temporally_api_v1_purchases_temporally_bot_id_get**](PurchasesApi.md#get_all_temporally_api_v1_purchases_temporally_bot_id_get) | **GET** /api/v1/purchases/temporally/{bot_id} | Get All Temporally
 [**get_count_api_v1_purchases_token_status_count_get**](PurchasesApi.md#get_count_api_v1_purchases_token_status_count_get) | **GET** /api/v1/purchases/{token}/{status}/count | Get Count
 [**get_order_by_id_api_v1_purchases_order_id_token_one_get**](PurchasesApi.md#get_order_by_id_api_v1_purchases_order_id_token_one_get) | **GET** /api/v1/purchases/{order_id}/{token}/one | Get Order By Id
 [**get_purchase_by_id_api_v1_purchases_purchase_id_get**](PurchasesApi.md#get_purchase_by_id_api_v1_purchases_purchase_id_get) | **GET** /api/v1/purchases/{purchase_id} | Get Purchase By Id
@@ -156,56 +155,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**list[PurchaseBaseDb]**](PurchaseBaseDb.md)
-
-### Authorization
-
-[HTTPBasic](../README.md#HTTPBasic)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **get_all_temporally_api_v1_purchases_temporally_bot_id_get**
-> list[PurchaseBase] get_all_temporally_api_v1_purchases_temporally_bot_id_get(bot_id)
-
-Get All Temporally
-
-### Example
-```python
-from __future__ import print_function
-import time
-import swagger_client
-from swagger_client.rest import ApiException
-from pprint import pprint
-# Configure HTTP basic authorization: HTTPBasic
-configuration = swagger_client.Configuration()
-configuration.username = 'YOUR_USERNAME'
-configuration.password = 'YOUR_PASSWORD'
-
-# create an instance of the API class
-api_instance = swagger_client.PurchasesApi(swagger_client.ApiClient(configuration))
-bot_id = 56 # int | 
-
-try:
-    # Get All Temporally
-    api_response = api_instance.get_all_temporally_api_v1_purchases_temporally_bot_id_get(bot_id)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling PurchasesApi->get_all_temporally_api_v1_purchases_temporally_bot_id_get: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **bot_id** | **int**|  | 
-
-### Return type
-
-[**list[PurchaseBase]**](PurchaseBase.md)
 
 ### Authorization
 

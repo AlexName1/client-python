@@ -11,7 +11,6 @@ Method | HTTP request | Description
 [**get_order_by_id_api_v1_orders_order_id_get**](OrdersApi.md#get_order_by_id_api_v1_orders_order_id_get) | **GET** /api/v1/orders/{order_id} | Get Order By Id
 [**get_user_orders_api_v1_orders_users_user_id_get**](OrdersApi.md#get_user_orders_api_v1_orders_users_user_id_get) | **GET** /api/v1/orders/users/{user_id} | Get User Orders
 [**insert_order_api_v1_orders_post**](OrdersApi.md#insert_order_api_v1_orders_post) | **POST** /api/v1/orders | Insert Order
-[**insert_order_temporally_api_v1_orders_temporally_post**](OrdersApi.md#insert_order_temporally_api_v1_orders_temporally_post) | **POST** /api/v1/orders/temporally | Insert Order Temporally
 
 # **delete_order_api_v1_orders_order_id_delete**
 > object delete_order_api_v1_orders_order_id_delete(order_id)
@@ -375,56 +374,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **body** | [**InsertOrder**](InsertOrder.md)|  | 
  **token** | **str**|  | 
-
-### Return type
-
-[**OrderBaseDb**](OrderBaseDb.md)
-
-### Authorization
-
-[HTTPBasic](../README.md#HTTPBasic)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **insert_order_temporally_api_v1_orders_temporally_post**
-> OrderBaseDb insert_order_temporally_api_v1_orders_temporally_post(body)
-
-Insert Order Temporally
-
-### Example
-```python
-from __future__ import print_function
-import time
-import swagger_client
-from swagger_client.rest import ApiException
-from pprint import pprint
-# Configure HTTP basic authorization: HTTPBasic
-configuration = swagger_client.Configuration()
-configuration.username = 'YOUR_USERNAME'
-configuration.password = 'YOUR_PASSWORD'
-
-# create an instance of the API class
-api_instance = swagger_client.OrdersApi(swagger_client.ApiClient(configuration))
-body = swagger_client.InsertOrderTemporally() # InsertOrderTemporally | 
-
-try:
-    # Insert Order Temporally
-    api_response = api_instance.insert_order_temporally_api_v1_orders_temporally_post(body)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling OrdersApi->insert_order_temporally_api_v1_orders_temporally_post: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | [**InsertOrderTemporally**](InsertOrderTemporally.md)|  | 
 
 ### Return type
 

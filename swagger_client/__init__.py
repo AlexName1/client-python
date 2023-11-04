@@ -54,7 +54,6 @@ from swagger_client.models.info_item_update_new import InfoItemUpdateNew
 from swagger_client.models.insert_basket import InsertBasket
 from swagger_client.models.insert_message_tg import InsertMessageTg
 from swagger_client.models.insert_order import InsertOrder
-from swagger_client.models.insert_order_temporally import InsertOrderTemporally
 from swagger_client.models.insert_purchase import InsertPurchase
 from swagger_client.models.insert_scheduler import InsertScheduler
 from swagger_client.models.item_base import ItemBase
@@ -65,7 +64,6 @@ from swagger_client.models.model_count import ModelCount
 from swagger_client.models.order_base import OrderBase
 from swagger_client.models.order_base_db import OrderBaseDb
 from swagger_client.models.partner_base import PartnerBase
-from swagger_client.models.purchase_base import PurchaseBase
 from swagger_client.models.purchase_base_db import PurchaseBaseDb
 from swagger_client.models.purchase_update import PurchaseUpdate
 from swagger_client.models.quantity_base import QuantityBase

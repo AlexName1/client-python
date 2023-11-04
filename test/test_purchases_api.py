@@ -49,13 +49,6 @@ class TestPurchasesApi(unittest.TestCase):
         """
         pass
 
-    def test_get_all_temporally_api_v1_purchases_temporally_bot_id_get(self):
-        """Test case for get_all_temporally_api_v1_purchases_temporally_bot_id_get
-
-        Get All Temporally  # noqa: E501
-        """
-        pass
-
     def test_get_count_api_v1_purchases_token_status_count_get(self):
         """Test case for get_count_api_v1_purchases_token_status_count_get
 

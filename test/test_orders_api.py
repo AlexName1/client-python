@@ -77,13 +77,6 @@ class TestOrdersApi(unittest.TestCase):
         """
         pass
 
-    def test_insert_order_temporally_api_v1_orders_temporally_post(self):
-        """Test case for insert_order_temporally_api_v1_orders_temporally_post
-
-        Insert Order Temporally  # noqa: E501
-        """
-        pass
-
 
 if __name__ == '__main__':
     unittest.main()

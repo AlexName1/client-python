@@ -113,11 +113,9 @@ Class | Method | HTTP request | Description
 *OrdersApi* | [**get_order_by_id_api_v1_orders_order_id_get**](docs/OrdersApi.md#get_order_by_id_api_v1_orders_order_id_get) | **GET** /api/v1/orders/{order_id} | Get Order By Id
 *OrdersApi* | [**get_user_orders_api_v1_orders_users_user_id_get**](docs/OrdersApi.md#get_user_orders_api_v1_orders_users_user_id_get) | **GET** /api/v1/orders/users/{user_id} | Get User Orders
 *OrdersApi* | [**insert_order_api_v1_orders_post**](docs/OrdersApi.md#insert_order_api_v1_orders_post) | **POST** /api/v1/orders | Insert Order
-*OrdersApi* | [**insert_order_temporally_api_v1_orders_temporally_post**](docs/OrdersApi.md#insert_order_temporally_api_v1_orders_temporally_post) | **POST** /api/v1/orders/temporally | Insert Order Temporally
 *PurchasesApi* | [**delete_purchase_api_v1_purchases_purchase_id_delete**](docs/PurchasesApi.md#delete_purchase_api_v1_purchases_purchase_id_delete) | **DELETE** /api/v1/purchases/{purchase_id} | Delete Purchase
 *PurchasesApi* | [**get_active_orders_api_v1_purchases_token_active_get**](docs/PurchasesApi.md#get_active_orders_api_v1_purchases_token_active_get) | **GET** /api/v1/purchases/{token}/active | Get Active Orders
 *PurchasesApi* | [**get_all_api_v1_purchases_get**](docs/PurchasesApi.md#get_all_api_v1_purchases_get) | **GET** /api/v1/purchases | Get All
-*PurchasesApi* | [**get_all_temporally_api_v1_purchases_temporally_bot_id_get**](docs/PurchasesApi.md#get_all_temporally_api_v1_purchases_temporally_bot_id_get) | **GET** /api/v1/purchases/temporally/{bot_id} | Get All Temporally
 *PurchasesApi* | [**get_count_api_v1_purchases_token_status_count_get**](docs/PurchasesApi.md#get_count_api_v1_purchases_token_status_count_get) | **GET** /api/v1/purchases/{token}/{status}/count | Get Count
 *PurchasesApi* | [**get_order_by_id_api_v1_purchases_order_id_token_one_get**](docs/PurchasesApi.md#get_order_by_id_api_v1_purchases_order_id_token_one_get) | **GET** /api/v1/purchases/{order_id}/{token}/one | Get Order By Id
 *PurchasesApi* | [**get_purchase_by_id_api_v1_purchases_purchase_id_get**](docs/PurchasesApi.md#get_purchase_by_id_api_v1_purchases_purchase_id_get) | **GET** /api/v1/purchases/{purchase_id} | Get Purchase By Id
@@ -164,7 +162,6 @@ Class | Method | HTTP request | Description
  - [InsertBasket](docs/InsertBasket.md)
  - [InsertMessageTg](docs/InsertMessageTg.md)
  - [InsertOrder](docs/InsertOrder.md)
- - [InsertOrderTemporally](docs/InsertOrderTemporally.md)
  - [InsertPurchase](docs/InsertPurchase.md)
  - [InsertScheduler](docs/InsertScheduler.md)
  - [ItemBase](docs/ItemBase.md)
@@ -175,7 +172,6 @@ Class | Method | HTTP request | Description
  - [OrderBase](docs/OrderBase.md)
  - [OrderBaseDb](docs/OrderBaseDb.md)
  - [PartnerBase](docs/PartnerBase.md)
- - [PurchaseBase](docs/PurchaseBase.md)
  - [PurchaseBaseDb](docs/PurchaseBaseDb.md)
  - [PurchaseUpdate](docs/PurchaseUpdate.md)
  - [QuantityBase](docs/QuantityBase.md)

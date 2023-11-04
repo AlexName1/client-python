@@ -31,25 +31,22 @@ class UpdatePurchase(object):
         'purchase_id': 'int',
         'add_info': 'str',
         'add_photo': 'str',
-        'status': 'int',
-        'order_id': 'int'
+        'status': 'int'
     }
 
     attribute_map = {
         'purchase_id': 'purchase_id',
         'add_info': 'add_info',
         'add_photo': 'add_photo',
-        'status': 'status',
-        'order_id': 'order_id'
+        'status': 'status'
     }
 
-    def __init__(self, purchase_id=None, add_info=None, add_photo=None, status=None, order_id=None):  # noqa: E501
+    def __init__(self, purchase_id=None, add_info=None, add_photo=None, status=None):  # noqa: E501
         """UpdatePurchase - a model defined in Swagger"""  # noqa: E501
         self._purchase_id = None
         self._add_info = None
         self._add_photo = None
         self._status = None
-        self._order_id = None
         self.discriminator = None
         self.purchase_id = purchase_id
         if add_info is not None:
@@ -58,8 +55,6 @@ class UpdatePurchase(object):
             self.add_photo = add_photo
         if status is not None:
             self.status = status
-        if order_id is not None:
-            self.order_id = order_id
 
     @property
     def purchase_id(self):
@@ -146,27 +141,6 @@ class UpdatePurchase(object):
         """
 
         self._status = status
-
-    @property
-    def order_id(self):
-        """Gets the order_id of this UpdatePurchase.  # noqa: E501
-
-
-        :return: The order_id of this UpdatePurchase.  # noqa: E501
-        :rtype: int
-        """
-        return self._order_id
-
-    @order_id.setter
-    def order_id(self, order_id):
-        """Sets the order_id of this UpdatePurchase.
-
-
-        :param order_id: The order_id of this UpdatePurchase.  # noqa: E501
-        :type: int
-        """
-
-        self._order_id = order_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""
