@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**user_id** | **int** |  | 
+**user_bot_id** | **int** |  | 
 **size_id** | **int** |  | 
 **price** | **int** |  | 
 **code** | **str** |  | 

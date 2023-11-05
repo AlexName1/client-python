@@ -28,53 +28,53 @@ class InsertBasket(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'user_id': 'int',
+        'user_bot_id': 'int',
         'size_id': 'int',
         'price': 'int',
         'code': 'str'
     }
 
     attribute_map = {
-        'user_id': 'user_id',
+        'user_bot_id': 'user_bot_id',
         'size_id': 'size_id',
         'price': 'price',
         'code': 'code'
     }
 
-    def __init__(self, user_id=None, size_id=None, price=None, code=None):  # noqa: E501
+    def __init__(self, user_bot_id=None, size_id=None, price=None, code=None):  # noqa: E501
         """InsertBasket - a model defined in Swagger"""  # noqa: E501
-        self._user_id = None
+        self._user_bot_id = None
         self._size_id = None
         self._price = None
         self._code = None
         self.discriminator = None
-        self.user_id = user_id
+        self.user_bot_id = user_bot_id
         self.size_id = size_id
         self.price = price
         self.code = code
 
     @property
-    def user_id(self):
-        """Gets the user_id of this InsertBasket.  # noqa: E501
+    def user_bot_id(self):
+        """Gets the user_bot_id of this InsertBasket.  # noqa: E501
 
 
-        :return: The user_id of this InsertBasket.  # noqa: E501
+        :return: The user_bot_id of this InsertBasket.  # noqa: E501
         :rtype: int
         """
-        return self._user_id
+        return self._user_bot_id
 
-    @user_id.setter
-    def user_id(self, user_id):
-        """Sets the user_id of this InsertBasket.
+    @user_bot_id.setter
+    def user_bot_id(self, user_bot_id):
+        """Sets the user_bot_id of this InsertBasket.
 
 
-        :param user_id: The user_id of this InsertBasket.  # noqa: E501
+        :param user_bot_id: The user_bot_id of this InsertBasket.  # noqa: E501
         :type: int
         """
-        if user_id is None:
-            raise ValueError("Invalid value for `user_id`, must not be `None`")  # noqa: E501
+        if user_bot_id is None:
+            raise ValueError("Invalid value for `user_bot_id`, must not be `None`")  # noqa: E501
 
-        self._user_id = user_id
+        self._user_bot_id = user_bot_id
 
     @property
     def size_id(self):

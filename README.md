@@ -75,7 +75,7 @@ Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *BarcodesApi* | [**insert_api_v1_barcodes_post**](docs/BarcodesApi.md#insert_api_v1_barcodes_post) | **POST** /api/v1/barcodes | Insert
 *BasketsApi* | [**delete_one_basket_api_v1_baskets_basket_id_delete**](docs/BasketsApi.md#delete_one_basket_api_v1_baskets_basket_id_delete) | **DELETE** /api/v1/baskets/{basket_id} | Delete One Basket
-*BasketsApi* | [**delete_user_basket_api_v1_baskets_users_user_id_delete**](docs/BasketsApi.md#delete_user_basket_api_v1_baskets_users_user_id_delete) | **DELETE** /api/v1/baskets/users/{user_id} | Delete User Basket
+*BasketsApi* | [**delete_user_basket_api_v1_baskets_users_bots_user_bot_id_delete**](docs/BasketsApi.md#delete_user_basket_api_v1_baskets_users_bots_user_bot_id_delete) | **DELETE** /api/v1/baskets/users_bots/{user_bot_id} | Delete User Basket
 *BasketsApi* | [**get_basket_api_v1_baskets_get**](docs/BasketsApi.md#get_basket_api_v1_baskets_get) | **GET** /api/v1/baskets | Get Basket
 *BasketsApi* | [**get_count_basket_api_v1_baskets_all_count_get**](docs/BasketsApi.md#get_count_basket_api_v1_baskets_all_count_get) | **GET** /api/v1/baskets/all/count | Get Count Basket
 *BasketsApi* | [**get_list_id_basket_api_v1_baskets_all_list_id_get**](docs/BasketsApi.md#get_list_id_basket_api_v1_baskets_all_list_id_get) | **GET** /api/v1/baskets/all/list_id | Get List Id Basket

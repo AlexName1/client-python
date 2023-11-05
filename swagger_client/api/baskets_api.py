@@ -125,45 +125,43 @@ class BasketsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def delete_user_basket_api_v1_baskets_users_user_id_delete(self, user_id, token, **kwargs):  # noqa: E501
+    def delete_user_basket_api_v1_baskets_users_bots_user_bot_id_delete(self, user_bot_id, **kwargs):  # noqa: E501
         """Delete User Basket  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.delete_user_basket_api_v1_baskets_users_user_id_delete(user_id, token, async_req=True)
+        >>> thread = api.delete_user_basket_api_v1_baskets_users_bots_user_bot_id_delete(user_bot_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param int user_id: (required)
-        :param str token: (required)
+        :param int user_bot_id: (required)
         :return: object
                  If the method is called asynchronously,
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.delete_user_basket_api_v1_baskets_users_user_id_delete_with_http_info(user_id, token, **kwargs)  # noqa: E501
+            return self.delete_user_basket_api_v1_baskets_users_bots_user_bot_id_delete_with_http_info(user_bot_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.delete_user_basket_api_v1_baskets_users_user_id_delete_with_http_info(user_id, token, **kwargs)  # noqa: E501
+            (data) = self.delete_user_basket_api_v1_baskets_users_bots_user_bot_id_delete_with_http_info(user_bot_id, **kwargs)  # noqa: E501
             return data
 
-    def delete_user_basket_api_v1_baskets_users_user_id_delete_with_http_info(self, user_id, token, **kwargs):  # noqa: E501
+    def delete_user_basket_api_v1_baskets_users_bots_user_bot_id_delete_with_http_info(self, user_bot_id, **kwargs):  # noqa: E501
         """Delete User Basket  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.delete_user_basket_api_v1_baskets_users_user_id_delete_with_http_info(user_id, token, async_req=True)
+        >>> thread = api.delete_user_basket_api_v1_baskets_users_bots_user_bot_id_delete_with_http_info(user_bot_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param int user_id: (required)
-        :param str token: (required)
+        :param int user_bot_id: (required)
         :return: object
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['user_id', 'token']  # noqa: E501
+        all_params = ['user_bot_id']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -174,28 +172,22 @@ class BasketsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method delete_user_basket_api_v1_baskets_users_user_id_delete" % key
+                    " to method delete_user_basket_api_v1_baskets_users_bots_user_bot_id_delete" % key
                 )
             params[key] = val
         del params['kwargs']
-        # verify the required parameter 'user_id' is set
-        if ('user_id' not in params or
-                params['user_id'] is None):
-            raise ValueError("Missing the required parameter `user_id` when calling `delete_user_basket_api_v1_baskets_users_user_id_delete`")  # noqa: E501
-        # verify the required parameter 'token' is set
-        if ('token' not in params or
-                params['token'] is None):
-            raise ValueError("Missing the required parameter `token` when calling `delete_user_basket_api_v1_baskets_users_user_id_delete`")  # noqa: E501
+        # verify the required parameter 'user_bot_id' is set
+        if ('user_bot_id' not in params or
+                params['user_bot_id'] is None):
+            raise ValueError("Missing the required parameter `user_bot_id` when calling `delete_user_basket_api_v1_baskets_users_bots_user_bot_id_delete`")  # noqa: E501
 
         collection_formats = {}
 
         path_params = {}
-        if 'user_id' in params:
-            path_params['user_id'] = params['user_id']  # noqa: E501
+        if 'user_bot_id' in params:
+            path_params['user_bot_id'] = params['user_bot_id']  # noqa: E501
 
         query_params = []
-        if 'token' in params:
-            query_params.append(('token', params['token']))  # noqa: E501
 
         header_params = {}
 
@@ -211,7 +203,7 @@ class BasketsApi(object):
         auth_settings = ['HTTPBasic']  # noqa: E501
 
         return self.api_client.call_api(
-            '/api/v1/baskets/users/{user_id}', 'DELETE',
+            '/api/v1/baskets/users_bots/{user_bot_id}', 'DELETE',
             path_params,
             query_params,
             header_params,
@@ -638,45 +630,43 @@ class BasketsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def insert_api_v1_baskets_post(self, body, token, **kwargs):  # noqa: E501
+    def insert_api_v1_baskets_post(self, body, **kwargs):  # noqa: E501
         """Insert  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.insert_api_v1_baskets_post(body, token, async_req=True)
+        >>> thread = api.insert_api_v1_baskets_post(body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
         :param InsertBasket body: (required)
-        :param str token: (required)
         :return: object
                  If the method is called asynchronously,
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.insert_api_v1_baskets_post_with_http_info(body, token, **kwargs)  # noqa: E501
+            return self.insert_api_v1_baskets_post_with_http_info(body, **kwargs)  # noqa: E501
         else:
-            (data) = self.insert_api_v1_baskets_post_with_http_info(body, token, **kwargs)  # noqa: E501
+            (data) = self.insert_api_v1_baskets_post_with_http_info(body, **kwargs)  # noqa: E501
             return data
 
-    def insert_api_v1_baskets_post_with_http_info(self, body, token, **kwargs):  # noqa: E501
+    def insert_api_v1_baskets_post_with_http_info(self, body, **kwargs):  # noqa: E501
         """Insert  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.insert_api_v1_baskets_post_with_http_info(body, token, async_req=True)
+        >>> thread = api.insert_api_v1_baskets_post_with_http_info(body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
         :param InsertBasket body: (required)
-        :param str token: (required)
         :return: object
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['body', 'token']  # noqa: E501
+        all_params = ['body']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -695,18 +685,12 @@ class BasketsApi(object):
         if ('body' not in params or
                 params['body'] is None):
             raise ValueError("Missing the required parameter `body` when calling `insert_api_v1_baskets_post`")  # noqa: E501
-        # verify the required parameter 'token' is set
-        if ('token' not in params or
-                params['token'] is None):
-            raise ValueError("Missing the required parameter `token` when calling `insert_api_v1_baskets_post`")  # noqa: E501
 
         collection_formats = {}
 
         path_params = {}
 
         query_params = []
-        if 'token' in params:
-            query_params.append(('token', params['token']))  # noqa: E501
 
         header_params = {}
 
