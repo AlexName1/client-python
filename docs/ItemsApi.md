@@ -284,7 +284,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_items_action_new_codes_api_v1_items_token_all_new_codes_get**
-> list[object] get_items_action_new_codes_api_v1_items_token_all_new_codes_get(token, action, category=category, size=size, color=color, season=season, sneaker=sneaker)
+> list[str] get_items_action_new_codes_api_v1_items_token_all_new_codes_get(token, action, category=category, size=size, color=color, season=season, sneaker=sneaker)
 
 Get Items Action New Codes
 
@@ -332,7 +332,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**list[object]**
+**list[str]**
 
 ### Authorization
 
