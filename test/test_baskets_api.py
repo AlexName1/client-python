@@ -35,8 +35,8 @@ class TestBasketsApi(unittest.TestCase):
         """
         pass
 
-    def test_delete_user_basket_api_v1_baskets_users_user_id_delete(self):
-        """Test case for delete_user_basket_api_v1_baskets_users_user_id_delete
+    def test_delete_user_basket_api_v1_baskets_users_bots_user_bot_id_delete(self):
+        """Test case for delete_user_basket_api_v1_baskets_users_bots_user_bot_id_delete
 
         Delete User Basket  # noqa: E501
         """

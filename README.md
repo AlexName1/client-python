@@ -93,7 +93,6 @@ Class | Method | HTTP request | Description
 *InfoItemsApi* | [**update_api_v1_info_items_token_put**](docs/InfoItemsApi.md#update_api_v1_info_items_token_put) | **PUT** /api/v1/info-items/{token} | Update
 *InfoItemsApi* | [**update_new_api_v1_info_items_token_new_put**](docs/InfoItemsApi.md#update_new_api_v1_info_items_token_new_put) | **PUT** /api/v1/info-items/{token}/new | Update New
 *ItemsApi* | [**get_brands_and_counts_api_v1_items_category_brands_counts_get**](docs/ItemsApi.md#get_brands_and_counts_api_v1_items_category_brands_counts_get) | **GET** /api/v1/items/{category}/brands-counts | Get Brands And Counts
-*ItemsApi* | [**get_codes_items_api_v1_items_codes_get**](docs/ItemsApi.md#get_codes_items_api_v1_items_codes_get) | **GET** /api/v1/items/codes | Get Codes Items
 *ItemsApi* | [**get_item_api_v1_items_code_token_one_get**](docs/ItemsApi.md#get_item_api_v1_items_code_token_one_get) | **GET** /api/v1/items/{code}/{token}/one | Get Item
 *ItemsApi* | [**get_item_new_api_v1_items_code_token_one_new_get**](docs/ItemsApi.md#get_item_new_api_v1_items_code_token_one_new_get) | **GET** /api/v1/items/{code}/{token}/one_new | Get Item New
 *ItemsApi* | [**get_item_selectinload_size_api_v1_items_code_token_load_size_get**](docs/ItemsApi.md#get_item_selectinload_size_api_v1_items_code_token_load_size_get) | **GET** /api/v1/items/{code}/{token}/load-size | Get Item Selectinload Size
@@ -101,9 +100,6 @@ Class | Method | HTTP request | Description
 *ItemsApi* | [**get_items_codes_api_v1_items_category_brand_codes_get**](docs/ItemsApi.md#get_items_codes_api_v1_items_category_brand_codes_get) | **GET** /api/v1/items/{category}/{brand}/codes | Get Items Codes
 *ItemsApi* | [**get_models_and_counts_api_v1_items_category_brand_models_counts_get**](docs/ItemsApi.md#get_models_and_counts_api_v1_items_category_brand_models_counts_get) | **GET** /api/v1/items/{category}/{brand}/models-counts | Get Models And Counts
 *ItemsApi* | [**get_models_api_v1_items_category_brand_models_get**](docs/ItemsApi.md#get_models_api_v1_items_category_brand_models_get) | **GET** /api/v1/items/{category}/{brand}/models | Get Models
-*ItemsApi* | [**insert_or_update_api_v1_items_merge_post**](docs/ItemsApi.md#insert_or_update_api_v1_items_merge_post) | **POST** /api/v1/items/merge | Insert Or Update
-*ItemsApi* | [**update_active_api_v1_items_active_put**](docs/ItemsApi.md#update_active_api_v1_items_active_put) | **PUT** /api/v1/items/active | Update Active
-*ItemsApi* | [**update_photo_by_code_api_v1_items_photo_code_file_id_photo_put**](docs/ItemsApi.md#update_photo_by_code_api_v1_items_photo_code_file_id_photo_put) | **PUT** /api/v1/items/photo/{code}/{file_id_photo} | Update Photo By Code
 *MessagesTgApi* | [**get_api_v1_messages_tg_name_get**](docs/MessagesTgApi.md#get_api_v1_messages_tg_name_get) | **GET** /api/v1/messages-tg/{name} | Get
 *MessagesTgApi* | [**insert_or_update_api_v1_messages_tg_post**](docs/MessagesTgApi.md#insert_or_update_api_v1_messages_tg_post) | **POST** /api/v1/messages-tg | Insert Or Update
 *OrdersApi* | [**delete_order_api_v1_orders_order_id_delete**](docs/OrdersApi.md#delete_order_api_v1_orders_order_id_delete) | **DELETE** /api/v1/orders/{order_id} | Delete Order
@@ -114,14 +110,9 @@ Class | Method | HTTP request | Description
 *OrdersApi* | [**get_user_orders_api_v1_orders_users_user_id_get**](docs/OrdersApi.md#get_user_orders_api_v1_orders_users_user_id_get) | **GET** /api/v1/orders/users/{user_id} | Get User Orders
 *OrdersApi* | [**insert_order_api_v1_orders_post**](docs/OrdersApi.md#insert_order_api_v1_orders_post) | **POST** /api/v1/orders | Insert Order
 *PurchasesApi* | [**delete_purchase_api_v1_purchases_purchase_id_delete**](docs/PurchasesApi.md#delete_purchase_api_v1_purchases_purchase_id_delete) | **DELETE** /api/v1/purchases/{purchase_id} | Delete Purchase
-*PurchasesApi* | [**get_active_orders_api_v1_purchases_token_active_get**](docs/PurchasesApi.md#get_active_orders_api_v1_purchases_token_active_get) | **GET** /api/v1/purchases/{token}/active | Get Active Orders
 *PurchasesApi* | [**get_all_api_v1_purchases_get**](docs/PurchasesApi.md#get_all_api_v1_purchases_get) | **GET** /api/v1/purchases | Get All
 *PurchasesApi* | [**get_count_api_v1_purchases_token_status_count_get**](docs/PurchasesApi.md#get_count_api_v1_purchases_token_status_count_get) | **GET** /api/v1/purchases/{token}/{status}/count | Get Count
-*PurchasesApi* | [**get_order_by_id_api_v1_purchases_order_id_token_one_get**](docs/PurchasesApi.md#get_order_by_id_api_v1_purchases_order_id_token_one_get) | **GET** /api/v1/purchases/{order_id}/{token}/one | Get Order By Id
 *PurchasesApi* | [**get_purchase_by_id_api_v1_purchases_purchase_id_get**](docs/PurchasesApi.md#get_purchase_by_id_api_v1_purchases_purchase_id_get) | **GET** /api/v1/purchases/{purchase_id} | Get Purchase By Id
-*PurchasesApi* | [**get_user_orders_api_v1_purchases_token_users_user_id_get**](docs/PurchasesApi.md#get_user_orders_api_v1_purchases_token_users_user_id_get) | **GET** /api/v1/purchases/{token}/users/{user_id} | Get User Orders
-*PurchasesApi* | [**insert_new_api_v1_purchases_token_new_post**](docs/PurchasesApi.md#insert_new_api_v1_purchases_token_new_post) | **POST** /api/v1/purchases/{token}/new | Insert New
-*PurchasesApi* | [**update_api_v1_purchases_token_put**](docs/PurchasesApi.md#update_api_v1_purchases_token_put) | **PUT** /api/v1/purchases/{token} | Update
 *PurchasesApi* | [**update_only_api_v1_purchases_put**](docs/PurchasesApi.md#update_only_api_v1_purchases_put) | **PUT** /api/v1/purchases | Update Only
 *QuantitiesApi* | [**insert_or_update_api_v1_quantities_merge_post**](docs/QuantitiesApi.md#insert_or_update_api_v1_quantities_merge_post) | **POST** /api/v1/quantities/merge | Insert Or Update
 *SchedulersApi* | [**delete_api_v1_schedulers_scheduler_id_delete**](docs/SchedulersApi.md#delete_api_v1_schedulers_scheduler_id_delete) | **DELETE** /api/v1/schedulers/{scheduler_id} | Delete
@@ -162,18 +153,15 @@ Class | Method | HTTP request | Description
  - [InsertBasket](docs/InsertBasket.md)
  - [InsertMessageTg](docs/InsertMessageTg.md)
  - [InsertOrder](docs/InsertOrder.md)
- - [InsertPurchase](docs/InsertPurchase.md)
  - [InsertScheduler](docs/InsertScheduler.md)
  - [ItemBase](docs/ItemBase.md)
  - [ItemBaseDb](docs/ItemBaseDb.md)
- - [ItemsUpdateActive](docs/ItemsUpdateActive.md)
  - [MessageTgBase](docs/MessageTgBase.md)
  - [ModelCount](docs/ModelCount.md)
  - [OrderBase](docs/OrderBase.md)
  - [OrderBaseDb](docs/OrderBaseDb.md)
  - [PartnerBase](docs/PartnerBase.md)
  - [PurchaseBaseDb](docs/PurchaseBaseDb.md)
- - [PurchaseUpdate](docs/PurchaseUpdate.md)
  - [QuantityBase](docs/QuantityBase.md)
  - [QuantityBaseDb](docs/QuantityBaseDb.md)
  - [SchedulerBaseDb](docs/SchedulerBaseDb.md)

@@ -35,13 +35,6 @@ class TestPurchasesApi(unittest.TestCase):
         """
         pass
 
-    def test_get_active_orders_api_v1_purchases_token_active_get(self):
-        """Test case for get_active_orders_api_v1_purchases_token_active_get
-
-        Get Active Orders  # noqa: E501
-        """
-        pass
-
     def test_get_all_api_v1_purchases_get(self):
         """Test case for get_all_api_v1_purchases_get
 
@@ -56,38 +49,10 @@ class TestPurchasesApi(unittest.TestCase):
         """
         pass
 
-    def test_get_order_by_id_api_v1_purchases_order_id_token_one_get(self):
-        """Test case for get_order_by_id_api_v1_purchases_order_id_token_one_get
-
-        Get Order By Id  # noqa: E501
-        """
-        pass
-
     def test_get_purchase_by_id_api_v1_purchases_purchase_id_get(self):
         """Test case for get_purchase_by_id_api_v1_purchases_purchase_id_get
 
         Get Purchase By Id  # noqa: E501
-        """
-        pass
-
-    def test_get_user_orders_api_v1_purchases_token_users_user_id_get(self):
-        """Test case for get_user_orders_api_v1_purchases_token_users_user_id_get
-
-        Get User Orders  # noqa: E501
-        """
-        pass
-
-    def test_insert_new_api_v1_purchases_token_new_post(self):
-        """Test case for insert_new_api_v1_purchases_token_new_post
-
-        Insert New  # noqa: E501
-        """
-        pass
-
-    def test_update_api_v1_purchases_token_put(self):
-        """Test case for update_api_v1_purchases_token_put
-
-        Update  # noqa: E501
         """
         pass
 

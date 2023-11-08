@@ -35,13 +35,6 @@ class TestItemsApi(unittest.TestCase):
         """
         pass
 
-    def test_get_codes_items_api_v1_items_codes_get(self):
-        """Test case for get_codes_items_api_v1_items_codes_get
-
-        Get Codes Items  # noqa: E501
-        """
-        pass
-
     def test_get_item_api_v1_items_code_token_one_get(self):
         """Test case for get_item_api_v1_items_code_token_one_get
 
@@ -88,27 +81,6 @@ class TestItemsApi(unittest.TestCase):
         """Test case for get_models_api_v1_items_category_brand_models_get
 
         Get Models  # noqa: E501
-        """
-        pass
-
-    def test_insert_or_update_api_v1_items_merge_post(self):
-        """Test case for insert_or_update_api_v1_items_merge_post
-
-        Insert Or Update  # noqa: E501
-        """
-        pass
-
-    def test_update_active_api_v1_items_active_put(self):
-        """Test case for update_active_api_v1_items_active_put
-
-        Update Active  # noqa: E501
-        """
-        pass
-
-    def test_update_photo_by_code_api_v1_items_photo_code_file_id_photo_put(self):
-        """Test case for update_photo_by_code_api_v1_items_photo_code_file_id_photo_put
-
-        Update Photo By Code  # noqa: E501
         """
         pass
 
