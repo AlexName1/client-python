@@ -46,11 +46,10 @@ class PurchaseBaseDb(object):
         'add_photo': 'str',
         'partner': 'bool',
         'paid': 'bool',
-        'delivery_cdek_id': 'str',
+        'delivery_cdek_id': 'int',
         'approve_size': 'bool',
         'size_id': 'int',
         'bot_id': 'int',
-        'duplicate_check': 'str',
         'order_id': 'int',
         'delivery_cdek_photo_tg_file_id': 'str',
         'item': 'ItemBase',
@@ -83,7 +82,6 @@ class PurchaseBaseDb(object):
         'approve_size': 'approve_size',
         'size_id': 'size_id',
         'bot_id': 'bot_id',
-        'duplicate_check': 'duplicate_check',
         'order_id': 'order_id',
         'delivery_cdek_photo_tg_file_id': 'delivery_cdek_photo_tg_file_id',
         'item': 'item',
@@ -93,7 +91,7 @@ class PurchaseBaseDb(object):
         'yookassa_payment': 'yookassa_payment'
     }
 
-    def __init__(self, id=None, created=None, buyer=None, code=None, price=None, delivery=None, address=None, phone=None, checking=None, pod=None, invoice=None, comment=None, status=None, add_info=None, user_id=None, add_photo=None, partner=None, paid=None, delivery_cdek_id=None, approve_size=None, size_id=None, bot_id=None, duplicate_check=None, order_id=None, delivery_cdek_photo_tg_file_id=None, item=None, order=None, delivery_cdek=None, size=None, yookassa_payment=None):  # noqa: E501
+    def __init__(self, id=None, created=None, buyer=None, code=None, price=None, delivery=None, address=None, phone=None, checking=None, pod=None, invoice=None, comment=None, status=None, add_info=None, user_id=None, add_photo=None, partner=None, paid=None, delivery_cdek_id=None, approve_size=None, size_id=None, bot_id=None, order_id=None, delivery_cdek_photo_tg_file_id=None, item=None, order=None, delivery_cdek=None, size=None, yookassa_payment=None):  # noqa: E501
         """PurchaseBaseDb - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._created = None
@@ -117,7 +115,6 @@ class PurchaseBaseDb(object):
         self._approve_size = None
         self._size_id = None
         self._bot_id = None
-        self._duplicate_check = None
         self._order_id = None
         self._delivery_cdek_photo_tg_file_id = None
         self._item = None
@@ -170,8 +167,6 @@ class PurchaseBaseDb(object):
             self.size_id = size_id
         if bot_id is not None:
             self.bot_id = bot_id
-        if duplicate_check is not None:
-            self.duplicate_check = duplicate_check
         if order_id is not None:
             self.order_id = order_id
         if delivery_cdek_photo_tg_file_id is not None:
@@ -571,7 +566,7 @@ class PurchaseBaseDb(object):
 
 
         :return: The delivery_cdek_id of this PurchaseBaseDb.  # noqa: E501
-        :rtype: str
+        :rtype: int
         """
         return self._delivery_cdek_id
 
@@ -581,7 +576,7 @@ class PurchaseBaseDb(object):
 
 
         :param delivery_cdek_id: The delivery_cdek_id of this PurchaseBaseDb.  # noqa: E501
-        :type: str
+        :type: int
         """
 
         self._delivery_cdek_id = delivery_cdek_id
@@ -648,27 +643,6 @@ class PurchaseBaseDb(object):
         """
 
         self._bot_id = bot_id
-
-    @property
-    def duplicate_check(self):
-        """Gets the duplicate_check of this PurchaseBaseDb.  # noqa: E501
-
-
-        :return: The duplicate_check of this PurchaseBaseDb.  # noqa: E501
-        :rtype: str
-        """
-        return self._duplicate_check
-
-    @duplicate_check.setter
-    def duplicate_check(self, duplicate_check):
-        """Sets the duplicate_check of this PurchaseBaseDb.
-
-
-        :param duplicate_check: The duplicate_check of this PurchaseBaseDb.  # noqa: E501
-        :type: str
-        """
-
-        self._duplicate_check = duplicate_check
 
     @property
     def order_id(self):
