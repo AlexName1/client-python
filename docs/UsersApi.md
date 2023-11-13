@@ -11,7 +11,7 @@ Method | HTTP request | Description
 [**update_user_items_api_v1_users_user_id_items_put**](UsersApi.md#update_user_items_api_v1_users_user_id_items_put) | **PUT** /api/v1/users/{user_id}/items | Update User Items
 
 # **get_all_ids_users_api_v1_users_ids_get**
-> list[object] get_all_ids_users_api_v1_users_ids_get(token)
+> list[int] get_all_ids_users_api_v1_users_ids_get(token)
 
 Get All Ids Users
 
@@ -47,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**list[object]**
+**list[int]**
 
 ### Authorization
 
