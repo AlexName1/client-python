@@ -28,6 +28,20 @@ class TestUsersBotsApi(unittest.TestCase):
     def tearDown(self):
         pass
 
+    def test_get_all_ids_users_api_v1_users_bots_ids_get(self):
+        """Test case for get_all_ids_users_api_v1_users_bots_ids_get
+
+        Get All Ids Users  # noqa: E501
+        """
+        pass
+
+    def test_get_count_api_v1_users_bots_count_get(self):
+        """Test case for get_count_api_v1_users_bots_count_get
+
+        Get Count  # noqa: E501
+        """
+        pass
+
     def test_get_only_user_bot_api_v1_users_bots_user_id_only_get(self):
         """Test case for get_only_user_bot_api_v1_users_bots_user_id_only_get
 
@@ -53,6 +67,13 @@ class TestUsersBotsApi(unittest.TestCase):
         """Test case for get_user_client_bot_api_v1_users_bots_user_id_client_get
 
         Get User Client Bot  # noqa: E501
+        """
+        pass
+
+    def test_update_last_mess_api_v1_users_bots_mess_put(self):
+        """Test case for update_last_mess_api_v1_users_bots_mess_put
+
+        Update Last Mess  # noqa: E501
         """
         pass
 

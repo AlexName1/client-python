@@ -15,12 +15,12 @@ from __future__ import absolute_import
 import unittest
 
 import swagger_client
-from swagger_client.models.update_user_mess import UpdateUserMess  # noqa: E501
+from swagger_client.models.update_user_bot_mess import UpdateUserBotMess  # noqa: E501
 from swagger_client.rest import ApiException
 
 
-class TestUpdateUserMess(unittest.TestCase):
-    """UpdateUserMess unit test stubs"""
+class TestUpdateUserBotMess(unittest.TestCase):
+    """UpdateUserBotMess unit test stubs"""
 
     def setUp(self):
         pass
@@ -28,10 +28,10 @@ class TestUpdateUserMess(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def testUpdateUserMess(self):
-        """Test UpdateUserMess"""
+    def testUpdateUserBotMess(self):
+        """Test UpdateUserBotMess"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.update_user_mess.UpdateUserMess()  # noqa: E501
+        # model = swagger_client.models.update_user_bot_mess.UpdateUserBotMess()  # noqa: E501
         pass
 
 

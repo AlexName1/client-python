@@ -4,10 +4,113 @@ All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**get_all_ids_users_api_v1_users_bots_ids_get**](UsersBotsApi.md#get_all_ids_users_api_v1_users_bots_ids_get) | **GET** /api/v1/users_bots/ids | Get All Ids Users
+[**get_count_api_v1_users_bots_count_get**](UsersBotsApi.md#get_count_api_v1_users_bots_count_get) | **GET** /api/v1/users_bots/count | Get Count
 [**get_only_user_bot_api_v1_users_bots_user_id_only_get**](UsersBotsApi.md#get_only_user_bot_api_v1_users_bots_user_id_only_get) | **GET** /api/v1/users_bots/{user_id}/only | Get Only User Bot
 [**get_user_bot_api_v1_users_bots_user_id_get**](UsersBotsApi.md#get_user_bot_api_v1_users_bots_user_id_get) | **GET** /api/v1/users_bots/{user_id} | Get User Bot
 [**get_user_bot_start_api_v1_users_bots_user_id_start_get**](UsersBotsApi.md#get_user_bot_start_api_v1_users_bots_user_id_start_get) | **GET** /api/v1/users_bots/{user_id}/start | Get User Bot Start
 [**get_user_client_bot_api_v1_users_bots_user_id_client_get**](UsersBotsApi.md#get_user_client_bot_api_v1_users_bots_user_id_client_get) | **GET** /api/v1/users_bots/{user_id}/client | Get User Client Bot
+[**update_last_mess_api_v1_users_bots_mess_put**](UsersBotsApi.md#update_last_mess_api_v1_users_bots_mess_put) | **PUT** /api/v1/users_bots/mess | Update Last Mess
+
+# **get_all_ids_users_api_v1_users_bots_ids_get**
+> list[int] get_all_ids_users_api_v1_users_bots_ids_get(token)
+
+Get All Ids Users
+
+### Example
+```python
+from __future__ import print_function
+import time
+import swagger_client
+from swagger_client.rest import ApiException
+from pprint import pprint
+# Configure HTTP basic authorization: HTTPBasic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
+
+# create an instance of the API class
+api_instance = swagger_client.UsersBotsApi(swagger_client.ApiClient(configuration))
+token = 'token_example' # str | 
+
+try:
+    # Get All Ids Users
+    api_response = api_instance.get_all_ids_users_api_v1_users_bots_ids_get(token)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling UsersBotsApi->get_all_ids_users_api_v1_users_bots_ids_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **token** | **str**|  | 
+
+### Return type
+
+**list[int]**
+
+### Authorization
+
+[HTTPBasic](../README.md#HTTPBasic)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **get_count_api_v1_users_bots_count_get**
+> int get_count_api_v1_users_bots_count_get(token)
+
+Get Count
+
+### Example
+```python
+from __future__ import print_function
+import time
+import swagger_client
+from swagger_client.rest import ApiException
+from pprint import pprint
+# Configure HTTP basic authorization: HTTPBasic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
+
+# create an instance of the API class
+api_instance = swagger_client.UsersBotsApi(swagger_client.ApiClient(configuration))
+token = 'token_example' # str | 
+
+try:
+    # Get Count
+    api_response = api_instance.get_count_api_v1_users_bots_count_get(token)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling UsersBotsApi->get_count_api_v1_users_bots_count_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **token** | **str**|  | 
+
+### Return type
+
+**int**
+
+### Authorization
+
+[HTTPBasic](../README.md#HTTPBasic)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_only_user_bot_api_v1_users_bots_user_id_only_get**
 > UserBotBaseDb get_only_user_bot_api_v1_users_bots_user_id_only_get(user_id, token, partner=partner, user=user, stock=stock)
@@ -229,6 +332,56 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **update_last_mess_api_v1_users_bots_mess_put**
+> object update_last_mess_api_v1_users_bots_mess_put(body)
+
+Update Last Mess
+
+### Example
+```python
+from __future__ import print_function
+import time
+import swagger_client
+from swagger_client.rest import ApiException
+from pprint import pprint
+# Configure HTTP basic authorization: HTTPBasic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
+
+# create an instance of the API class
+api_instance = swagger_client.UsersBotsApi(swagger_client.ApiClient(configuration))
+body = swagger_client.UpdateUserBotMess() # UpdateUserBotMess | 
+
+try:
+    # Update Last Mess
+    api_response = api_instance.update_last_mess_api_v1_users_bots_mess_put(body)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling UsersBotsApi->update_last_mess_api_v1_users_bots_mess_put: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**UpdateUserBotMess**](UpdateUserBotMess.md)|  | 
+
+### Return type
+
+**object**
+
+### Authorization
+
+[HTTPBasic](../README.md#HTTPBasic)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

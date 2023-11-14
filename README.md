@@ -121,15 +121,13 @@ Class | Method | HTTP request | Description
 *SizesApi* | [**get_size_by_id_api_v1_sizes_size_id_get**](docs/SizesApi.md#get_size_by_id_api_v1_sizes_size_id_get) | **GET** /api/v1/sizes/{size_id} | Get Size By Id
 *SizesApi* | [**get_sizes_api_v1_sizes_get**](docs/SizesApi.md#get_sizes_api_v1_sizes_get) | **GET** /api/v1/sizes | Get Sizes
 *SizesApi* | [**insert_or_nothing_api_v1_sizes_post**](docs/SizesApi.md#insert_or_nothing_api_v1_sizes_post) | **POST** /api/v1/sizes | Insert Or Nothing
-*UsersApi* | [**get_all_ids_users_api_v1_users_ids_get**](docs/UsersApi.md#get_all_ids_users_api_v1_users_ids_get) | **GET** /api/v1/users/ids | Get All Ids Users
-*UsersApi* | [**get_count_api_v1_users_count_get**](docs/UsersApi.md#get_count_api_v1_users_count_get) | **GET** /api/v1/users/count | Get Count
-*UsersApi* | [**get_user_items_api_v1_users_user_id_items_get**](docs/UsersApi.md#get_user_items_api_v1_users_user_id_items_get) | **GET** /api/v1/users/{user_id}/items | Get User Items
-*UsersApi* | [**update_last_mess_api_v1_users_user_id_mess_put**](docs/UsersApi.md#update_last_mess_api_v1_users_user_id_mess_put) | **PUT** /api/v1/users/{user_id}/mess | Update Last Mess
-*UsersApi* | [**update_user_items_api_v1_users_user_id_items_put**](docs/UsersApi.md#update_user_items_api_v1_users_user_id_items_put) | **PUT** /api/v1/users/{user_id}/items | Update User Items
+*UsersBotsApi* | [**get_all_ids_users_api_v1_users_bots_ids_get**](docs/UsersBotsApi.md#get_all_ids_users_api_v1_users_bots_ids_get) | **GET** /api/v1/users_bots/ids | Get All Ids Users
+*UsersBotsApi* | [**get_count_api_v1_users_bots_count_get**](docs/UsersBotsApi.md#get_count_api_v1_users_bots_count_get) | **GET** /api/v1/users_bots/count | Get Count
 *UsersBotsApi* | [**get_only_user_bot_api_v1_users_bots_user_id_only_get**](docs/UsersBotsApi.md#get_only_user_bot_api_v1_users_bots_user_id_only_get) | **GET** /api/v1/users_bots/{user_id}/only | Get Only User Bot
 *UsersBotsApi* | [**get_user_bot_api_v1_users_bots_user_id_get**](docs/UsersBotsApi.md#get_user_bot_api_v1_users_bots_user_id_get) | **GET** /api/v1/users_bots/{user_id} | Get User Bot
 *UsersBotsApi* | [**get_user_bot_start_api_v1_users_bots_user_id_start_get**](docs/UsersBotsApi.md#get_user_bot_start_api_v1_users_bots_user_id_start_get) | **GET** /api/v1/users_bots/{user_id}/start | Get User Bot Start
 *UsersBotsApi* | [**get_user_client_bot_api_v1_users_bots_user_id_client_get**](docs/UsersBotsApi.md#get_user_client_bot_api_v1_users_bots_user_id_client_get) | **GET** /api/v1/users_bots/{user_id}/client | Get User Client Bot
+*UsersBotsApi* | [**update_last_mess_api_v1_users_bots_mess_put**](docs/UsersBotsApi.md#update_last_mess_api_v1_users_bots_mess_put) | **PUT** /api/v1/users_bots/mess | Update Last Mess
 *WaybillsApi* | [**update_api_v1_waybills_put**](docs/WaybillsApi.md#update_api_v1_waybills_put) | **PUT** /api/v1/waybills | Update
 *YookassaPaymentsApi* | [**insert_api_v1_yookassa_payments_post**](docs/YookassaPaymentsApi.md#insert_api_v1_yookassa_payments_post) | **POST** /api/v1/yookassa-payments | Insert
 
@@ -169,8 +167,7 @@ Class | Method | HTTP request | Description
  - [SizeBaseDb](docs/SizeBaseDb.md)
  - [StockBase](docs/StockBase.md)
  - [UpdatePurchase](docs/UpdatePurchase.md)
- - [UpdateUserItems](docs/UpdateUserItems.md)
- - [UpdateUserMess](docs/UpdateUserMess.md)
+ - [UpdateUserBotMess](docs/UpdateUserBotMess.md)
  - [UserBaseDb](docs/UserBaseDb.md)
  - [UserBotBase](docs/UserBotBase.md)
  - [UserBotBaseDb](docs/UserBotBaseDb.md)

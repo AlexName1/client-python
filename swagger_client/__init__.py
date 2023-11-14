@@ -28,7 +28,6 @@ from swagger_client.api.purchases_api import PurchasesApi
 from swagger_client.api.quantities_api import QuantitiesApi
 from swagger_client.api.schedulers_api import SchedulersApi
 from swagger_client.api.sizes_api import SizesApi
-from swagger_client.api.users_api import UsersApi
 from swagger_client.api.users_bots_api import UsersBotsApi
 from swagger_client.api.waybills_api import WaybillsApi
 from swagger_client.api.yookassa_payments_api import YookassaPaymentsApi
@@ -70,8 +69,7 @@ from swagger_client.models.size_base import SizeBase
 from swagger_client.models.size_base_db import SizeBaseDb
 from swagger_client.models.stock_base import StockBase
 from swagger_client.models.update_purchase import UpdatePurchase
-from swagger_client.models.update_user_items import UpdateUserItems
-from swagger_client.models.update_user_mess import UpdateUserMess
+from swagger_client.models.update_user_bot_mess import UpdateUserBotMess
 from swagger_client.models.user_base_db import UserBaseDb
 from swagger_client.models.user_bot_base import UserBotBase
 from swagger_client.models.user_bot_base_db import UserBotBaseDb
