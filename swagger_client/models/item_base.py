@@ -47,7 +47,8 @@ class ItemBase(object):
         'category_id': 'str',
         'manufacturer_country': 'str',
         'material': 'str',
-        'dimension_id': 'int'
+        'dimension_id': 'int',
+        'photo_path_tg': 'str'
     }
 
     attribute_map = {
@@ -70,10 +71,11 @@ class ItemBase(object):
         'category_id': 'category_id',
         'manufacturer_country': 'manufacturer_country',
         'material': 'material',
-        'dimension_id': 'dimension_id'
+        'dimension_id': 'dimension_id',
+        'photo_path_tg': 'photo_path_tg'
     }
 
-    def __init__(self, id=None, code=None, changed=None, active=None, brand=None, model=None, title=None, retail_price=None, drop_price=None, link=None, photos=None, season=None, color=None, discount_price=None, new=None, code_hash=None, category_id=None, manufacturer_country=None, material=None, dimension_id=None):  # noqa: E501
+    def __init__(self, id=None, code=None, changed=None, active=None, brand=None, model=None, title=None, retail_price=None, drop_price=None, link=None, photos=None, season=None, color=None, discount_price=None, new=None, code_hash=None, category_id=None, manufacturer_country=None, material=None, dimension_id=None, photo_path_tg=None):  # noqa: E501
         """ItemBase - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._code = None
@@ -95,6 +97,7 @@ class ItemBase(object):
         self._manufacturer_country = None
         self._material = None
         self._dimension_id = None
+        self._photo_path_tg = None
         self.discriminator = None
         if id is not None:
             self.id = id
@@ -136,6 +139,8 @@ class ItemBase(object):
             self.material = material
         if dimension_id is not None:
             self.dimension_id = dimension_id
+        if photo_path_tg is not None:
+            self.photo_path_tg = photo_path_tg
 
     @property
     def id(self):
@@ -556,6 +561,27 @@ class ItemBase(object):
         """
 
         self._dimension_id = dimension_id
+
+    @property
+    def photo_path_tg(self):
+        """Gets the photo_path_tg of this ItemBase.  # noqa: E501
+
+
+        :return: The photo_path_tg of this ItemBase.  # noqa: E501
+        :rtype: str
+        """
+        return self._photo_path_tg
+
+    @photo_path_tg.setter
+    def photo_path_tg(self, photo_path_tg):
+        """Sets the photo_path_tg of this ItemBase.
+
+
+        :param photo_path_tg: The photo_path_tg of this ItemBase.  # noqa: E501
+        :type: str
+        """
+
+        self._photo_path_tg = photo_path_tg
 
     def to_dict(self):
         """Returns the model properties as a dict"""

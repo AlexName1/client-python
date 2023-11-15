@@ -4,6 +4,7 @@ All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**get_all_api_v1_items_get**](ItemsApi.md#get_all_api_v1_items_get) | **GET** /api/v1/items | Get All
 [**get_brands_and_counts_api_v1_items_category_brands_counts_get**](ItemsApi.md#get_brands_and_counts_api_v1_items_category_brands_counts_get) | **GET** /api/v1/items/{category}/brands-counts | Get Brands And Counts
 [**get_item_api_v1_items_code_token_one_get**](ItemsApi.md#get_item_api_v1_items_code_token_one_get) | **GET** /api/v1/items/{code}/{token}/one | Get Item
 [**get_item_new_api_v1_items_code_token_one_new_get**](ItemsApi.md#get_item_new_api_v1_items_code_token_one_new_get) | **GET** /api/v1/items/{code}/{token}/one_new | Get Item New
@@ -12,6 +13,56 @@ Method | HTTP request | Description
 [**get_items_codes_api_v1_items_category_brand_codes_get**](ItemsApi.md#get_items_codes_api_v1_items_category_brand_codes_get) | **GET** /api/v1/items/{category}/{brand}/codes | Get Items Codes
 [**get_models_and_counts_api_v1_items_category_brand_models_counts_get**](ItemsApi.md#get_models_and_counts_api_v1_items_category_brand_models_counts_get) | **GET** /api/v1/items/{category}/{brand}/models-counts | Get Models And Counts
 [**get_models_api_v1_items_category_brand_models_get**](ItemsApi.md#get_models_api_v1_items_category_brand_models_get) | **GET** /api/v1/items/{category}/{brand}/models | Get Models
+
+# **get_all_api_v1_items_get**
+> list[ItemBaseDb] get_all_api_v1_items_get(token)
+
+Get All
+
+### Example
+```python
+from __future__ import print_function
+import time
+import swagger_client
+from swagger_client.rest import ApiException
+from pprint import pprint
+# Configure HTTP basic authorization: HTTPBasic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
+
+# create an instance of the API class
+api_instance = swagger_client.ItemsApi(swagger_client.ApiClient(configuration))
+token = 'token_example' # str | 
+
+try:
+    # Get All
+    api_response = api_instance.get_all_api_v1_items_get(token)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling ItemsApi->get_all_api_v1_items_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **token** | **str**|  | 
+
+### Return type
+
+[**list[ItemBaseDb]**](ItemBaseDb.md)
+
+### Authorization
+
+[HTTPBasic](../README.md#HTTPBasic)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_brands_and_counts_api_v1_items_category_brands_counts_get**
 > list[BrandCount] get_brands_and_counts_api_v1_items_category_brands_counts_get(category)

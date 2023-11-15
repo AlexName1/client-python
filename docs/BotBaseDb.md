@@ -8,7 +8,6 @@ Name | Type | Description | Notes
 **full_name** | **str** |  | [optional] 
 **username** | **str** |  | [optional] 
 **id_bot** | **int** |  | [optional] 
-**server_ip** | **str** |  | [optional] 
 **admin_list** | **list[int]** |  | [optional] 
 **text_channel_url** | **str** |  | [optional] 
 **support_url** | **str** |  | [optional] 

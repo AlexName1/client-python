@@ -23,6 +23,7 @@ Name | Type | Description | Notes
 **manufacturer_country** | **str** |  | [optional] 
 **material** | **str** |  | [optional] 
 **dimension_id** | **int** |  | [optional] 
+**photo_path_tg** | **str** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

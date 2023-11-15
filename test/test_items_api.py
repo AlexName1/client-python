@@ -28,6 +28,13 @@ class TestItemsApi(unittest.TestCase):
     def tearDown(self):
         pass
 
+    def test_get_all_api_v1_items_get(self):
+        """Test case for get_all_api_v1_items_get
+
+        Get All  # noqa: E501
+        """
+        pass
+
     def test_get_brands_and_counts_api_v1_items_category_brands_counts_get(self):
         """Test case for get_brands_and_counts_api_v1_items_category_brands_counts_get
 

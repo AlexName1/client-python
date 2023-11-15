@@ -32,14 +32,12 @@ class OrderBaseDb(object):
         'created': 'datetime',
         'user_bot_id': 'int',
         'buyer': 'str',
-        'price': 'int',
         'delivery': 'str',
         'address': 'str',
         'phone': 'str',
         'checking': 'bool',
         'payment_receipt': 'str',
         'comment': 'str',
-        'info_delivery': 'str',
         'partner': 'bool',
         'paid': 'bool',
         'purchases': 'list[PurchaseBaseDb]',
@@ -51,34 +49,30 @@ class OrderBaseDb(object):
         'created': 'created',
         'user_bot_id': 'user_bot_id',
         'buyer': 'buyer',
-        'price': 'price',
         'delivery': 'delivery',
         'address': 'address',
         'phone': 'phone',
         'checking': 'checking',
         'payment_receipt': 'payment_receipt',
         'comment': 'comment',
-        'info_delivery': 'info_delivery',
         'partner': 'partner',
         'paid': 'paid',
         'purchases': 'purchases',
         'user_bot': 'user_bot'
     }
 
-    def __init__(self, id=None, created=None, user_bot_id=None, buyer=None, price=None, delivery=None, address=None, phone=None, checking=None, payment_receipt=None, comment=None, info_delivery=None, partner=None, paid=None, purchases=None, user_bot=None):  # noqa: E501
+    def __init__(self, id=None, created=None, user_bot_id=None, buyer=None, delivery=None, address=None, phone=None, checking=None, payment_receipt=None, comment=None, partner=None, paid=None, purchases=None, user_bot=None):  # noqa: E501
         """OrderBaseDb - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._created = None
         self._user_bot_id = None
         self._buyer = None
-        self._price = None
         self._delivery = None
         self._address = None
         self._phone = None
         self._checking = None
         self._payment_receipt = None
         self._comment = None
-        self._info_delivery = None
         self._partner = None
         self._paid = None
         self._purchases = None
@@ -92,8 +86,6 @@ class OrderBaseDb(object):
             self.user_bot_id = user_bot_id
         if buyer is not None:
             self.buyer = buyer
-        if price is not None:
-            self.price = price
         if delivery is not None:
             self.delivery = delivery
         if address is not None:
@@ -106,8 +98,6 @@ class OrderBaseDb(object):
             self.payment_receipt = payment_receipt
         if comment is not None:
             self.comment = comment
-        if info_delivery is not None:
-            self.info_delivery = info_delivery
         if partner is not None:
             self.partner = partner
         if paid is not None:
@@ -200,27 +190,6 @@ class OrderBaseDb(object):
         """
 
         self._buyer = buyer
-
-    @property
-    def price(self):
-        """Gets the price of this OrderBaseDb.  # noqa: E501
-
-
-        :return: The price of this OrderBaseDb.  # noqa: E501
-        :rtype: int
-        """
-        return self._price
-
-    @price.setter
-    def price(self, price):
-        """Sets the price of this OrderBaseDb.
-
-
-        :param price: The price of this OrderBaseDb.  # noqa: E501
-        :type: int
-        """
-
-        self._price = price
 
     @property
     def delivery(self):
@@ -347,27 +316,6 @@ class OrderBaseDb(object):
         """
 
         self._comment = comment
-
-    @property
-    def info_delivery(self):
-        """Gets the info_delivery of this OrderBaseDb.  # noqa: E501
-
-
-        :return: The info_delivery of this OrderBaseDb.  # noqa: E501
-        :rtype: str
-        """
-        return self._info_delivery
-
-    @info_delivery.setter
-    def info_delivery(self, info_delivery):
-        """Sets the info_delivery of this OrderBaseDb.
-
-
-        :param info_delivery: The info_delivery of this OrderBaseDb.  # noqa: E501
-        :type: str
-        """
-
-        self._info_delivery = info_delivery
 
     @property
     def partner(self):

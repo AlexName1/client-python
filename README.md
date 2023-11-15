@@ -92,6 +92,7 @@ Class | Method | HTTP request | Description
 *InfoItemsApi* | [**insert_or_update_api_v1_info_items_token_post**](docs/InfoItemsApi.md#insert_or_update_api_v1_info_items_token_post) | **POST** /api/v1/info-items/{token} | Insert Or Update
 *InfoItemsApi* | [**update_api_v1_info_items_token_put**](docs/InfoItemsApi.md#update_api_v1_info_items_token_put) | **PUT** /api/v1/info-items/{token} | Update
 *InfoItemsApi* | [**update_new_api_v1_info_items_token_new_put**](docs/InfoItemsApi.md#update_new_api_v1_info_items_token_new_put) | **PUT** /api/v1/info-items/{token}/new | Update New
+*ItemsApi* | [**get_all_api_v1_items_get**](docs/ItemsApi.md#get_all_api_v1_items_get) | **GET** /api/v1/items | Get All
 *ItemsApi* | [**get_brands_and_counts_api_v1_items_category_brands_counts_get**](docs/ItemsApi.md#get_brands_and_counts_api_v1_items_category_brands_counts_get) | **GET** /api/v1/items/{category}/brands-counts | Get Brands And Counts
 *ItemsApi* | [**get_item_api_v1_items_code_token_one_get**](docs/ItemsApi.md#get_item_api_v1_items_code_token_one_get) | **GET** /api/v1/items/{code}/{token}/one | Get Item
 *ItemsApi* | [**get_item_new_api_v1_items_code_token_one_new_get**](docs/ItemsApi.md#get_item_new_api_v1_items_code_token_one_new_get) | **GET** /api/v1/items/{code}/{token}/one_new | Get Item New
